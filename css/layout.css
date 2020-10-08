@@ -3,13 +3,6 @@ body {
     grid-template-columns: 1fr;
 }
 
-.container-fluid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-    .container-fluid > .row {
-        grid-column: 1 / 2;
-    }
 .container {
     display: grid;
     grid-template-columns: 1fr 1200px 1fr;
