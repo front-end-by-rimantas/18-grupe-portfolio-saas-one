@@ -63,7 +63,7 @@
 /* FOOTER */
 
 
-@media (max-width: 1300px) {
+@media (max-width: 990px) {
 /* HEADER */
 .container.header > .row {
     grid-template-columns: 150px 1fr 220px;
@@ -89,7 +89,7 @@
 /* FOOTER */
 
 }
-@media (max-width: 1100px) {
+@media (max-width: 750px) {
     /* HEADER */
     .container.header > .row {
         grid-template-columns: 150px 1fr 0;
@@ -126,31 +126,7 @@
 /* FOOTER */
 
 }
-@media (max-width: 900px) {
-/* HEADER */
-
-/* HERO */
-
-/* HOMEPAGE ABOUT */
-
-/* FEATURE */
-
-/* APP */
-
-/* PROJECTS */
-
-/* FAQ */
-
-/* TESTIMONIALS */
-
-/* OUR TEAM */
-
-/* ADDRESS */
-
-/* FOOTER */
-
-}
-@media (max-width: 700px) {
+@media (max-width: 540px) {
 /* HEADER */
 
 /* HERO */
