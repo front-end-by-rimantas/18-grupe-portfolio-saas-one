@@ -5,6 +5,46 @@
 /* HOMEPAGE ABOUT */
 
 /* FEATURE */
+.title {
+    margin-top: 20px;
+}
+.feature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    .feature-block > .box {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        margin-top: 40px;
+    
+    }
+        .feature-block > .box > .left {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            float: left;
+            background-color: tomato;
+            padding: 20px;
+            border-radius: 50px 50px  6px  50px;
+        }
+        .feature-block > .box > .right{
+            display: inline-block;
+            float: left;
+            margin-left: 15px;
+        }
+            .feature-block > .box > .right > h3{
+                
+                font-size: 20px;
+            }
+            .feature-block > .box > .right > p{
+                margin-top: 20px;
+                font-size: 17px;
+            }
+    .feature-block > .fa {
+        align-items: center;
+        text-align: center;   
+    }
 
 /* APP */
 
@@ -29,6 +69,10 @@
 /* HOMEPAGE ABOUT */
 
 /* FEATURE */
+.feature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 /* APP */
 
@@ -46,13 +90,17 @@
 
 }
 @media (max-width: 750px) {
-    /* HEADER */
+/* HEADER */
 
 /* HERO */
 
 /* HOMEPAGE ABOUT */
 
 /* FEATURE */
+.feature-block {
+    display: grid;
+    grid-template-columns: 1fr ;
+ }
 
 /* APP */
 
