@@ -1,0 +1,24 @@
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7052FC;
+    background-color: #F2EFFF;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    padding: 4px 15px;
+}
+/* TITLES (HEADERS) */
+.title {
+
+}
+.title.center {
+    text-align: center;
+}
+/* PARAGRAPHS */
+
+/* SOCIALS */
+
