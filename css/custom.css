@@ -23,12 +23,12 @@
         margin-left: 185px;
         max-width: 300px;
         }
-        .app > .row > .right-column > .mobile-2 {
-            position: absolute;
-            max-width: 300px;
-            right: 20px;
-            top: -50px;
-        }
+    .app > .row > .right-column > .mobile-2 {
+        position: absolute;
+        max-width: 300px;
+        right: 20px;
+        top: -50px;
+    }
 .app > .row > .left-column {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -45,13 +45,13 @@
     .app > .row > .left-column > .left-column-paragraph {
         margin-bottom: 45px;
     }
-    .app > .row > .left-column > .left-column-buttons > .button.white.round > .fab {
-        color: #7052fb;
-        line-height: 28px;
-    }
     .app > .row > .left-column > .left-column-buttons > .button.white.round {
         margin-right: 20px;
     }
+        .app > .row > .left-column > .left-column-buttons > .button.white.round > .fab {
+            color: #7052fb;
+            line-height: 28px;
+        }
 /* PROJECTS */
 
 /* FAQ */
@@ -80,24 +80,24 @@
     margin-bottom: 100px;
     max-height: max-content;
 }
-.app > .row > .right-column {
-    position: relative;
-    display: block;
-    float: left;
-    width: 100%;
-}
-    .app > .row > .right-column > .mobile-1 {
+    .app > .row > .right-column {
         position: relative;
-        z-index: 22;
-        margin-left: 0px;
-        max-width: 300px;
+        display: block;
+        float: left;
+        width: 100%;
     }
-    .app > .row > .right-column > .mobile-2 {
-        position: absolute;
-        max-width: 300px;
-        right: 203px;
-        top: -50px;
-    }
+        .app > .row > .right-column > .mobile-1 {
+            position: relative;
+            z-index: 22;
+            margin-left: 0px;
+            max-width: 300px;
+        }
+        .app > .row > .right-column > .mobile-2 {
+            position: absolute;
+            max-width: 300px;
+            right: 203px;
+            top: -50px;
+        }
 .app > .row > .left-column {
     display: block;
     float: left;
