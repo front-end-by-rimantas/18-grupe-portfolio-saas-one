@@ -7,17 +7,48 @@
         float: left;
         width: 50%;
     }
-        div.discount > b {
+        div.discount {
             display: inline-block;
-            float: left;
-            color: #7052FB;
+            margin: 0 15px 10px;
+            border: 1px solid #9292922e;
+            padding: 4px 15px;
+            border-radius: 3px;
+            box-shadow: 0 7px 25px 0 rgba(22,53,76,0.05);
         }
-        div.hero-links > a.button:hover {
-            box-shadow: none;
+            div.discount > b {
+                color: #7052FB;
+            }
+        h1 {
+            font-size: 50px;
+            line-height: 60px;
+            font-weight: 400;
+            margin: 0 15px 20px 15px;
+            color: #2b2350
         }
+        div.hero-left > p {
+            margin: 0 15px 40px 15px;
+        }
+            div.hero-links > a.button {
+                margin: 0 10px 50px 15px;
+            }
+            div.hero-links > a.button:hover {
+                box-shadow: none;
+            }
+            div.hero-right{
+                position: relative;
+            }
         div.hero-right > img {
             width: 100%;
+            box-shadow: 0 30px 60px 0 rgba(0,11,40,0.14);
+            margin: 50px 0 0 0;
         }
+    div.hero-bg > img {
+        position: absolute;
+        width: 50%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
 /* HOMEPAGE ABOUT */
 
 /* FEATURE */
