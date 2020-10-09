@@ -14,12 +14,20 @@
 }
 /* TITLES (HEADERS) */
 .title {
-
-}
-.title.center {
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
     text-align: center;
 }
+
 /* PARAGRAPHS */
+.p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
 
 /* SOCIALS */
 
