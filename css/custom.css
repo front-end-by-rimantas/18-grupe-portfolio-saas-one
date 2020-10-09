@@ -1,7 +1,23 @@
 /* HEADER */
 
 /* HERO */
-
+    .hero-left,
+    .hero-right {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+        div.discount > b {
+            display: inline-block;
+            float: left;
+            color: #7052FB;
+        }
+        div.hero-links > a.button:hover {
+            box-shadow: none;
+        }
+        div.hero-right > img {
+            width: 100%;
+        }
 /* HOMEPAGE ABOUT */
 
 /* FEATURE */
