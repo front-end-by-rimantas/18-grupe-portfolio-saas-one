@@ -19,6 +19,7 @@
     margin-top: 20px;
     margin-bottom: 40px;
 }
+
  .box {
      display: inline-block;
      margin-bottom: 40px;
@@ -50,39 +51,37 @@
  }
  .fa {
      align-items: center;
-     text-align: center;
-     
+     text-align: center;   
  }
-
-
 @media (max-width: 1300px) {
     .box {
-        width:280px; 
+        width:280px;   
     }
     .box > .right{
-       
         width: 65%;
-     
      }
-  
 }
 @media (max-width: 1100px) {
     .box {
-        width:280px; 
+        width:340px; 
+        margin: 0;
+        margin-right: 50px;
+        margin-top: 50px;
     }
     .box > .right{
         width: 50%;
      }
-  
-    
 }
 @media (max-width: 900px) {
 
     .box {
-        width:50%; 
+        width:100%; 
     }
-  
 }
 @media (max-width: 700px) {
-  
+
+   .box {
+        width:100%;
+        margin-left: 0; 
+    }
 }
