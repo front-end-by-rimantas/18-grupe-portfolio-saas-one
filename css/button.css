@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+    background-color: #7052FB;
+    color: #fff;
+    padding: 8px 30px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid transparent;
+    font-weight: 700;
+    line-height: 28px;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px 0 rgba(112,111,111,0.3);
+}
+    .button.white {
+        background-color: #fff;
+        color:  #7052FB;
+        border: 1px solid #7052FB;
+        box-shadow: none;
+    }
+
+    .button.white.round {
+        border-radius: 40px;
+        border: 2px solid #7052FB;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    
