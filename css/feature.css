@@ -1,15 +1,11 @@
 
-.title-feature{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+.title {
     margin-top: 20px;
 }
 
 .feature-block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
  }
  .box {
      display: flex;
@@ -25,24 +21,27 @@
      float: left;
      background-color: tomato;
      padding: 20px;
-     border-radius: 50px 50px  3px  50px;
+     border-radius: 50px 50px  6px  50px;
  }
  .box > .right{
     display: inline-block;
-   
     float: left;
     margin-left: 15px;
  }
+ .box > .right > h3{
+    
+    font-size: 20px;
+}
  .box > .right > p{
      margin-top: 20px;
-     font-size: 20px;
+     font-size: 17px;
  }
  .fa {
      align-items: center;
      text-align: center;   
  }
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
   
 .feature-block {
     display: grid;
