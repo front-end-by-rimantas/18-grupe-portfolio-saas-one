@@ -7,7 +7,51 @@
 /* FEATURE */
 
 /* APP */
-
+.app > .row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-height: 700px;
+}
+.app > .row > .right-column {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+}
+    .app > .row > .right-column > .mobile-1 {
+        position: relative;
+        z-index: 22;
+        margin-left: 185px;
+        max-width: 300px;
+        }
+        .app > .row > .right-column > .mobile-2 {
+            position: absolute;
+            max-width: 300px;
+            right: 20px;
+            top: -50px;
+        }
+.app > .row > .left-column {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: inline-block;
+    float: left;
+    width: 40%;
+    align-items: center;
+}
+    .app > .row > .left-column > .left-column-title {
+        text-align: left;
+        margin-bottom: 25px;
+        line-height: 40px;
+    }
+    .app > .row > .left-column > .left-column-paragraph {
+        margin-bottom: 45px;
+    }
+    .app > .row > .left-column > .left-column-buttons > .button.white.round > .fab {
+        color: #7052fb;
+        line-height: 28px;
+    }
+    .app > .row > .left-column > .left-column-buttons > .button.white.round {
+        margin-right: 20px;
+    }
 /* PROJECTS */
 
 /* FAQ */
@@ -31,7 +75,35 @@
 /* FEATURE */
 
 /* APP */
-
+.app > .row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-height: max-content;
+}
+.app > .row > .right-column {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+    .app > .row > .right-column > .mobile-1 {
+        position: relative;
+        z-index: 22;
+        margin-left: 0px;
+        max-width: 300px;
+    }
+    .app > .row > .right-column > .mobile-2 {
+        position: absolute;
+        max-width: 300px;
+        right: 203px;
+        top: -50px;
+    }
+.app > .row > .left-column {
+    display: block;
+    float: left;
+    width: 100%;
+    align-items: center;
+}
 /* PROJECTS */
 
 /* FAQ */
@@ -55,7 +127,12 @@
 /* FEATURE */
 
 /* APP */
-
+.app > .row > .right-column > .mobile-2 {
+    position: absolute;
+    max-width: 300px;
+    right: 20px;
+    top: -50px;
+}
 /* PROJECTS */
 
 /* FAQ */
