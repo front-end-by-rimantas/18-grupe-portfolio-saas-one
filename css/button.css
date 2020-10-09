@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    background-color: #7052FB;
+    color: #ffffff;
+    padding: 10px;
+}
+    .button.white {
+    background-color: #ffffff;
+    color:  #7052FB;
+    border: 1px solid #7052FB;
+    }
+
+    .button.round {
+        border-radius: 40px;
+    }
