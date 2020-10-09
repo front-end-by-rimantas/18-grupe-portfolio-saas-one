@@ -3,9 +3,78 @@
 /* HERO */
 
 /* HOMEPAGE ABOUT */
+.homepage-about > .row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 45%;
+    margin-bottom: 80px;
+}
+.home-about-card {
+    display: inline-block;
+    width: 87%;
+    height: 290px;
+    box-shadow: 0 15px 25px 0 rgba(131,131,131,0.1);
+    margin-bottom: 50px;
+    padding: 30px 35px;
+}
+.home-about-card .title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #a55cef;
+}
+    .home-about-card > .card-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        /* color: #a55cef; */
+        background-color: #fff5f6;
+        margin-bottom: 40px;
+    }
+        .home-about-card > .card-header > i {
+            color: #a55cef;
+        }
+
+    .homepage-about > .row > .left-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+        .homepage-about > .row > .left-block > .left-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .homepage-about > .row > .left-block > .right-row {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+        }
+
+    .homepage-about > .row > .right-block {
+        display: inline-block;
+        padding: 20px;
+        margin-top: 150px;
+    }
+        .homepage-about > .row > .right-block > .title {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+        .homepage-about > .row > .right-block > b {
+            font-size: 18px;
+        }
+        .homepage-about > .row > .right-block > p {
+            margin: 20px 0 30px 0;
+        }
 
 /* FEATURE */
-.title {
+.feature > .row > .title {
     margin-top: 20px;
 }
 .feature-block {
@@ -67,6 +136,12 @@
 /* HERO */
 
 /* HOMEPAGE ABOUT */
+.homepage-about > .row {
+    grid-template-columns: 1fr;
+}
+.homepage-about > .row > .left-block {
+    grid-template-columns: 1fr;
+}
 
 /* FEATURE */
 .feature-block {
