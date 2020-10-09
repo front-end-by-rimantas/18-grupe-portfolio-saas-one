@@ -6,33 +6,45 @@
     grid-template-areas: 
     "logo nav btn";
     height: 100px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: Quicksand,sans-serif;
 }
-    .container.header > .header-logo {
+    .container.header .header-logo {
         grid-area: logo;
     }
-    .container.header > .header-navigation {
+    .container.header .header-navigation {
         grid-area: nav;
     }
-        .container.header > .header-navigation > .nav-btn {
-            margin-left: 20px;
+        .container.header .header-navigation .nav-btn {
+            /* display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+               */
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            outline: 1px solid #ff62ab;
+            color: #2b2350;
+            line-height: 100px;
+            margin-left: 30px;
+            padding: 5px 0;
+            position: relative;
         }
-    .container.header > .button.purchase-btn {
+    .container.header .button.purchase-btn {
         grid-area: btn;
     }
 
 /* RESPONSIVE */
 @media (max-width: 1300px) {
-.container.header > .row {
-    grid-template-columns: 150px 1fr 220px;
-}
+    .container.header > .row {
+        grid-template-columns: 150px 1fr 220px;
+    }
 }
 @media (max-width: 1100px) {
-    .container.header > .header-navigation {
+    .container.header .header-navigation {
         display: none;
-        visibility: none;
     }
-    .container.header > .button.purchase-btn {
+    .container.header .button.purchase-btn {
         display: none;
     }
 }
