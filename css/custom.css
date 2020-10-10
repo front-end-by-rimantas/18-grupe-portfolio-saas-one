@@ -70,22 +70,22 @@
     padding-right: 15px;
 }
     .app > .row > .right-column > .mobile-1 {
-        position: relative;
-        z-index: 22;
+        z-index: 2;
         margin-left: 185px;
         max-width: 300px;
         }
     .app > .row > .right-column > .mobile-2 {
         position: absolute;
         max-width: 300px;
+        z-index: -1;
         right: 20px;
         top: -50px;
     }
 .app > .row > .left-column {
-    padding-top: 50px;
-    padding-bottom: 100px;
     display: inline-block;
     float: left;
+    padding-top: 50px;
+    padding-bottom: 100px;
     width: 40%;
     align-items: center;
     padding-left: 15px;
@@ -101,11 +101,20 @@
     }
     .app > .row > .left-column > .left-column-buttons > .button.white.round {
         margin-right: 20px;
+        transition: 0.3s;
     }
         .app > .row > .left-column > .left-column-buttons > .button.white.round > .fab {
             color: #7052fb;
             margin-right: 10px;
             line-height: 28px;
+            transition: 0.3s;
+        }
+        .app > .row > .left-column > .left-column-buttons > .button.white.round:hover {
+            color: white;
+            background-color: #7052fb;
+        }
+        .app > .row > .left-column > .left-column-buttons > .button.white.round:hover .fab {
+            color: white;
         }
 /* PROJECTS */
 
@@ -131,33 +140,22 @@
 
 /* APP */
 .app > .row {
-    margin-top: 100px;
-    margin-bottom: 100px;
     max-height: max-content;
 }
     .app > .row > .right-column {
-        position: relative;
         display: block;
         float: left;
         width: 100%;
     }
         .app > .row > .right-column > .mobile-1 {
-            position: relative;
-            z-index: 22;
             margin-left: 0px;
-            max-width: 300px;
         }
         .app > .row > .right-column > .mobile-2 {
-            position: absolute;
-            max-width: 300px;
             right: 203px;
-            top: -50px;
         }
 .app > .row > .left-column {
     display: block;
-    float: left;
     width: 100%;
-    align-items: center;
 }
 /* PROJECTS */
 
@@ -183,10 +181,7 @@
 
 /* APP */
 .app > .row > .right-column > .mobile-2 {
-    position: absolute;
-    max-width: 300px;
-    right: 20px;
-    top: -50px;
+    right: 10px;
 }
 /* PROJECTS */
 
@@ -212,10 +207,7 @@
 
 /* APP */
 .app > .row > .right-column > .mobile-2 {
-    position: absolute;
-    max-width: 300px;
-    right: 150px;
-    top: -50px;
+    right: 120px;
 }
 /* PROJECTS */
 
