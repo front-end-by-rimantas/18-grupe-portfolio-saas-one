@@ -67,38 +67,58 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-.container.address {
+.container.address > .row {
+    height: 424px;
+    margin-bottom: 100px;
 }
-    .container.address > .row {
-        height: 424px;
-    }
-    .container.address > .row > .address-title > .title{
+    .container.adrs > .row > .adrs-title > .title{
         margin-bottom: 20px;
+        font-size: 36px;
     }
-        .container.address > .row > .address-contacts {
+        .container.address > .row > .adrs-contacts {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            padding: 5px;
         }
-        .container.address > .row > .address-contacts > .address-box-wrap {
-
-        }
-            .container.address > .row > .address-contacts > .address-box-wrap > .address-box {
-                text-align: center;
-                
+            .container.address > .row > .adrs-contacts > .adrs-box-wrap {
+                padding-left: 15px;
+                padding-right: 15px;
             }
-                .container.address > .row > .address-contacts > .address-box-wrap > .address-box > .address-icons {
-                    display: flex;
-                    margin: 0 auto;
-                    width: 110px;
-                    border-radius: 30px;
-                    height: 110px;
-                    justify-content: center;
-                    align-items: center;
+                .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box {
+                    padding: 10px;
+                    text-align: center;
+                    height: 100%;
                 }
-                    .container.address > .row > .address-contacts > .address-box-wrap > .address-box > .address-icons > .fas {
-                        font-size: 45px;
+                    .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-box-titles {
+                        font-size: 20px;
+                        margin-bottom: 5px;
                     }
+                        .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+                            display: flex;
+                            margin: 0 auto;
+                            width: 110px;
+                            border-radius: 30px;
+                            height: 110px;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 16px 120px;
+                        }
+                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons > .fas {
+                                font-size: 45px;
+                                color: gray;
+                            }
+                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-social {
+                                margin-top: 15px;
+                            }
+                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-social > a >.fab {
+                                line-height: 30px;
+                                padding: 0px 15px;
+                                font-size: 20px;
+                                color: gray;
+                            }
+                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-paragraphs,
+                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-titles {
+                                margin-bottom: 5px;
+                            }
 /* FOOTER */
 
 
