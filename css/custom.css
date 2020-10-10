@@ -66,6 +66,8 @@
     position: relative;
     display: inline-block;
     width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
     .app > .row > .right-column > .mobile-1 {
         position: relative;
@@ -86,6 +88,8 @@
     float: left;
     width: 40%;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
     .app > .row > .left-column > .left-column-title {
         text-align: left;
@@ -100,6 +104,7 @@
     }
         .app > .row > .left-column > .left-column-buttons > .button.white.round > .fab {
             color: #7052fb;
+            margin-right: 10px;
             line-height: 28px;
         }
 /* PROJECTS */
