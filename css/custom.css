@@ -206,7 +206,12 @@
 /* FEATURE */
 
 /* APP */
-
+.app > .row > .right-column > .mobile-2 {
+    position: absolute;
+    max-width: 300px;
+    right: 150px;
+    top: -50px;
+}
 /* PROJECTS */
 
 /* FAQ */
