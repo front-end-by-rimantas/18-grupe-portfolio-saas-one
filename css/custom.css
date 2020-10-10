@@ -30,6 +30,7 @@
             margin: 0 15px 40px 15px;
         }
             div.hero-links > a.button {
+                display: inline-block;
                 margin: 0 10px 50px 15px;
             }
             div.hero-links > a.button:hover {
@@ -75,7 +76,25 @@
 /* HEADER */
 
 /* HERO */
-
+    div.hero-left,
+    div.hero-right,
+    div.hero-right > img {
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+        div.hero-links > a.button {
+                margin: 0 0 0 15px;
+            }
+    div.hero-right {
+        margin: 20px 0 40px;
+    }
+        div.hero-bg > img {
+            top: -25px;
+            width: 95%;
+        }
 /* HOMEPAGE ABOUT */
 
 /* FEATURE */
@@ -123,7 +142,9 @@
 /* HEADER */
 
 /* HERO */
-
+div.hero-links > a {
+    width: calc(90% / 2);
+}
 /* HOMEPAGE ABOUT */
 
 /* FEATURE */
