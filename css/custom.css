@@ -81,7 +81,6 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        /* color: #a55cef; */
         background-color: #fff5f6;
         margin-bottom: 40px;
     }
@@ -122,6 +121,11 @@
         .homepage-about > .row > .right-block > p {
             margin: 20px 0 30px 0;
         }
+        .homepage-about > .row > .right-block > .button:hover {
+            box-shadow: none;
+        }
+
+
 
 /* FEATURE */
 .feature > .row > .title {
