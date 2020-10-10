@@ -67,7 +67,38 @@
 /* OUR TEAM */
 
 /* ADDRESS */
+.container.address {
+}
+    .container.address > .row {
+        height: 424px;
+    }
+    .container.address > .row > .address-title > .title{
+        margin-bottom: 20px;
+    }
+        .container.address > .row > .address-contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 5px;
+        }
+        .container.address > .row > .address-contacts > .address-box-wrap {
 
+        }
+            .container.address > .row > .address-contacts > .address-box-wrap > .address-box {
+                text-align: center;
+                
+            }
+                .container.address > .row > .address-contacts > .address-box-wrap > .address-box > .address-icons {
+                    display: flex;
+                    margin: 0 auto;
+                    width: 110px;
+                    border-radius: 30px;
+                    height: 110px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    .container.address > .row > .address-contacts > .address-box-wrap > .address-box > .address-icons > .fas {
+                        font-size: 45px;
+                    }
 /* FOOTER */
 
 
