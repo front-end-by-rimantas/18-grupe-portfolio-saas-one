@@ -142,6 +142,9 @@
 .homepage-about > .row > .left-block {
     grid-template-columns: 1fr;
 }
+.homepage-about > .row > .right-block {
+    margin-top: 0;
+}
 
 /* FEATURE */
 .feature-block {
