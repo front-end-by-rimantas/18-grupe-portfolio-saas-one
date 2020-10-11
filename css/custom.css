@@ -63,6 +63,52 @@
 /* FAQ */
 
 /* TESTIMONIALS */
+.testimonials{
+    height: 550px;
+    background-image: url(/img/testimonials-bd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title {
+    font-size: 35px;
+}
+.testimonial-block
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 650px;
+    justify-content: center; 
+    margin-top: 90px;   
+  }
+.testimonial-block > h2{
+    font-size: 20px;
+}
+.testimonial-block > p {
+    margin: 20px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.testimonial-block > p> b {
+    font-size: 20px;
+    line-height: 35px;
+}
+.testimonial-block > .clients {
+    margin: 0;
+    font-size: 15px;
+}
+.testimonial-block > .name {
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.testimonial-block > .imagin{
+    display: inline;
+    
+}
+.testimonial-block > .imagin > img{
+    border-radius: 50%;
+    box-shadow: 0 18px 25px 0 rgba(112,111,111,0.3);
+}
 
 /* OUR TEAM */
 
