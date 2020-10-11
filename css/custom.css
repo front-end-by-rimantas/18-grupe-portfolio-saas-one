@@ -237,6 +237,104 @@
 /* TESTIMONIALS */
 
 /* OUR TEAM */
+.our-team > .row > .title {
+    margin-top: 20px;
+}
+.our-team > .row {
+    padding: 80px 0;
+}
+.our-team-bg {
+    position: absolute;
+    left: -20%;
+    z-index: -1;
+}
+.our-team-bg > img {
+    width: 100%;
+}
+
+
+.our-team > .row > .our-team-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+    .our-team > .row > .our-team-block > .profile {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        overflow: hidden;
+        
+    }
+        .our-team > .row > .our-team-block > .profile > img {
+            width: 100%;
+            border-radius: 5px;
+            background-color: #494949;
+            background-size: auto;
+        }
+        .our-team > .row > .our-team-block > .profile > .profile-social {
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: calc((100% / 2) - 46px);
+        }
+            .our-team > .row > .our-team-block > .profile > .profile-social > a > i {
+                height: 42px;
+                width: 42px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid white;
+                border-radius: 50%;
+                }
+        .our-team > .row > .our-team-block > .profile > .profile-name-position {
+            position: absolute;
+            visibility: hidden;
+            bottom: -110px;
+            background-color: white;
+            width: calc(100% - 22px);
+            padding: 20px;
+            text-align: center;
+            height: calc(100% / 3.5);
+            border-radius: 0 0 3px 3px;
+            transition-duration: 2s;
+        }
+            .our-team > .row > .our-team-block > .profile > .profile-name-position > span {
+                    width: 100%;
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 18px;
+            }
+            .our-team > .row > .our-team-block > .profile > .profile-name-position > span:first-of-type {
+                font-weight: 800;
+                font-size: 20px;
+            }
+        /* Hover */
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+        .our-team > .row > .our-team-block > .profile:hover .profile-social {
+            visibility: visible;
+        }
+        .our-team > .row > .our-team-block > .profile:hover .profile-name-position {
+            visibility: visible;
+            bottom: 10px;
+        }
+        .our-team > .row > .our-team-block > .profile:hover {
+            opacity: 0.9;
+        }
 
 /* ADDRESS */
 
@@ -309,7 +407,12 @@
 /* TESTIMONIALS */
 
 /* OUR TEAM */
-
+.our-team > .row > .our-team-block {
+    grid-template-columns: 1fr 1fr;
+}
+.our-team > .row > .our-team-block > .profile:nth-child(n+3) {
+    display: none;
+}
 /* ADDRESS */
 
 /* FOOTER */
@@ -339,7 +442,12 @@
 /* TESTIMONIALS */
 
 /* OUR TEAM */
-
+.our-team > .row > .our-team-block {
+    grid-template-columns: 1fr;
+}
+.our-team > .row > .our-team-block > .profile:nth-child(n+2) {
+    display: none;
+}
 /* ADDRESS */
 
 /* FOOTER */
