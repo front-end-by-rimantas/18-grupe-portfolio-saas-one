@@ -244,34 +244,33 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-.container.address > .row {
+.address > .row {
     height: 424px;
     margin-bottom: 100px;
 }
-    .container.adrs > .row > .adrs-title > .title{
+    .address > .row > .adrs-title > .title{
         margin-bottom: 20px;
         font-size: 36px;
     }
-        .container.address > .row > .adrs-contacts {
+      .adrs {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
-            .container.address > .row > .adrs-contacts > .adrs-box-wrap {
+        .adrs-box-wrap {
                 padding-left: 15px;
                 padding-right: 15px;
             }
-                .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box {
+                .adrs-box {
                     padding: 10px;
                     text-align: center;
                     height: 100%;
                 }
-                    .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-box-titles {
+                    .adrs-box-titles {
                         font-size: 20px;
                         margin-bottom: 5px;
                     }
-                        .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+                        .adrs-icons {
                             display: flex;
-                            margin: 0 auto;
                             width: 110px;
                             border-radius: 30px;
                             height: 110px;
@@ -279,22 +278,29 @@
                             align-items: center;
                             margin: 16px 120px;
                         }
-                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons > .fas {
+                            .adrs-icons > .fas {
                                 font-size: 45px;
                                 color: gray;
                             }
-                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-social {
+                            .adrs-social {
                                 margin-top: 15px;
                             }
-                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-social > a >.fab {
+                            .adrs-social > a > .fab {
                                 line-height: 30px;
                                 padding: 0px 15px;
                                 font-size: 20px;
                                 color: gray;
                             }
-                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-paragraphs,
-                            .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-titles {
+                            .adrs-contacts,
+                            .adrs-paragraphs,
+                            .adrs-titles {
                                 margin-bottom: 5px;
+                                display: block;
+                                width: 100%;
+                                text-decoration: none;
+                            }
+                            .adrs-contacts:hover {
+                                color: #007bff;
                             }
 /* FOOTER */
 
@@ -367,7 +373,7 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-.container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+.adrs-box > .adrs-icons {
     margin: 0 auto;
 }
 /* FOOTER */
@@ -399,13 +405,13 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-.container.address > .row {
+.address > .row {
     height: max-content;
 }
-    .container.address > .row > .adrs-contacts {
+    .address > .row > .adrs {
         display: block;
     }
-        .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+        .address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
             margin: 16px 190px;
         }
 /* FOOTER */
@@ -435,10 +441,10 @@ div.hero-links > a {
 /* OUR TEAM */
 
 /* ADDRESS */
-.container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+.adrs-box > .adrs-icons {
     margin: auto;
 }
-    .container.address > .row > .adrs-contacts {
+    .address > .row > .adrs-contacts {
         width: 100%;
     }
 /* FOOTER */
