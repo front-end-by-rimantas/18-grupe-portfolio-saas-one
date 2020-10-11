@@ -142,7 +142,9 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-
+.container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+    margin: 0 auto;
+}
 /* FOOTER */
 
 }
@@ -166,7 +168,15 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-
+.container.address > .row {
+    height: max-content;
+}
+    .container.address > .row > .adrs-contacts {
+        display: block;
+    }
+        .container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+            margin: 16px 190px;
+        }
 /* FOOTER */
 
 }
@@ -190,7 +200,12 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-
+.container.address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+    margin: auto;
+}
+    .container.address > .row > .adrs-contacts {
+        width: 100%;
+    }
 /* FOOTER */
 
 }
