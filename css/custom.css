@@ -36,6 +36,11 @@
             div.hero-links > a.button:hover {
                 box-shadow: none;
             }
+            div.hero-links > a.white:hover {
+                background-color: #7052FB;
+                color: #fff;
+                box-shadow: 0 10px 25px 0 rgba(112,111,111,0.3);
+            }
             div.hero-right{
                 position: relative;
             }
