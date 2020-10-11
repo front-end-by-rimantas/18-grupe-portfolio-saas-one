@@ -90,6 +90,7 @@
     }
     .fas:hover{
         color: #B374FB;
+        cursor: pointer;
     }
         .testimonial-block > .center > h2{
             font-size: 20px;
