@@ -336,7 +336,64 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-
+.address > .row {
+    height: 424px;
+    margin-bottom: 100px;
+}
+    .address > .row > .adrs-title > .title{
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+      .adrs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .adrs-box-wrap {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+                .adrs-box {
+                    padding: 10px;
+                    text-align: center;
+                    height: 100%;
+                }
+                    .adrs-box-titles {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                        .adrs-icons {
+                            display: flex;
+                            width: 110px;
+                            border-radius: 30px;
+                            height: 110px;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 16px 120px;
+                        }
+                            .adrs-icons > .fas {
+                                font-size: 45px;
+                                color: gray;
+                            }
+                            .adrs-social {
+                                margin-top: 15px;
+                            }
+                            .adrs-social > a > .fab {
+                                line-height: 30px;
+                                padding: 0px 15px;
+                                font-size: 20px;
+                                color: gray;
+                            }
+                            .adrs-contacts,
+                            .adrs-paragraphs,
+                            .adrs-titles {
+                                margin-bottom: 5px;
+                                display: block;
+                                width: 100%;
+                                text-decoration: none;
+                            }
+                            .adrs-contacts:hover {
+                                color: #007bff;
+                            }
 /* FOOTER */
 
 
@@ -415,7 +472,9 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-
+.adrs-box > .adrs-icons {
+    margin: 0 auto;
+}
 /* FOOTER */
 
 }
@@ -462,7 +521,15 @@
 /* OUR TEAM */
 
 /* ADDRESS */
-
+.address > .row {
+    height: max-content;
+}
+    .address > .row > .adrs {
+        display: block;
+    }
+        .address > .row > .adrs-contacts > .adrs-box-wrap > .adrs-box > .adrs-icons {
+            margin: 16px 190px;
+        }
 /* FOOTER */
 
 }
@@ -500,7 +567,12 @@ div.hero-links > a {
 /* OUR TEAM */
 
 /* ADDRESS */
-
+.adrs-box > .adrs-icons {
+    margin: auto;
+}
+    .address > .row > .adrs-contacts {
+        width: 100%;
+    }
 /* FOOTER */
 
 }
