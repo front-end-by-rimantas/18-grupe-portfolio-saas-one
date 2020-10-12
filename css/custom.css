@@ -285,6 +285,9 @@
             justify-content: center;
             top: calc((100% / 2) - 46px);
         }
+            .our-team > .row > .our-team-block > .profile > .profile-social > a {
+                text-decoration: none;
+             }
             .our-team > .row > .our-team-block > .profile > .profile-social > a > i {
                 height: 42px;
                 width: 42px;
@@ -294,7 +297,7 @@
                 align-items: center;
                 border: 1px solid white;
                 border-radius: 50%;
-                }
+             }
         .our-team > .row > .our-team-block > .profile > .profile-name-position {
             position: absolute;
             visibility: hidden;
