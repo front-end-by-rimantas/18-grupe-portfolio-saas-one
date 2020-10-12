@@ -1,5 +1,52 @@
 /* HEADER */
-
+.container.header > .row {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 400px 1fr 220px;
+    grid-template-areas: 
+    "logo nav btn";
+    height: 100px;
+    font-family: Quicksand,sans-serif;
+}   
+    .container.header .header-logo {
+        grid-area: logo;
+    }
+    .container.header .logo-section {
+        margin-top: 32px;
+    }
+    .container.header .header-navigation {
+        grid-area: nav;
+    }
+        .container.header .header-navigation > .toggle-menu {
+            display: none;
+        }
+        .container.header .header-navigation .nav-btn {
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #2b2350;
+            line-height: 100px;
+            margin: 0 15px;
+            padding: 5px 0;
+            position: relative;
+        }
+        .container.header .header-navigation .nav-btn:hover {
+            color: blue;
+        }
+        .container.header .header-navigation .nav-btn:last-of-type {
+            margin: 0 0 0 23;
+        }
+    .container.header .button.purchase-btn {
+        grid-area: btn;
+        margin-top: 27px;
+        box-shadow: 0px 15px 30px rgba(196, 194, 194, 0.527);
+        border: none;
+    }
+    .container.header .button.purchase-btn:hover {
+        background-color: blue;
+        color: white;
+    }
 /* HERO */
     .hero-left,
     .hero-right {
@@ -556,7 +603,20 @@ footer {
 
 @media (max-width: 990px) {
 /* HEADER */
-
+.container.header > .row {
+    grid-template-columns: 150px 1fr 0px;
+}
+.container.header .header-navigation .nav-btn {
+    display: none;
+}
+.container.header .header-navigation > .toggle-menu {
+    display: inline-block;
+    float: right;
+    margin-top: 34px;
+}
+.container.header .button.purchase-btn {
+    display: none;
+}
 /* HERO */
     div.hero-left,
     div.hero-right,
@@ -647,8 +707,11 @@ footer > .row {
 }
 }
 @media (max-width: 750px) {
-/* HEADER */
-
+    /* HEADER */
+    .container.header > .row {
+        grid-template-columns: 150px 1fr 0;
+    }
+    
 /* HERO */
 
 /* HOMEPAGE ABOUT */
