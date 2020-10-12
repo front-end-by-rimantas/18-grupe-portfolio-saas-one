@@ -252,22 +252,25 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         text-align: center;
+        font-weight: 600;
     }
-        .counter {
-            color: #8B86FF;
+        .download > .counter > .clr {
+            color: #8687f3;
         }
-            .counter > span:nth-child(2) {
-                color: #E9A17B;
-            }
-            .counter > span:nth-of-type(3) {
-                color: #E681FE;
-            }
-            .counter > span:nth-of-type(4) {
-                color: #F62EE1;
-            }
-            .proj-numb,
-            .proj-let {
+        .show > .counter > .clr {
+            color: #ee9f76;
+        }
+        .projects > .counter > .clr {
+            color: #e882ff;
+        }
+        .cases > .counter > .clr {
+            color: #f42ade;
+        }
+            .clr {
                 font-size: 50px;
+            }
+        .countup-wrap p {
+            font-weight: 500;
         }
 /* FAQ */
     .FAQ > .row > .title {
