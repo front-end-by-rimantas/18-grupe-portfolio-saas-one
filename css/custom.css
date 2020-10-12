@@ -240,7 +240,63 @@
 /* FAQ */
 
 /* TESTIMONIALS */
-
+.testimonials{
+    height: 600px;
+    background-image: url(/img/mini-test-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.testimonial-block
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 650px 1fr;
+    justify-content: center; 
+    margin-top: 90px;   
+  }
+    .arrow-left{
+        grid-column: 1/2;
+        align-self: center;
+    }
+    .center {
+        grid-column: 2/3;
+    }
+    .arrow-right{
+        grid-column: 3/4;
+        align-self: center;
+    }
+    .fas:hover{
+        color: #B374FB;
+        cursor: pointer;
+    }
+        .testimonial-block > .center > h2{
+            font-size: 20px;
+        }
+        .testimonial-block > .center > .p {
+            margin: 20px;
+            font-size: 20px;
+            line-height: 35px;
+        }
+        .testimonial-block > .center > .p> b {
+            font-size: 20px;
+            line-height: 35px;
+            margin: 0;
+        }
+        .testimonial-block > .center > .clients {
+            margin: 0;
+            font-size: 15px;
+        }
+        .testimonial-block > .center > .name {
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        .testimonial-block > .center > .imagin{
+            display: inline;
+        }
+        .testimonial-block > .center > .imagin > img{
+            border-radius: 50%;
+            box-shadow: 0 18px 25px 0 rgba(112,111,111,0.3);
+        }
 /* OUR TEAM */
 
 /* ADDRESS */
@@ -312,7 +368,12 @@
 /* FAQ */
 
 /* TESTIMONIALS */
-
+.testimonials{
+    height: 600px;
+}
+.testimonial-block{
+    grid-template-columns: 1fr 550px 1fr; 
+  }
 /* OUR TEAM */
 
 /* ADDRESS */
@@ -342,7 +403,16 @@
 /* FAQ */
 
 /* TESTIMONIALS */
-
+.testimonials{
+    height: 550px;
+}
+.testimonial-block{
+    grid-template-columns: 1fr 450px 1fr; 
+  }
+  .testimonial-block > .center > .p {
+    font-size: 15px;
+    line-height: 25px;
+}
 /* OUR TEAM */
 
 /* ADDRESS */
@@ -370,6 +440,16 @@ div.hero-links > a {
 /* FAQ */
 
 /* TESTIMONIALS */
+.testimonials{
+    height: 600px;
+}
+.testimonial-block{
+    grid-template-columns: 1fr 350px 1fr; 
+  }
+  .testimonial-block > .center > .p {
+    font-size: 15px;
+    line-height: 25px;
+}
 
 /* OUR TEAM */
 
