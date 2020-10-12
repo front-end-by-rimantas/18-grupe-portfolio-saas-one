@@ -238,7 +238,43 @@
 /* PROJECTS */
 
 /* FAQ */
-
+    .FAQ > .row > .title {
+        margin: 20px 0;
+        color: #2e2c38;
+    }
+    .FAQ > .row > .FAQ-box {
+        display: inline-block;
+        width: 66%;
+        margin: 0 17%;
+    }
+        .FAQ > .row > .FAQ-box > .QA {
+                margin: 0 15px;
+            }
+            .QA > .question-and-icon {
+                display: inline-block;
+                width: 100%;
+                padding: 18px 20px;
+                margin: 5px 0;
+                background-color: #fcfcfc;
+                border-radius: 4px;
+                position: relative;
+            }
+                .QA > .question-and-icon > a.question {
+                    font-size: 20px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: #2b2350;
+                }
+                .QA > .question-and-icon > i {
+                    position: absolute;
+                    top: 40%;
+                    right: 2%;
+                    color: #aaa;
+                }
+            .QA > p.answer {
+                font-size: 16px;
+                padding: 20px 20px 10px;
+            }
 /* TESTIMONIALS */
 .testimonials{
     height: 600px;
@@ -366,7 +402,9 @@
 /* PROJECTS */
 
 /* FAQ */
-
+.FAQ > .row > .title {
+    font-size: 28px;
+}
 /* TESTIMONIALS */
 .testimonials{
     height: 600px;
@@ -401,7 +439,15 @@
 /* PROJECTS */
 
 /* FAQ */
-
+.FAQ > .row > .title {
+    font-size: 26px;
+    padding: 0 20px;
+}
+.FAQ > .row > .FAQ-box {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
 /* TESTIMONIALS */
 .testimonials{
     height: 550px;
