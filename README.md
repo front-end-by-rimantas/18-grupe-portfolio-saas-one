@@ -2,14 +2,14 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-# Mitech
+# Saas-one
 ### 18b group personal website project
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
 Site published at https://front-end-by-rimantas.github.io/18b-grupe-portfolio/
 
-Design: [Mitech portfolio template](https://demo.hasthemes.com/mitech-preview/index-infotechno.html)
+Design: [Saas-one](https://altrcloud.ru/saasone/index-two)
 
 
 ## Project features
@@ -19,4 +19,9 @@ Design: [Mitech portfolio template](https://demo.hasthemes.com/mitech-preview/in
 - no AJAX
 
 ## Authors
-[Rimantas](https://github.com/belauzas)
+[Rimantas](https://github.com/belauzas)<br>
+[Povilas](https://github.com/PovilasZubrys)<br>
+[Ieva](https://github.com/ievaza)<br>
+[Rosita](https://github.com/rositatisor)<br>
+[Matas](https://github.com/Matulanas)<br>
+[Ignas](https://github.com/IgnasKazenas)<br>
