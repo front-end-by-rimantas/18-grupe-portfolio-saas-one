@@ -13,7 +13,8 @@
 // our-team import
 
 // address import
-
+import ourAddressData from './data/addressData.js'
+import renderAddress from './components/address/renderAddress.js'
 // footer import
 
 // background animations import
