@@ -8,5 +8,4 @@ function renderSingleAddress(address) {
     </div>`;
     return HTML;
 }
-
 export { renderSingleAddress };
