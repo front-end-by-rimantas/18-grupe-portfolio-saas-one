@@ -7,7 +7,8 @@
 // projects import
 
 // faq import
-
+import { faqData } from './data/faq.js';
+import { renderFAQ } from './components/renderFAQ.js';
 // testimonials import
 
 // our-team import
@@ -28,7 +29,7 @@
 // projects logic
 
 // faq logic
-
+renderFAQ(faqData);
 // testimonials logic
 
 // our-team logic
