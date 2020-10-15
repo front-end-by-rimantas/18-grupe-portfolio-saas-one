@@ -1,6 +1,6 @@
 const ourAddressData = {
-    selector: '#address',
-    addresses: [
+    selector: '#address-js',
+    address: [
         {
             iconTitle: '<i class="fas fa-map-marker-alt"></i>',
             title: 'Our location',
@@ -25,4 +25,4 @@ const ourAddressData = {
         }
     ]
 }
-    export default ourAddressData;
+export { ourAddressData }
