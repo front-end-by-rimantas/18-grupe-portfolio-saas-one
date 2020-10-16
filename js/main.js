@@ -1,6 +1,8 @@
 // header import
 
 // about import
+import { homeAboutData } from './data/homeAboutData.js';
+import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
 
 // features import
 
@@ -22,6 +24,7 @@
 // header logic
 
 // about logic
+renderHomeAbout(homeAboutData);
 
 // features logic
 
