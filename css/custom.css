@@ -297,8 +297,9 @@ header .button {
                 background-color: #fcfcfc;
                 border-radius: 4px;
                 position: relative;
+                cursor: pointer;
             }
-                .FAQ .QA > .question-and-icon > a.question {
+                .FAQ .QA > .question-and-icon > p.question {
                     font-size: 20px;
                     text-decoration: none;
                     font-weight: 500;
@@ -313,6 +314,15 @@ header .button {
             .FAQ .QA > p.answer {
                 font-size: 16px;
                 padding: 20px 20px 10px;
+            }
+                .FAQ .QA > p.hidden {
+                display: none;
+            }
+            .FAQ .QA.show > p {
+                display: none;
+            }
+            .FAQ .QA.show > p.hidden {
+                display: inline-block;
             }
 /* TESTIMONIALS */
 .testimonials{

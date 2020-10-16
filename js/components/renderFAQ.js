@@ -1,6 +1,6 @@
 import { generateSingleFAQ } from './generateSingleFAQ.js'
 
-function renderFAQ (data) {
+function renderFAQ(data) {
     //input validation
 
     //logic
@@ -16,7 +16,30 @@ function renderFAQ (data) {
     // post logic validation
 
     //output
-    return faqDOM.innerHTML = HTML;
+    faqDOM.innerHTML = HTML;
+
+    // susirasti dominancius elementus .Question
+    const allQuestionDOM = document.querySelectorAll('.question');
+
+    // pradedame stebeti paspaudimus ant ju
+    for (let i = 0; i < allQuestionDOM.length; i++) {
+        const Question = allQuestionDOM[i];
+        Question.addEventListener('click', () => {
+            Question.closest('.QA').classList.add('show');
+        })
+    }
+    //     
+
+    for (let i = 0; i < allQuestionDOM.length; i++) {
+        const Question = allQuestionDOM[i];
+        Question.addEventListener('click', () => {
+            Question.closest('.QA').classList.add('');
+
+        })
+        // kokiame aukstyje yra .question elementas
+        // const questionDOM = questionDOM.closes('.question');
+        // const questionHeightPosition = questionDOM.offsetTop;
+    }
 }
 
 export { renderFAQ }
