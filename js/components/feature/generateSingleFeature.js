@@ -7,7 +7,7 @@ function generateSingleFeature (feature){
     } 
     //logic
 
-    const HTML =   `
+    const HTML =  `
     <div class="box">
     <div class="left" style="background-color:#${feature.background};"> <i class= "${feature.icon}" style=" color: #${feature.color};"></i> </div>
     <div class="right">
