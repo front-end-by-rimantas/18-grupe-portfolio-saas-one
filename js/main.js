@@ -1,8 +1,46 @@
 // header import
-// hero import
+
 // about import
+import { homeAboutData } from './data/homeAboutData.js';
+import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
+
+// features import
+import {featureData} from './data/features.js';
+import {renderFeature} from './components/feature/renderFeature.js';
+
+// projects import
+
+// faq import
+
+// testimonials import
+
+// our-team import
+
+// address import
+
+// footer import
+
+// background animations import
 
 
 // header logic
-// hero logic
+
 // about logic
+renderHomeAbout(homeAboutData);
+
+// features logic
+renderFeature(featureData);
+
+// projects logic
+
+// faq logic
+
+// testimonials logic
+
+// our-team logic
+
+// address logic
+
+// footer logic
+
+// background animations logic
