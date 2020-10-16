@@ -19,6 +19,8 @@ import {renderFeature} from './components/feature/renderFeature.js';
 // address import
 
 // footer import
+import { renderFooter } from './components/footer/renderFooter.js';
+import { footerData } from './data/footer.js'
 
 // background animations import
 
@@ -42,5 +44,6 @@ renderFeature(featureData);
 // address logic
 
 // footer logic
+renderFooter(footerData);
 
 // background animations logic
