@@ -5,6 +5,8 @@ import { homeAboutData } from './data/homeAboutData.js';
 import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
 
 // features import
+import {featureData} from './data/features.js';
+import {renderFeature} from './components/feature/renderFeature.js';
 
 // projects import
 
@@ -27,6 +29,7 @@ import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
 renderHomeAbout(homeAboutData);
 
 // features logic
+renderFeature(featureData);
 
 // projects logic
 
