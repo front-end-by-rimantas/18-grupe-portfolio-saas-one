@@ -11,11 +11,11 @@ function generateSingleHomeAbout(about) {
 
     const HTML = `
     
-                        <div class="card-header">
-                            ${about.icon}
+                        <div class="card-header" style="background-color:#${about.bg_color}">
+                            <i class="${about.icon}" style="color: #${about.color}"></i>
                         </div>
-                        <p class="title">${about.title}</p>
-                        <div class="card-paragraf">
+                        <p class="title" style="color: #${about.color}">${about.title}</p>
+                        <div class="card-paragraf" style="color: #${about.color}">
                             <p>${about.text}</p>
                         </div>`
     return HTML;
