@@ -14,7 +14,8 @@
 
 // address import
 import { ourAddressData } from './data/ourAddressData.js'
-import { renderSingleAddress } from './components/address/renderSingleAddress.js';
+import { renderAddress } from './components/address/renderAddress.js'
+
 // footer import
 
 // background animations import
@@ -35,7 +36,7 @@ import { renderSingleAddress } from './components/address/renderSingleAddress.js
 // our-team logic
 
 // address logic
-renderSingleAddress(ourAddressData);
+renderAddress(ourAddressData);
 
 // footer logic
 

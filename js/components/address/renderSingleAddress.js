@@ -4,7 +4,7 @@ function renderSingleAddress(address) {
         <div class="adrs-icons">${address.iconTitle}</div>
         <h5 class="adrs-box-titles">${address.title}</h5>
         <p class="adrs-paragraphs">${address.text}</p>
-        </div>  
+        </div>
     </div>`;
     return HTML;
 }
