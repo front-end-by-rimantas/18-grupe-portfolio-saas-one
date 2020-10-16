@@ -9,12 +9,10 @@ function renderHomeAbout(data){
 
     let HTML = [];
     const aboutDOM = document.querySelectorAll(data.selector);
+    
     // const aboutCount = data.about.length;
-
-    for(var i = 0; i < 3 ; i++){
-        const about = data.about[i];
-        HTML.push(generateSingleHomeAbout(about));
-        aboutDOM[i].innerHTML = HTML[i];
+    for (var i = 0; i < 3; i++) {
+        aboutDOM[i].innerHTML = generateSingleHomeAbout(data.about[i])
     }
     return HTML;
 }

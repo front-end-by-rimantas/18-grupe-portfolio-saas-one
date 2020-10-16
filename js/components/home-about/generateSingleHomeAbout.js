@@ -1,7 +1,11 @@
+import { isValidAbout } from "./isValidAbout.js";
 
-function generateSingleHomeAbout(about){
-    
+function generateSingleHomeAbout(about) {
+
     //input validation
+    if (!isValidAbout(about)) {
+        return '';
+    }
 
     //logic
 
