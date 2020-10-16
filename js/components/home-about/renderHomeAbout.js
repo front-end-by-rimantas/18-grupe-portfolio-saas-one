@@ -10,7 +10,6 @@ function renderHomeAbout(data){
     let HTML = [];
     const aboutDOM = document.querySelectorAll(data.selector);
     
-    // const aboutCount = data.about.length;
     for (var i = 0; i < 3; i++) {
         aboutDOM[i].innerHTML = generateSingleHomeAbout(data.about[i])
     }
