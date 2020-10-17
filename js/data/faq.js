@@ -1,5 +1,5 @@
 const faqData = {
-    selector: '#faq_block', // nepamirsti ideti ID i HTML
+    selector: '#faq_block',
     faq: [
         {
             question: 'Who kills more Americans each year: sharks or cows?',
@@ -37,9 +37,7 @@ const faqData = {
             answer: 'Humans. We are also believed to be the only animal that feels embarrassment—a complicated emotion requiring understanding others opinions and other factors. Charles Darwin called blushing "the most peculiar and most human of all expressions," while Mark Twain said, "Man is the only animal that blushes. Or needs to."',
             active: true,
         }
-
     ]
-
 }
 
 export { faqData }

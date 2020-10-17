@@ -1,5 +1,10 @@
+import { isValidFAQ } from './isValidFAQ.js'
+
 function generateSingleFAQ(faq) {
     // input validation
+    if (!isValidFAQ(faq)) {
+        return '';
+    }
 
     // logic 
     const HTML = `<div class="QA">
