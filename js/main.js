@@ -1,8 +1,12 @@
 // header import
 
 // about import
+import { homeAboutData } from './data/homeAboutData.js';
+import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
 
 // features import
+import {featureData} from './data/features.js';
+import {renderFeature} from './components/feature/renderFeature.js';
 
 // projects import
 
@@ -23,8 +27,10 @@ import { renderFAQ } from './components/renderFAQ.js';
 // header logic
 
 // about logic
+renderHomeAbout(homeAboutData);
 
 // features logic
+renderFeature(featureData);
 
 // projects logic
 
