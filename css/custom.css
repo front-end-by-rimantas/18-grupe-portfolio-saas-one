@@ -314,6 +314,10 @@ header .button {
                     right: 2%;
                     color: #aaa;
                 }
+                    .FAQ .QA > .question-and-icon > i.violet {
+                        color: #B374FB;
+                        transform: rotate(180deg);
+                    }
             .FAQ .QA > p.answer {
                 font-size: 16px;
                 padding: 20px 20px 10px;

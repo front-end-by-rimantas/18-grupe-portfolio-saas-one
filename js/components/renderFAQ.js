@@ -19,31 +19,20 @@ function renderFAQ(data) {
     faqDOM.innerHTML = HTML;
 
     // find .Question element
-    const allQuestionDOM = document.querySelectorAll('.question');
+    const allQuestionDOM = document.querySelectorAll('.question-and-icon');
+    const allIconDOM = document.querySelectorAll('.fa-angle-down');
 
-    // events when clicked on .question element
+    // events when clicked on .question-and-icon element
     for (let i = 0; i < allQuestionDOM.length; i++) {
         const Question = allQuestionDOM[i];
+        const Icon = allIconDOM[i];
         Question.addEventListener('click', () => {
             Question.closest('.QA').classList.toggle('show');
         })
-
+        Question.addEventListener("click", function () {
+            Icon.classList.toggle('violet');
+        });
     }
-    // hidden
-
-    // const allQuestionShowDOM = document.querySelectorAll('.question .show');
-    // console.log(allQuestionShowDOM);
-
-    // for (let i = 0; i < allQuestionShowDOM.length; i++) {
-    //     const showQuestion = allQuestionShowDOM[i];
-    //     showQuestion.addEventListener('click', () => {
-    //         showQuestion.closest('.QA').classList.remove('show');
-
-    //     })
-    //     // kokiame aukstyje yra .question elementas
-    //     // const questionDOM = questionDOM.closes('.question');
-    //     // const questionHeightPosition = questionDOM.offsetTop;
-    // }
 }
 
 export { renderFAQ }
