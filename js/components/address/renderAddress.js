@@ -11,7 +11,7 @@ function renderAddress(data) {
         const address = data.address[i];
         HTML += renderSingleAddress(address);
     }
-    return addressDOM.innerHTML = HTML;
+    return console.log(addressDOM.innerHTML = HTML);
 }
 
 export { renderAddress }
