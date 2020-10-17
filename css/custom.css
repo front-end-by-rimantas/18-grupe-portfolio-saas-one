@@ -299,6 +299,9 @@ header .button {
                 position: relative;
                 cursor: pointer;
             }
+                .FAQ .QA > .question-and-icon:hover {
+                    text-decoration: underline;
+                }
                 .FAQ .QA > .question-and-icon > p.question {
                     font-size: 20px;
                     text-decoration: none;

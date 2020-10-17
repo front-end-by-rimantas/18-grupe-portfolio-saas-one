@@ -18,28 +18,32 @@ function renderFAQ(data) {
     //output
     faqDOM.innerHTML = HTML;
 
-    // susirasti dominancius elementus .Question
+    // find .Question element
     const allQuestionDOM = document.querySelectorAll('.question');
 
-    // pradedame stebeti paspaudimus ant ju
+    // events when clicked on .question element
     for (let i = 0; i < allQuestionDOM.length; i++) {
         const Question = allQuestionDOM[i];
         Question.addEventListener('click', () => {
-            Question.closest('.QA').classList.add('show');
+            Question.closest('.QA').classList.toggle('show');
         })
-    }
-    //     
 
-    for (let i = 0; i < allQuestionDOM.length; i++) {
-        const Question = allQuestionDOM[i];
-        Question.addEventListener('click', () => {
-            Question.closest('.QA').classList.add('');
-
-        })
-        // kokiame aukstyje yra .question elementas
-        // const questionDOM = questionDOM.closes('.question');
-        // const questionHeightPosition = questionDOM.offsetTop;
     }
+    // hidden
+
+    // const allQuestionShowDOM = document.querySelectorAll('.question .show');
+    // console.log(allQuestionShowDOM);
+
+    // for (let i = 0; i < allQuestionShowDOM.length; i++) {
+    //     const showQuestion = allQuestionShowDOM[i];
+    //     showQuestion.addEventListener('click', () => {
+    //         showQuestion.closest('.QA').classList.remove('show');
+
+    //     })
+    //     // kokiame aukstyje yra .question elementas
+    //     // const questionDOM = questionDOM.closes('.question');
+    //     // const questionHeightPosition = questionDOM.offsetTop;
+    // }
 }
 
 export { renderFAQ }
