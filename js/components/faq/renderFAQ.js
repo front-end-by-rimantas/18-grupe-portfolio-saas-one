@@ -27,7 +27,7 @@ function renderFAQ(data) {
         const Question = allQuestionDOM[i];
         const Icon = allIconDOM[i];
         Question.addEventListener('click', () => {
-            Question.closest('.QA').classList.toggle('show');
+            Question.closest('.qa').classList.toggle('show');
         })
         Question.addEventListener("click", function () {
             Icon.classList.toggle('violet');

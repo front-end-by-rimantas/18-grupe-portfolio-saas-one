@@ -7,7 +7,7 @@ function generateSingleFAQ(faq) {
     }
 
     // logic 
-    const HTML = `<div class="QA">
+    const HTML = `<div class="qa">
                 <div class="question-and-icon">
                         <p class="question">${faq.question}</p>
                         <i class="${faq.icon}"></i>
