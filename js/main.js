@@ -43,10 +43,7 @@ renderFeature(featureData);
 // our-team logic
 
 // address logic
-renderSingleAddress(ourAddressData);
-console.log(ourAddressData);
-console.log(renderSingleAddress);
-renderAddress()
+renderAddress(ourAddressData);
 
 // footer logic
 
