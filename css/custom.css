@@ -19,7 +19,7 @@ header .toggle-menu {
     .header-navigation a {
         text-decoration: none;
     }
-header > .row > .header-navigation > a.navbtn {
+header > .row > .header-navigation a.navbtn {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
@@ -31,9 +31,6 @@ header > .row > .header-navigation > a.navbtn {
 
 header > .row > .header-navigation > a.navbtn:hover {
     color: #7052FB;
-}
-header .button {
-    
 }
     header .button:hover {
         background-color: blue;
@@ -54,7 +51,12 @@ header.container.fixed {
 /* 
 HEADER DROPMENU 
 */
-header > .row > .header-navigation > a.navbtn > div.dropdown {
+.dropdown, .sub-dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.dropdown-content, .sub-dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -68,7 +70,14 @@ header > .row > .header-navigation > a.navbtn > div.dropdown {
     animation-duration: 0.5s;
     animation-timing-function: ease;
 }
-    
+.dropdown:hover .dropdown-content {
+    display: grid;
+    z-index: 1;
+}
+.sub-dropdown:hover .sub-dropdown-content {
+    display: grid;
+    z-index: 1;
+} 
 @keyframes dropdown {
     0% {
         margin-top: 10px;
@@ -79,12 +88,13 @@ header > .row > .header-navigation > a.navbtn > div.dropdown {
         opacity: 1;
     }
 }
-.subnavbtn:hover,
+/* .subnavbtn:hover,
 .navbtn:hover { 
     cursor: pointer;
 }
-    .navbtn:hover .dropdown {
-        display: grid;    
+    .navbtn:hover .header-dropdown {
+        display: grid;  
+        background-color: red;;  
     }
     .navbtn:hover .dropdown.inside {
         display: none;
@@ -101,8 +111,7 @@ header > .row > .header-navigation > a.navbtn > div.dropdown {
         }
         .navbtn:hover .dropdown .subbtn:hover {
             color: #7052FB;
-        }
-
+        } */
 
 /* HERO */
 .container.hero > .row {
