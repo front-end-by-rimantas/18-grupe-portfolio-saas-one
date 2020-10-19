@@ -31,3 +31,128 @@ p {
 
 /* SOCIALS */
 
+
+/* BG ANIMATIONS */
+.shape-triangle,
+.shape-square {
+    position: absolute;
+    height: 18px;
+    animation-name: square;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+    .shape-square.hero {
+        top: 40%;
+        left: 40%;
+    }
+    .shape-square.home-about {
+        top: 180%;
+        right: 30%;
+    }
+    .shape-triangle.hero {
+        top: 70%;
+        left: 20%;  
+    }
+    .shape-triangle.home-about {
+        top: 230%;
+        left: 20%;
+    }
+
+.shape-plus-one {
+    position: absolute;
+    height: 25px;
+    animation-name: plusone;
+    animation-duration: 25s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+    .shape-plus-one.hero {
+        top: 0%;
+        left: 20%;
+    }
+    .shape-plus-one.home-about {
+        top: 190%;
+        left: 10%;
+    }
+.shape-plus-two {
+    position: absolute;
+    height: 25px;
+    animation-name: plustwo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+} 
+    .shape-plus-two.hero {
+        top: 95%;
+        left: 40%;
+    }
+    .shape-plus-two.home-about {
+        top: 270%;
+        left: 35%;
+    }
+
+.shape-oval.hero {
+    position: absolute;
+    height: 100px;
+    animation-name: oval;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+    top: 30%;
+    right: -5%;
+}
+
+@keyframes square {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        transform: translate(70px, 0) rotate(45deg);
+    }
+    40% {
+        transform: translate(140px, 70px) rotate(70deg);
+    }
+    60% {
+        transform: translate(80px, 120px) rotate(110deg);
+    }
+    80% {
+        transform: translate(-40px, 70px) rotate(140deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes plusone {
+    0% {
+        transform: translate(-300px, 150px) rotate(0deg);
+    }
+    100% {
+        transform: translate(250px, -200px) rotate(180deg);
+    }
+}
+
+@keyframes plustwo {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+@keyframes oval {
+    0% {
+        transform: translate(-50%, 0);
+    } 
+    100% {
+        transform: translate(-50%, 200%);
+    }
+}
