@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="./css/layout.css">
     <!-- 3rd party -->
     <script src="https://kit.fontawesome.com/28d6b952f3.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- components -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/button.css">
@@ -22,7 +24,7 @@
 
 <body>
     <!-- bg animations -->
-    <div class="hero-animations"> 
+    <div class="hero-animations">
         <img src="./img/shape-square.png" class="shape-square hero">
         <img src="./img/shape-triangle.png" class="shape-triangle hero">
         <img src="./img/shape-plus.png" class="shape-plus-one hero">
@@ -34,18 +36,50 @@
         <img src="./img/shape-plus.png" class="shape-plus-two home-about">
     </div>
     <!-- header -->
-    <header class="container">  
+    <header class="container">
         <div class="row">
-                <a class="header-logo col-3 col-lg-6 col-md-6" href="#">
-                    <img src="./img/logo-color-2.svg" alt="header logo">
-                </a>
+            <a class="header-logo col-3 col-lg-6 col-md-6" href="#">
+                <img src="./img/logo-color-2.svg" alt="header logo">
+            </a>
             <nav class="header-navigation col-6 col-md-9">
-                <a href="/">Home.</a>
-                <a href="#">Pages.</a>
-                <a href="./blog/">Blog.</a>
-                <a href="./portfolio/">Portfolio.</a>
-                <a href="./about/">About.</a>
-                <a href="./contact/">Contact.</a>
+                <a class="navbtn col-1" href="#">Home.</a>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Pages.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Service.</a>
+                        <a class="subbtn" href="#">About</a>
+                        <a class="subbtn" href="#">Contact</a>
+                        <a class="subbtn" href="#">Pricing</a>
+                        <div class="sub-dropdown">
+                            <a class="subbtn col-1" href="#">Case Study....</a>
+                            <div class="sub-dropdown-content">
+                                <a class="subbtn" href="#">Case Default</a>
+                                <a class="subbtn" href="#">Case Detail</a>
+                            </div>
+                        </div>
+                        <a class="subbtn" href="#"></a>Our Team</a>
+                        <a class="subbtn" href="#">Testimonials</a>
+                        <a class="subbtn" href="#"> FAQ</a>
+                        <a class="subbtn" href="#">Terms of use</a>
+                        <a class="subbtn" href="#">ERROR 404</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Blog.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Blog Default</a>
+                        <a class="subbtn" href="#">Blog Single</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Portfolio.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Portfolio Standard</a>
+                        <a class="subbtn" href="#">Portfolio Masonry</a>
+                    </div>
+                </div>
+                <a class="navbtn col-1" href="#">About.</a>
+                <a class="navbtn col-1" href="#">Contact.</a>
             </nav>
             <div class="toggle-menu col-lg-6 col-md-6">
                 <i class="fas fa-bars fa-2x"></i>
@@ -56,10 +90,12 @@
     <!-- hero -->
     <div class="container hero">
         <div class="row">
-           <div class="hero-left col-6 col-lg-12">
+            <div class="hero-left col-6 col-lg-12">
                 <div class="discount"><b>25% Discounton </b> every first project</div>
                 <h1>Ultimate Platform <br>to monitor your best workflow.</h1>
-                <p>Sit amet dictum sit amet justo donec enim diam. Volutpat est velit egestas dui id. Nibh cras pulvinar mattis nunc sed blandit. Nulla malesuada pellentesque elit eget gravida cum. Consequat mauris nunc congue nisi vitae suscipit tellus.</p>
+                <p>Sit amet dictum sit amet justo donec enim diam. Volutpat est velit egestas dui id. Nibh cras pulvinar
+                    mattis nunc sed blandit. Nulla malesuada pellentesque elit eget gravida cum. Consequat mauris nunc
+                    congue nisi vitae suscipit tellus.</p>
                 <div class="hero-links">
                     <a href="#" class="button">Get Started</a>
                     <a href="#" class="button white">Explore More</a>
@@ -79,33 +115,36 @@
             <div class="left-block col-7 col-lg-12" id="cards">
                 <div class="left-row col-3 col-lg-12">
                     <div class="home-about-card" id="home-about-card">
-                        
+
                     </div>
                 </div>
                 <div class="right-row col-3 col-lg-12">
                     <div class="home-about-card" id="home-about-card">
-                        
+
                     </div>
                     <div class="home-about-card" id="home-about-card">
-                        
+
                     </div>
                 </div>
             </div>
             <div class="right-block col-5 col-lg-12">
                 <p class="title">What features you will Get from App.</p>
                 <b>laboris nisi ut aliquip ex ea commodo consequat.</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipng elit, sed do eiusmod tempor incididunt ut labore aliqua. Ut enim que minim veniam, quis nostrud exercitation.</p>                        
+                <p>Lorem ipsum dolor sit amet, consectetur adipng elit, sed do eiusmod tempor incididunt ut labore
+                    aliqua. Ut enim que minim veniam, quis nostrud exercitation.</p>
                 <a class="button" href="">More About Us</a>
             </div>
-        </div>           
+        </div>
     </div>
-       <!-- feature -->
+    <!-- feature -->
     <div class="container feature">
         <div class="row">
-            <div class="section-title p col-12"> <p>Our feature</p> </div>
+            <div class="section-title p col-12">
+                <p>Our feature</p>
+            </div>
             <div class="title col-12">Why you should choose our Saas</div>
-           
-            <div id="feature_block" class="feature-block col-12">  </div>
+
+            <div id="feature_block" class="feature-block col-12"> </div>
         </div>
     </div>
     <!-- app -->
@@ -113,86 +152,93 @@
         <div class="row">
             <div class="left-column col-6 col-lg-12">
                 <h4 class="title left-column-title">How to use our App Download free your phone & computer</h1>
-                <p class="p left-column-paragraph">
-                    Odio ut enim blandit volutpat maecenas. Sed faucibus
-                     turpis in eu mi bibendum neque egestas. Quis commodo odio
-                    aenean sed adipiscing diam. Vel turpis nunc eget lorem dolor
-                    sed viverra. A iaculis at erat pellentesque adipiscing commodo
-                    elit at imperdiet. Nunc sed velit dignissim sodales ut eu sem
-                    integer.
-                </p>
-                <div class="left-column-buttons">
-                    <a href="#" class="button white round"><i class="fab fa-google-play"></i>Google Play</a>
-                    <a href="#" class="button white round"><i class="fab fa-apple"></i>App Store</a>
-                </div>
-           </div>
-           <div class="right-column col-6 col-lg-12">
-            <img src="./img/mobile-1.png" alt="App" class="mobile-1">
-            <img src="./img/mobile-2.png" alt="App-bg" class="mobile-2">
-        </div>
+                    <p class="p left-column-paragraph">
+                        Odio ut enim blandit volutpat maecenas. Sed faucibus
+                        turpis in eu mi bibendum neque egestas. Quis commodo odio
+                        aenean sed adipiscing diam. Vel turpis nunc eget lorem dolor
+                        sed viverra. A iaculis at erat pellentesque adipiscing commodo
+                        elit at imperdiet. Nunc sed velit dignissim sodales ut eu sem
+                        integer.
+                    </p>
+                    <div class="left-column-buttons">
+                        <a href="#" class="button white round"><i class="fab fa-google-play"></i>Google Play</a>
+                        <a href="#" class="button white round"><i class="fab fa-apple"></i>App Store</a>
+                    </div>
+            </div>
+            <div class="right-column col-6 col-lg-12">
+                <img src="./img/mobile-1.png" alt="App" class="mobile-1">
+                <img src="./img/mobile-2.png" alt="App-bg" class="mobile-2">
+            </div>
         </div>
     </div>
     <!-- projects -->
     <div class="container projects">
         <div class="row">
-                <div class="section-title p col-12"> <p>Our client & Projects</p> </div>
-                <div class="title col-12">Rutrum quisque non tellus orci ac auctor augue mauris augue.</div>
-                <div class="countup-wrap col-12">
-                    <div class="download">
-                        <div class="counter">
-                            <span class="proj-numb clr">14</span>
-                            <span class="proj-let clr">K+</span>
-                        </div>
-                        <p>Total downloads</p>
+            <div class="section-title p col-12">
+                <p>Our client & Projects</p>
+            </div>
+            <div class="title col-12">Rutrum quisque non tellus orci ac auctor augue mauris augue.</div>
+            <div class="countup-wrap col-12">
+                <div class="download">
+                    <div class="counter">
+                        <span class="proj-numb clr">14</span>
+                        <span class="proj-let clr">K+</span>
                     </div>
-                    <div class="show">
-                        <div class="counter">
-                            <span class="proj-numb clr">13</span>
-                            <span class="proj-let clr">M+</span>
-                        </div>
-                        <p>Total Show</p>
-                    </div>
-                    <div class="projects">
-                        <div class="counter">
-                            <span class="proj-numb clr">244</span>
-                            <span class="proj-let clr">+</span>
-                        </div>
-                        <p>Total Projects</p>
-                    </div>
-                    <div class="cases">
-                        <div class="counter">
-                            <span class="proj-numb clr">53</span>
-                            <span class="proj-let clr">M+</span>
-                        </div>
-                        <p>Total Cases</p>
-                    </div>
+                    <p>Total downloads</p>
                 </div>
+                <div class="show">
+                    <div class="counter">
+                        <span class="proj-numb clr">13</span>
+                        <span class="proj-let clr">M+</span>
+                    </div>
+                    <p>Total Show</p>
+                </div>
+                <div class="projects">
+                    <div class="counter">
+                        <span class="proj-numb clr">244</span>
+                        <span class="proj-let clr">+</span>
+                    </div>
+                    <p>Total Projects</p>
+                </div>
+                <div class="cases">
+                    <div class="counter">
+                        <span class="proj-numb clr">53</span>
+                        <span class="proj-let clr">M+</span>
+                    </div>
+                    <p>Total Cases</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- FAQ -->
     <div class="container faq">
         <div class="row">
-            <div class="section-title col-12"><p>Frequent question</p></div>
+            <div class="section-title col-12">
+                <p>Frequent question</p>
+            </div>
             <div class="title col-12">Diam maecenas sed enim ut sem gravida?</div>
             <div class="faq-box col-12">
                 <div class="qa" id="faq_block">
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <!-- testimonals -->
     <div class="container testimonials">
         <div class="row">
-            <div class="section-title p col-12"> <p>Testimonials</p> </div>
+            <div class="section-title p col-12">
+                <p>Testimonials</p>
+            </div>
             <div class="title col-12">Meet Client Satisfaction by using product</div>
 
-            <div class="testimonial-block col-12"> 
+            <div class="testimonial-block col-12">
                 <div class="arrow-left"> <i class="fas fa-long-arrow-alt-left fa-3x"></i> </div>
                 <div class="center">
                     <h2> Modern look & trending design </h2>
-                    <p class="p">Lorem  elit. Explicabo laudantiumnderit lorem lorem loremlabore lorem lorem loremlabore lorem lorem loremlabore officia odio atque laborum.</p>
-                     <div class="imagin"> <img src="img/boy.png" alt="profile"> </div>
+                    <p class="p">Lorem elit. Explicabo laudantiumnderit lorem lorem loremlabore lorem lorem loremlabore
+                        lorem lorem loremlabore officia odio atque laborum.</p>
+                    <div class="imagin"> <img src="img/boy.png" alt="profile"> </div>
                     <p class="p name"><b> Mark Wilson</b> </p>
                     <p class="p clients">Clients Manager</p>
                 </div>
@@ -203,7 +249,9 @@
     <!-- our team -->
     <div class="container our-team">
         <div class="row">
-            <div class="section-title p col-12"> <p>Our Team</p> </div>
+            <div class="section-title p col-12">
+                <p>Our Team</p>
+            </div>
             <div class="title col-12">Our Qulified Agents</div>
             <div class="our-team-bg">
                 <img src="./img/our-team-bg.jpg" alt="Our-Team Backgrdound Circle">
@@ -223,15 +271,15 @@
                 </div>
                 <div class="profile">
                     <img src="./img/team/2.png">
-                        <div class="profile-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="profile-name-position">
-                            <span>Miguel Ellis</span>
-                            <span>Project Manager</span>
-                        </div>
+                    <div class="profile-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="profile-name-position">
+                        <span>Miguel Ellis</span>
+                        <span>Project Manager</span>
+                    </div>
                 </div>
                 <div class="profile">
                     <img src="./img/team/3.png">
@@ -251,8 +299,10 @@
     <!-- address -->
     <div class="container address">
         <div class="row">
-            <div class="section-title col-12"><p>Our Address</p></div>
-            <div class="title col-12"> Meet Client Satisfaction by using product</div>            
+            <div class="section-title col-12">
+                <p>Our Address</p>
+            </div>
+            <div class="title col-12"> Meet Client Satisfaction by using product</div>
             <div class="adrs col-12">
                 <div class="adrs-box-wrap">
                     <div class="adrs-box">
@@ -284,13 +334,14 @@
             </div>
         </div>
     </div>
-    <!-- footer -->   
+    <!-- footer -->
     <footer>
         <div class="row">
             <div class="footer-row">
                 <div class="footer-paragraf">
                     <img src="./img/logo.svg">
-                    <p>We believe in Simple, Creative & Flexible Design Standards with a Retina & Responsive Approach.</p>
+                    <p>We believe in Simple, Creative & Flexible Design Standards with a Retina & Responsive Approach.
+                    </p>
                 </div>
                 <div class="footer-nav">
                     <p>Main Navigation</p>
