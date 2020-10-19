@@ -1,4 +1,7 @@
 /* HEADER */
+header.container {
+    padding: 0;
+}
 .header-logo,
 .header-button {
     display: flex;
@@ -13,29 +16,107 @@ header .toggle-menu {
     align-self: flex-end;
     align-items: center;
 }
-header .header-navigation a {
+    .header-navigation a {
+        text-decoration: none;
+    }
+header > .row > .header-navigation a.navbtn {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     color: #2b2350;
     line-height: 100px;
-    /* float: right; */
     margin: 0 15px;
     padding: 5px 0;
 }
-header .header-navigation a:hover {
-    color: blue;
-}
-header .button {
-    /* height: 28px; */
+
+header > .row > .header-navigation > a.navbtn:hover {
+    color: #7052FB;
 }
     header .button:hover {
         background-color: blue;
         color: white;
     }
+/* 
+FIXED HEADER 
+*/
+header.container.fixed {
+    position: fixed;
+    position: 0;
+    background: white;
+    padding: 0;
+    z-index: 100;
+    box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
+    width: 100%;
+}
+/* 
+HEADER DROPMENU 
+*/
+.dropdown, .sub-dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.dropdown-content, .sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 220px;
+    line-height: 50px;
+    padding: 30px;
+    border-radius: 7px;
+    animation-name: dropdown;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+.dropdown:hover .dropdown-content {
+    display: grid;
+    z-index: 1;
+}
+.sub-dropdown:hover .sub-dropdown-content {
+    display: grid;
+    z-index: 1;
+} 
+@keyframes dropdown {
+    0% {
+        margin-top: 10px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+/* .subnavbtn:hover,
+.navbtn:hover { 
+    cursor: pointer;
+}
+    .navbtn:hover .header-dropdown {
+        display: grid;  
+        background-color: red;;  
+    }
+    .navbtn:hover .dropdown.inside {
+        display: none;
+    }
+    .subnavbtn:hover .dropdown.inside {
+        display: grid;
+        right: -180px;
+        bottom: 150px;
+    } 
+        .navbtn:hover .dropdown .subbtn, .subnavbtn {
+            line-height: 40px;
+            text-decoration: none;
+            color: #8f8b9e;
+        }
+        .navbtn:hover .dropdown .subbtn:hover {
+            color: #7052FB;
+        } */
+
 /* HERO */
 .container.hero > .row {
     grid-column: 2 / span 2;
+    position: relative;
 }
 .hero .hero-left > p {
     margin: 0 15px 40px 15px;
