@@ -277,19 +277,19 @@ header .button {
             font-weight: 500;
         }
 /* FAQ */
-    .FAQ > .row > .title {
+    .faq > .row > .title {
         margin: 20px 0;
         color: #2e2c38;
     }
-    .FAQ > .row > .FAQ-box {
+    .faq > .row > .faq-box {
         display: inline-block;
         width: 66%;
         margin: 0 17%;
     }
-        .FAQ > .row > .FAQ-box > .QA {
+        .faq > .row > .faq-box > .qa {
                 margin: 0 15px;
             }
-            .FAQ .QA > .question-and-icon {
+            .faq .qa > .question-and-icon {
                 display: inline-block;
                 width: 100%;
                 padding: 18px 20px;
@@ -297,22 +297,39 @@ header .button {
                 background-color: #fcfcfc;
                 border-radius: 4px;
                 position: relative;
+                cursor: pointer;
             }
-                .FAQ .QA > .question-and-icon > a.question {
+                .faq .qa > .question-and-icon:hover {
+                    text-decoration: underline;
+                }
+                .faq .qa > .question-and-icon > p.question {
                     font-size: 20px;
                     text-decoration: none;
                     font-weight: 500;
                     color: #2b2350;
                 }
-                .FAQ .QA > .question-and-icon > i {
+                .faq .qa > .question-and-icon > i {
                     position: absolute;
                     top: 40%;
                     right: 2%;
                     color: #aaa;
                 }
-            .FAQ .QA > p.answer {
+                    .faq .qa > .question-and-icon > i.violet {
+                        color: #B374FB;
+                        transform: rotate(180deg);
+                    }
+            .faq .qa > p.answer {
                 font-size: 16px;
                 padding: 20px 20px 10px;
+            }
+                .faq .qa > p.hidden {
+                display: none;
+            }
+            .faq .qa.show > p {
+                display: none;
+            }
+            .faq .qa.show > p.hidden {
+                display: inline-block;
             }
 /* TESTIMONIALS */
 .testimonials{
