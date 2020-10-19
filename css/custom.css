@@ -16,7 +16,10 @@ header .toggle-menu {
     align-self: flex-end;
     align-items: center;
 }
-header .header-navigation .navbtn {
+    .header-navigation a {
+        text-decoration: none;
+    }
+header > .row > .header-navigation > a.navbtn {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
@@ -26,7 +29,7 @@ header .header-navigation .navbtn {
     padding: 5px 0;
 }
 
-header .header-navigation .navbtn:hover {
+header > .row > .header-navigation > a.navbtn:hover {
     color: #7052FB;
 }
 header .button {
@@ -51,7 +54,7 @@ header.container.fixed {
 /* 
 HEADER DROPMENU 
 */
-header.container .dropdown {
+header > .row > .header-navigation > a.navbtn > div.dropdown {
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -88,7 +91,7 @@ header.container .dropdown {
     }
     .subnavbtn:hover .dropdown.inside {
         display: grid;
-        right: -200px;
+        right: -180px;
         bottom: 150px;
     } 
         .navbtn:hover .dropdown .subbtn, .subnavbtn {
