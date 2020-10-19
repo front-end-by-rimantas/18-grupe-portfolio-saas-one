@@ -31,6 +31,9 @@ function renderFAQ(data) {
             if (question.classList.contains('show')) {
                 question.classList.remove('show');
                 icon.classList.remove('violet');
+            } else if (document.querySelector('.qa .show') === null && document.querySelector('.violet') === null) {
+                question.classList.add('show');
+                icon.classList.add('violet');
             } else {
                 document.querySelector('.qa .show').classList.remove('show');
                 question.classList.add('show');
