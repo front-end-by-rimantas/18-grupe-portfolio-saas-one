@@ -5,13 +5,14 @@ import { homeAboutData } from './data/homeAboutData.js';
 import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
 
 // features import
-import {featureData} from './data/features.js';
-import {renderFeature} from './components/feature/renderFeature.js';
+import { featureData } from './data/features.js';
+import { renderFeature } from './components/feature/renderFeature.js';
 
 // projects import
 
 // faq import
-
+import { faqData } from './data/faq.js';
+import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
 
 // our-team import
@@ -34,7 +35,7 @@ renderFeature(featureData);
 // projects logic
 
 // faq logic
-
+renderFAQ(faqData);
 // testimonials logic
 
 // our-team logic
