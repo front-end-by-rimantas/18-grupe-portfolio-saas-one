@@ -1,20 +1,20 @@
+import { isValidAddress } from './isValidAddress.js'
+
 function renderSingleAddress(address) {
-    console.log(address);
-
-    if (address.includes(link1) === true) {
-        return 'Fuck off';
+    if (!isValidAddress(address)) {
+        return '';
     }
-
-
-
-    // const HTML = `<div class="adrs-box-wrap">
-    //             <div class="adrs-box">
-    //                 <div class="adrs-icons">${address.iconTitle}</div>
-    //                 <h5 class="adrs-box-titles">${address.title}</h5>
-    //                 <p class="adrs-paragraphs">${address.text}</p>
-    //                 </div>
-    //             </div>`;
-    // return HTML;
+    const HTML = `<div class="adrs-box-wrap">
+                <div class="adrs-box">
+                    <div class="adrs-icons">${address.icon}</div>
+                    <h5 class="adrs-box-titles">${address.title}</h5>
+                    <p class="adrs-paragraphs">${address.text}</p>
+                    ${address.link1}
+                    ${address.link2}
+                    ${address.link3}
+                    ${address.phone}
+                    </div>
+                </div>`;
+    return HTML;
 }
-
 export { renderSingleAddress };

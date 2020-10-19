@@ -9,7 +9,14 @@ function renderAddress(data) {
         const address = data.address[i];
         HTML += renderSingleAddress(address);
     }
-    return console.log(addressDOM.innerHTML = HTML);
-}
+        return addressDOM.innerHTML = HTML;
+    }
 
 export { renderAddress }
+
+
+// <div class="adrs-box">
+// <div class="adrs-icons"><i class="fas fa-map-marker-alt"></i></div>
+// <h5 class="adrs-box-titles">Our Location</h5>
+// <p class="adrs-paragraphs">Danmondi, 7563 King Meadow <br> Suite 896, USA</p>
+// </div>

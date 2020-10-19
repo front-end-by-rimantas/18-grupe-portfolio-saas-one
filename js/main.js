@@ -5,6 +5,8 @@ import { homeAboutData } from './data/homeAboutData.js';
 import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
 
 // features import
+import {featureData} from './data/features.js';
+import {renderFeature} from './components/feature/renderFeature.js';
 
 // projects import
 
@@ -17,7 +19,6 @@ import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
 // address import
 import { ourAddressData } from './data/ourAddressData.js'
 import { renderAddress } from './components/address/renderAddress.js'
-import { renderSingleAddress } from './components/address/renderSingleAddress.js'
 
 // footer import
 
@@ -30,6 +31,7 @@ import { renderSingleAddress } from './components/address/renderSingleAddress.js
 renderHomeAbout(homeAboutData);
 
 // features logic
+renderFeature(featureData);
 
 // projects logic
 
@@ -40,7 +42,7 @@ renderHomeAbout(homeAboutData);
 // our-team logic
 
 // address logic
-renderSingleAddress(ourAddressData);
+renderAddress(ourAddressData);
 
 // footer logic
 
