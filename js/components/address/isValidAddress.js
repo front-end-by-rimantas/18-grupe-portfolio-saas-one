@@ -1,6 +1,5 @@
 function isValidAddress(address) {
     let errors = [];
-    let removed = [];
 
     if (typeof address.active !== 'boolean') {
         errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean')
@@ -41,7 +40,7 @@ function isValidAddress(address) {
         for (let i = 0; i < errors.length; i++) {
             console.error(errors[i])
         }
-
+ 
         return false;
     }
     // negeneruojame neaktyviu paslaugu

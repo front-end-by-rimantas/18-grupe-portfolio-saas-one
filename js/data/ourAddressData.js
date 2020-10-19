@@ -18,9 +18,9 @@ const ourAddressData = {
             icon: '<i class="fas fa-border-all"></i>',
             title: 'Get in Touch',
             text: 'Also find out social media below',
-            link1: '#',
-            link2: '#',
-            link3: '#',
+            facebook: '<i class="fab fa-facebook-f"></i>',
+            twitter: '<i class="fab fa-twitter"></i>',
+            linkedin: '<i class="fab fa-linkedin-in">',
             active: true,
         }
     ]
