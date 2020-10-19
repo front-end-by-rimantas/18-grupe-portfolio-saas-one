@@ -48,12 +48,6 @@ function isValidAddress(address) {
     if (!address.active) {
         return false;
     }
-    // for (let i = 0; i < address.lenght; i++) {
-    //     console.log(address.length);
-    //     if (address[i] == undefined) {
-    //         return false;
-    //     }
-    // }
     return true;
 }
 

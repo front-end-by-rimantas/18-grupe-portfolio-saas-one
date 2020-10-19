@@ -7,8 +7,17 @@ function renderAddress(data) {
 
     for (let i = 0; i < addressCount; i++) {
         const address = data.address[i];
-        HTML += renderSingleAddress(address);
+        if (i = 0) {
+            HTML += renderSingleAddress(address);
+        }
+        if (i = 1) {
+            HTML += renderSingleAddress1(address);
+        }
+        if (i = 2) {
+            HTML += renderSingleAddress2(address);
+        }
     }
+}
         return addressDOM.innerHTML = HTML;
     }
 

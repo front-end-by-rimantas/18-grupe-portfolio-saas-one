@@ -17,4 +17,10 @@ function renderSingleAddress(address) {
                 </div>`;
     return HTML;
 }
+function renderSingleAddress1(address) {
+
+}
+function renderSingleAddress2(address) {
+
+}
 export { renderSingleAddress };
