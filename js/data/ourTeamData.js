@@ -1,4 +1,4 @@
-const outTeam = {
+const ourTeamData = {
     selector: '#teamProfile',
     team: [
     {
@@ -19,7 +19,7 @@ const outTeam = {
         facebook: '#',
         twitter: '#',
         linkedin: '#',
-        active: true,
+        active: true
     },
     {
         profilePicture: '3.png',
@@ -54,4 +54,4 @@ const outTeam = {
     ]
 }
 
-export { outTeam }
+export { ourTeamData }

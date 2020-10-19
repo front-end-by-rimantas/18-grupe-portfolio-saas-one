@@ -1,4 +1,5 @@
 import { generateSingleOurTeam } from './generateSingleOurTeam.js';
+
 function renderOurTeam (data) {
 
     // input validation
@@ -7,10 +8,8 @@ function renderOurTeam (data) {
     let HTML = '';
     const teamDOM = document.querySelectorAll(data.selector);
     const teamCount = data.team.length;
-
-    for(let i=0; i < teamCount; i++){
-        const team = data.team[i];
-        teamDOM[i].innerHTML = generateSingleOurTeam(team);
+    for (var i = 0; i < 3; i++) {
+        teamDOM[i].innerHTML = generateSingleOurTeam(data.team[i])
     }
     return HTML;
 }

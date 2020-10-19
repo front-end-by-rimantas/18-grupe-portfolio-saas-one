@@ -15,7 +15,7 @@ import {renderFeature} from './components/feature/renderFeature.js';
 // testimonials import
 
 // our-team import
-import { outTeam } from './data/ourTeamData.js';
+import { ourTeamData } from './data/ourTeamData.js';
 import { renderOurTeam } from './components/ourTeam/renderOurTeam.js';
 
 // address import
@@ -40,7 +40,7 @@ renderFeature(featureData);
 // testimonials logic
 
 // our-team logic
-renderOurTeam(outTeam);
+renderOurTeam(ourTeamData);
 
 // address logic
 
