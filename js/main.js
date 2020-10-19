@@ -19,7 +19,6 @@ import {renderFeature} from './components/feature/renderFeature.js';
 // address import
 import { ourAddressData } from './data/ourAddressData.js'
 import { renderAddress } from './components/address/renderAddress.js'
-import { renderSingleAddress } from './components/address/renderSingleAddress.js'
 
 // footer import
 
