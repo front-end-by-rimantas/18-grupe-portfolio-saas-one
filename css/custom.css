@@ -36,6 +36,7 @@ header .button {
 /* HERO */
 .container.hero > .row {
     grid-column: 2 / span 2;
+    position: relative;
 }
 .hero .hero-left > p {
     margin: 0 15px 40px 15px;
