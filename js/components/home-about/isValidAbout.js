@@ -2,11 +2,11 @@ function isValidAbout(about) {
     let errors = [];
 
     if (typeof about.active !== 'boolean') {
-        errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean')
+        errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean');
     }
 
     if (typeof about.icon !== 'string') {
-        errors.push('ERROR: paslaugos icon turi buti tekstinis')
+        errors.push('ERROR: paslaugos icon turi buti tekstinis');
     }
     else {
         if (about.icon === '') {
@@ -15,7 +15,7 @@ function isValidAbout(about) {
     }
 
     if (typeof about.title !== 'string') {
-        errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis')
+        errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis');
     }
     else {
         if (about.title === '') {
@@ -38,7 +38,7 @@ function isValidAbout(about) {
     }
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
-            console.error(errors[i])
+            console.error(errors[i]);
         }
 
         return false;
