@@ -1,18 +1,18 @@
 import { isValidFAQ } from './isValidFAQ.js'
 
-function generateSingleFAQ(faq) {
+function generateSingleFAQ(faq, expanded = false) {
     // input validation
     if (!isValidFAQ(faq)) {
         return '';
     }
 
     // logic 
-    const HTML = `<div class="qa">
-                <div class="question-and-icon">
+    const HTML = `<div class="qa ${expanded ? 'show' : ''}">
+                    <div class="question-and-icon">
                         <p class="question">${faq.question}</p>
-                        <i class="${faq.icon}"></i>
-                </div>
-                <p class="answer hidden">${faq.answer}</p>
+                        <i class="${faq.icon} ${expanded ? 'violet' : ''}"></i>
+                    </div>
+                    <p class="answer hidden">${faq.answer}</p>
                 </div>`;
 
     // output 
