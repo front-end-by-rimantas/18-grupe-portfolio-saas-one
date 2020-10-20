@@ -1,5 +1,9 @@
-
+import {isValidFooter} from './isValidFooter.js'
 function generateSingleFooter (data) {
+
+    if (!isValidFooter(data)) {
+        return ''; 
+    } 
 
     const HTML = `
     <p>${data.title}</p>
