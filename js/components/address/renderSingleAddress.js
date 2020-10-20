@@ -21,7 +21,7 @@ function renderSingleAddress1(address) {
                     <div class="adrs-box">
                         <div class="adrs-icons">${address.icon}</div>
                         <h5 class="adrs-box-titles">${address.title}</h5>
-                        <a href="#" class="adrs-contacts">${address.text}</a>
+                        <a href="#" class="adrs-contacts">${address.email}</a>
                         <a href="#" class="adrs-contacts">${address.phone}</a>
                     </div>
                 </div>`

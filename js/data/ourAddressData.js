@@ -10,7 +10,7 @@ const ourAddressData = {
         {
             icon: '<i class="fas fa-envelope-open"></i>',
             title: 'Email & Phone',
-            text: 'roganinc@coname.com',
+            email: 'roganinc@coname.com',
             phone: '880 1723801729',
             active: true
         },
