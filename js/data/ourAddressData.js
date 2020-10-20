@@ -5,14 +5,14 @@ const ourAddressData = {
             icon: '<i class="fas fa-map-marker-alt"></i>',
             title: 'Our location',
             text: 'Danmondi, 7563 King Meadow Suite 896, USA',
-            active: true,
+            active: true
         },
         {
             icon: '<i class="fas fa-envelope-open"></i>',
             title: 'Email & Phone',
             text: 'roganinc@coname.com',
             phone: '880 1723801729',
-            active: true,
+            active: true
         },
         {
             icon: '<i class="fas fa-border-all"></i>',
@@ -20,8 +20,8 @@ const ourAddressData = {
             text: 'Also find out social media below',
             facebook: '<i class="fab fa-facebook-f"></i>',
             twitter: '<i class="fab fa-twitter"></i>',
-            linkedin: '<i class="fab fa-linkedin-in">',
-            active: true,
+            linkedin: '<i class="fab fa-linkedin-in"></i>',
+            active: true
         }
     ]
 }

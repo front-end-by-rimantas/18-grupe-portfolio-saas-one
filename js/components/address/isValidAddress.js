@@ -2,11 +2,11 @@ function isValidAddress(address) {
     let errors = [];
 
     if (typeof address.active !== 'boolean') {
-        errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean')
+        errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean');
     }
 
     if (typeof address.icon !== 'string') {
-        errors.push('ERROR: paslaugos icon turi buti tekstinis')
+        errors.push('ERROR: paslaugos icon turi buti tekstinis');
     }
     else {
         if (address.icon === '') {
@@ -15,7 +15,7 @@ function isValidAddress(address) {
     }
 
     if (typeof address.title !== 'string') {
-        errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis')
+        errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis');
     }
     else {
         if (address.title === '') {
@@ -38,7 +38,7 @@ function isValidAddress(address) {
     }
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
-            console.error(errors[i])
+            console.error(errors[i]);
         }
  
         return false;
