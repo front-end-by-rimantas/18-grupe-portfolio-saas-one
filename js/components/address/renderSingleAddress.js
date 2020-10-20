@@ -12,7 +12,6 @@ function renderSingleAddress(address) {
                     </div>
                 </div>`;
     return HTML;
-
 }
 function renderSingleAddress1(address) {
     // if (!isValidAddress(address)) {
