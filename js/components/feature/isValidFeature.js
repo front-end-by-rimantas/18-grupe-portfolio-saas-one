@@ -1,12 +1,12 @@
-function isValidFeature (feature) {
+function isValidFeature(feature) {
     let errors = [];
-   
-    if (typeof feature.active !== 'boolean'){
-        errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean')
+
+    if (typeof feature.active !== 'boolean') {
+        errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean');
     }
 
-    if (typeof feature.icon !== 'string'){
-        errors.push('ERROR: paslaugos icon turi buti tekstinis')
+    if (typeof feature.icon !== 'string') {
+        errors.push('ERROR: paslaugos icon turi buti tekstinis');
     }
     else {
         if (feature.icon === '') {
@@ -14,8 +14,8 @@ function isValidFeature (feature) {
         }
     }
 
-    if (typeof feature.title !== 'string'){
-        errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis')
+    if (typeof feature.title !== 'string') {
+        errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis');
     }
     else {
         if (feature.title === '') {
@@ -36,24 +36,24 @@ function isValidFeature (feature) {
             errors.push('ERROR: paslaugos aprasymas yra per ilgas.');
         }
     }
-    
+
     if (typeof feature.background !== 'string') {
         errors.push('ERROR: background nuoroda turi buti tekstine.');
     } else {
         if (feature.link === '') {
             errors.push('ERROR: bakcground nuoroda negali buti tuscia.');
-    }
+        }
     }
     if (typeof feature.color !== 'string') {
         errors.push('ERROR: color nuoroda turi buti tekstine.');
     } else {
         if (feature.link === '') {
             errors.push('ERROR: color nuoroda negali buti tuscia.');
-    }
+        }
     }
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
-            console.error(errors[i])
+            console.error(errors[i]);
         }
 
         return false;
