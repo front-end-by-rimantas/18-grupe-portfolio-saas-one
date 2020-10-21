@@ -14,9 +14,6 @@ header.container {
     align-items: center;
 }
 .header-button {
-    /* display: flex;
-    justify-items: center;
-    align-items: center; */
     display: grid;
     place-items: center;
 }
@@ -65,22 +62,26 @@ HEADER DROPMENU
     width: 220px;
     line-height: 30px;
     padding: 30px;
-    right: -160px;
+    /* left: 0; */
+    top: 85px;
+    min-width: 220px;
     border-radius: 7px;
     animation-name: dropdown;
     animation-duration: 0.5s;
     animation-timing-function: ease;
 }
+    .subbtn {
+        
+    }
 .sub-dropdown-content {
     top: -23px;
 }
 .dropdown:hover .dropdown-content {
     display: grid;
-    z-index: 1;
 }
 .sub-dropdown:hover .sub-dropdown-content {
     display: grid;
-    z-index: 1;
+    left: 160px;
 } 
 @keyframes dropdown {
     0% {
