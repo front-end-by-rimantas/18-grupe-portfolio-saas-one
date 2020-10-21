@@ -293,7 +293,6 @@ HEADER DROPMENU
     }
     .app .left-column > .left-column-buttons > .button.white.round {
         margin-right: 20px;
-        transition: 0.3s;
     }
         .app .left-column > .left-column-buttons > .button.white.round > .fab {
             color: #7052fb;
@@ -304,6 +303,8 @@ HEADER DROPMENU
         .app .left-column > .left-column-buttons > .button.white.round:hover {
             color: white;
             background-color: #7052fb;
+            box-shadow: -1px 3px 10px black;
+
         }
         .app .left-column > .left-column-buttons > .button.white.round:hover .fab {
             color: white;
@@ -316,14 +317,14 @@ HEADER DROPMENU
 }
     .app .right-column > .mobile-1 {
         z-index: 2;
-        margin-left: 185px;
+        margin-left: 70px;
         max-width: 300px;
     }
     .app .right-column > .mobile-2 {
         position: absolute;
         max-width: 300px;
         z-index: -1;
-        right: 20px;
+        right: -10px;
         top: -50px;
     }
 /* PROJECTS */
@@ -853,7 +854,7 @@ footer > .row {
 
 /* APP */
 .app .right-column > .mobile-2 {
-    right: 120px;
+    right: 20px;
 }
 /* PROJECTS */
 .projects .countup-wrap {
