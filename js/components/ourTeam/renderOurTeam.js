@@ -7,7 +7,6 @@ function renderOurTeam (data) {
     // logic
     let HTML = '';
     const teamDOM = document.querySelectorAll(data.selector);
-    const teamCount = data.team.length;
     for (var i = 0; i < 3; i++) {
         teamDOM[i].innerHTML = generateSingleOurTeam(data.team[i])
     }
