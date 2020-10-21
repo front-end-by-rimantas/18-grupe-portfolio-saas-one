@@ -6,11 +6,13 @@ function isValidTeam(team){
     }
 
     if(typeof team.profilePicture !== 'string'){
-        errors.push('ERROR: profilio nuotraukos pavadinimas turi buti tekstinis.')
+        errors.push('ERROR: profilio nuotraukos pavadinimas turi buti tekstinis.');
     } else {
         if(team.profilePicture === ''){
-            errors.push('ERROR: profilio nuotraukos pavadinimas negali buti tuscias.')
+            errors.push('ERROR: profilio nuotraukos pavadinimas negali buti tuscias.');
         }
+        if(team.profilePicture.length < 5){
+            errors.push('ERROR: profilio nuotraukos pavadinimo ilgis negali būti trumpesnis nei 5 simboliai.');
     }
 
     if(typeof team.name !== 'string'){
