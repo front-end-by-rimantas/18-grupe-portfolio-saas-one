@@ -679,6 +679,26 @@ footer {
             footer .copyright-section > .footer-socials > a > i {
                 color: #9694a1;
             }
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
+
 
 
 @media (max-width: 990px) {
@@ -763,7 +783,27 @@ footer > .row {
 footer .footer-row {
     grid-template-columns: 1fr 1fr;
 }
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
 }
+
 @media (max-width: 750px) {
 /* HEADER */
     
@@ -840,7 +880,28 @@ footer > .row {
         footer.copyright-section > .footer-socials {
             justify-content: center;
         }
+
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
 }
+
 @media (max-width: 540px) {
 /* HEADER */
 
@@ -885,4 +946,25 @@ footer > .row {
     }
 /* FOOTER */
 
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
+
 }
+
