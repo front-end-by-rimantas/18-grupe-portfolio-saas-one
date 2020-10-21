@@ -1,5 +1,6 @@
 // header import
-
+import { headerData } from './data/header.js';
+import { HeaderNav } from './components/header/HeaderNav.js';
 // about import
 import { homeAboutData } from './data/homeAboutData.js';
 import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
@@ -25,7 +26,7 @@ import { renderFAQ } from './components/faq/renderFAQ.js';
 
 
 // header logic
-
+new HeaderNav(headerData);
 // about logic
 renderHomeAbout(homeAboutData);
 
