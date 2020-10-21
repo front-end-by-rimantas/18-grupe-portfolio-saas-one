@@ -108,6 +108,29 @@ p {
     top: 30%;
     right: -5%;
 }
+.btn.back-to-top {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(148,148,148,0.16);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+    .btn.back-to-top:hover {
+        background-color: #7052FB;
+        color: #fff;
+        box-shadow: 0 10px 25px 0 rgba(112,111,111,0.3);
+    }
+html {
+    scroll-behavior: smooth;
+}
 
 @keyframes square {
     0% {
