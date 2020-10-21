@@ -1,6 +1,6 @@
 import { isValidAddressHTML } from './isValidAddress.js'
 import { isValidAddressHTML1 } from './isValidAddress.js'
-// import { isValidAddressHTML2 } from './isValidAddress.js'
+import { isValidAddressHTML2 } from './isValidAddress.js'
 
 function renderSingleAddress(address) {
     if (!isValidAddressHTML(address)) {
@@ -30,7 +30,7 @@ function renderSingleAddress1(address) {
     return HTML1
 }
 function renderSingleAddress2(address) {
-    if (!isValidAddressHTML(address)) {
+    if (!isValidAddressHTML2(address)) {
         return '';
     }
     const HTML2 = `<div class="adrs-box-wrap">
