@@ -13,6 +13,7 @@ function isValidTeam(team){
         }
         if(team.profilePicture.length < 5){
             errors.push('ERROR: profilio nuotraukos pavadinimo ilgis negali būti trumpesnis nei 5 simboliai.');
+        }
     }
 
     if(typeof team.name !== 'string'){
