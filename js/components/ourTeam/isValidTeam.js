@@ -2,7 +2,7 @@ function isValidTeam(team){
     let errors = [];
 
     if(typeof team.active !== 'boolean'){
-        errors.push('ERROR: paslaugos aktyvumo statusas turi buti boolean.');
+        errors.push('ERROR: komandos nario aktyvumo statusas turi buti boolean.');
     }
 
     if(typeof team.profilePicture !== 'string'){
