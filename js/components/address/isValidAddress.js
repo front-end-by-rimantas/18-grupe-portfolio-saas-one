@@ -85,8 +85,10 @@ function isValidAddressHTML1(address) {
     }
 
     // PHONE validacija
-    if (!isNaN(address.phone)) {
 
+    if (Number(address.phone)) {
+
+    } else {
         errors.push('ERROR: Kontaktų telefono numeris turi būti sudarytas iš skaičių.');
     }
 

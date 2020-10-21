@@ -11,7 +11,7 @@ const ourAddressData = {
             icon: '<i class="fas fa-envelope-open"></i>',
             title: 'Email & Phone',
             email: 'roganinc@coname.com',
-            phone: '880 1723801729',
+            phone: '8801723801729',
             active: true
         },
         {
