@@ -1,62 +1,48 @@
-function isValidAddress(address) {
+function isValidAddressHTML(address) {
     let errors = [];
 
     if (typeof address.active !== 'boolean') {
-        errors.push('ERROR: adreso korteles aktyvumo statusas turi buti boolean');
+        errors.push('ERROR: Kontaktų laukelių tipas turi būti Boolean.'); 
     }
 
+    // ICON validacija
     if (typeof address.icon !== 'string') {
-        errors.push('ERROR: adreso korteles icon turi buti tekstinis');
+        errors.push('ERROR: Kontaktų icon tipas turi būti tekstinis.'); 
     }
-    else {
-        if (address.icon === '') {
-            errors.push('ERROR: adreso korteles icon negali buti tuscia.');
-        }
+    if (address.icon === '') {
+        errors.push('ERROR: Kontaktų icon negali būti tuščias.');
     }
 
+    // TITLE validacija
     if (typeof address.title !== 'string') {
-        errors.push('ERROR: adreso korteles pavadinimas turi buti tekstinis');
-    } else {
-        if (address.title === '') {
-            errors.push('ERROR: adreso korteles pavadinimas negali buti tuscias.');
-        }
-        if (address.title.length > 20) {
-            errors.push('ERROR: adreso korteles pavadinimas yra per ilgas.');
-        }
+        errors.push('ERROR: Kontaktų title turi būti tekstinis.');
     }
-    
-    if (typeof address.email === 'undefined') {
-        return '';
-    } else {
-        if (typeof address.email !== 'string') {
-            errors.push('ERROR: adreso korteles email turi buti tekstinis');
-        }
-        if (address.email === '') {
-            errors.push('ERROR: adreso korteles email negali buti tuscias.');
-        }
-        if (address.email.length > 30) {
-            errors.push('ERROR: adreso korteles email yra per ilgas.');
-        }
+    if (address.title === '') {
+        errors.push('ERROR: Kontaktų title negali būti tušti.');
+    }
+    if (address.title.length > 30) {
+        errors.push('ERROR: Kontaktų title yra per ilgas.');
     }
 
-    if (typeof address.text === 'undefined') {
-        return '';
-    } else {
-        if (typeof address.text !== 'string') {
-            errors.push('ERROR: adreso korteles aprasymas turi buti tekstinis.');
-        }
-        if (address.text === '') {
-            errors.push('ERROR: adreso korteles aprasymas negali buti tuscias.');
-        }
-        if (address.text.length > 80) {
-            errors.push('ERROR: adreso korteles aprasymas yra per ilgas.');
-        }
+    // TEXT validacija
+
+    if (typeof address.text !== 'string') {
+        errors.push('ERROR: Kontaktų laukelių text tipas turi būti tekstinis.');
     }
+    if (address.text === '') {
+        errors.push('ERROR: Kontaktų laukelis text negali būti tuščias.');
+    }
+    if (address.text > 150) {
+        errors.push('ERROR: Kontaktų text laukelis per ilgas.');
+    }
+
+    // ERRORS
+
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
             console.error(errors[i]);
         }
- 
+
         return false;
     }
     // negeneruojame neaktyviu paslaugu
@@ -65,5 +51,63 @@ function isValidAddress(address) {
     }
     return true;
 }
+function isValidAddressHTML1(address) {
 
-export { isValidAddress }
+    let errors = [];
+
+    if (typeof address.active !== 'boolean') {
+        errors.push('ERROR: Kontaktų laukelių tipas turi būti Boolean.');
+    }
+
+    // ICON validacija
+    if (typeof address.icon !== 'string') {
+        errors.push('ERROR: Kontaktų icon tipas turi būti tekstinis.');
+    }
+    if (address.icon === '') {
+        errors.push('ERROR: Kontaktų icon negali būti tuščias.');
+    }
+
+    // TITLE validacija
+    if (typeof address.title !== 'string') {
+        errors.push('ERROR: Kontaktų title turi būti tekstinis.');
+    }
+    if (address.title === '') {
+        errors.push('ERROR: Kontaktų title negali būti tušti.');
+    }
+    if (address.title.length > 30) {
+        errors.push('ERROR: Kontaktų title yra per ilgas.');
+    }
+
+    // EMAIL validacija
+
+    if (!/(.+)@(.+){2,}\.(.+){2,}/.test(address.email)) {
+        errors.push('ERROR: Kontaktų email netinkamas.')
+    }
+
+    // PHONE validacija
+    if (!isNaN(address.phone)) {
+
+        errors.push('ERROR: Kontaktų telefono numeris turi būti sudarytas iš skaičių.');
+    }
+
+    // ERRORS
+
+    if (errors.length > 0) {
+        for (let i = 0; i < errors.length; i++) {
+            console.error(errors[i]);
+        }
+
+        return false;
+    }
+    // negeneruojame neaktyviu paslaugu
+    if (!address.active) {
+        return false;
+    }
+    return true;
+}
+function isValidAddressHTML2(address) {
+
+}
+export { isValidAddressHTML }
+export { isValidAddressHTML1 }
+export { isValidAddressHTML2 }
