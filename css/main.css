@@ -163,13 +163,13 @@ p {
 .container.faq,
 .container.testimonials,
 footer {
-    animation: 1s ease 0.5s 1 normal slideFromBottom;
+    animation: 1s ease 1 normal slideFromBottom;
 }
 .hero .hero-right > img {
-    animation: 1.5s ease 0.5s 1 normal slideFromRight;
+    animation: 1.5s ease 1 normal slideFromRight;
 }
 .container.feature {
-    animation: 1.5s ease 0.5s 1 normal slideFromLeft;
+    animation: 1.5s ease 1 normal slideFromLeft;
 }
 @keyframes slideFromBottom {
     0% {
