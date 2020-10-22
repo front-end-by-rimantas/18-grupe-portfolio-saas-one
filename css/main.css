@@ -185,7 +185,8 @@ html {
 .container.app,
 .container.faq,
 .container.testimonials,
-footer {
+footer,
+.btn.btn.back-to-top {
     animation: 1s ease 1 normal slideFromBottom;
 }
 .hero .hero-right > img {
