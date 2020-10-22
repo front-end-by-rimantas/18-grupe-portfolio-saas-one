@@ -77,11 +77,6 @@ function isValidFooter (data)  {
         } return false;
     }
     return true;
-    // inactive questions are not generated
-    // if (!faq.active) {
-        // return false;
-    // } return true;
-        
 }
 
 
