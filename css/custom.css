@@ -504,6 +504,8 @@ HEADER DROPMENU
             border-radius: 5px;
             background-color: #494949;
             background-size: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px 0 rgba(0,11,40,0.14);
         }
         .our-team .our-team-block > .profile > .profile-social {
             visibility: hidden;
@@ -524,18 +526,20 @@ HEADER DROPMENU
                 align-items: center;
                 border: 1px solid white;
                 border-radius: 50%;
+                margin: 3px;
              }
         .our-team .our-team-block > .profile > .profile-name-position {
             position: absolute;
             visibility: hidden;
             bottom: -110px;
             background-color: white;
-            width: calc(100% - 22px);
+            width: calc(100% - 20px);
             padding: 20px;
             text-align: center;
             height: calc(100% / 3.5);
             border-radius: 0 0 3px 3px;
             transition-duration: 2s;
+            
         }
             .our-team .our-team-block > .profile > .profile-name-position > span {
                     width: 100%;
@@ -548,12 +552,16 @@ HEADER DROPMENU
                 font-size: 20px;
             }
         /* Hover */
+        .our-team > .row > .our-team-block > .profile > .profile-social > a > i:hover {
+            background-color: #fff;
+            color: #FB6638;
+          }
         .our-team .our-team-block > .profile:hover .profile-social {
             visibility: visible;
         }
         .our-team .our-team-block > .profile:hover .profile-name-position {
             visibility: visible;
-            bottom: 10px;
+            bottom: 30px;
         }
         .our-team .our-team-block > .profile:hover {
             opacity: 0.9;

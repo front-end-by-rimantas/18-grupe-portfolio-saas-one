@@ -16,6 +16,8 @@ import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
 
 // our-team import
+import { ourTeamData } from './data/ourTeamData.js';
+import { renderOurTeam } from './components/ourTeam/renderOurTeam.js';
 
 // address import
 import { ourAddressData } from './data/ourAddressData.js'
@@ -41,6 +43,7 @@ renderFAQ(faqData);
 // testimonials logic
 
 // our-team logic
+renderOurTeam(ourTeamData);
 
 // address logic
 renderAddress(ourAddressData);
