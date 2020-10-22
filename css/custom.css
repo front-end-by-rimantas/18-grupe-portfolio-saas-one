@@ -706,6 +706,15 @@ footer {
     line-height: 1;
     margin-bottom: 40px;
 }
+    .row > .form-header > .col-7 > .name {
+        width: 50%;
+    }
+        .row > .form-header > .col-7 > .name > .name-input {
+        width: 50%;
+    }
+    .row > .form-header > .col-7 > .last-name > .last-name-input {
+        width: 50%;
+    }
     .row > .vertical-line {
         width: 1px;
         height: 100%;
