@@ -22,7 +22,7 @@ import { renderFAQ } from './components/faq/renderFAQ.js';
 // footer import
 
 // background animations import
-
+import { renderBackToTop } from './components/back-to-top.js'
 
 // header logic
 
@@ -45,3 +45,4 @@ renderFAQ(faqData);
 // footer logic
 
 // background animations logic
+renderBackToTop();
