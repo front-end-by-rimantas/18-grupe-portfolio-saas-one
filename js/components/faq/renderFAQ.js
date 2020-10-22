@@ -7,9 +7,12 @@ function renderFAQ(data) {
     let HTML = '';
     const faqDOM = document.querySelector(data.selector);
     const faqCount = data.faq.length;
-
+    if(!faqDOM){
+        return;
+    }
     for (let i = 0; i < faqCount; i++) {
         const faq = data.faq[i];
+        
         HTML += generateSingleFAQ(faq, i === 0 ? true : false);
     }
 
