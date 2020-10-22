@@ -15,8 +15,11 @@ function isValidTest(data) {
         if (data.title.length > 30) {
             errors.push('ERROR: paslaugos pavadinimas yra per ilgas.');
         }
-
+        if (data.title.length < 6) {
+            errors.push('ERROR: paslaugos pavadinimas yra per trumpas.');
+        }
     }
+
     if (typeof data.description !== 'string') {
         errors.push('ERROR: paslaugos aprasymas turi buti tekstinis.');
     } else {
@@ -26,53 +29,61 @@ function isValidTest(data) {
         if (data.description.length > 150) {
             errors.push('ERROR: paslaugos aprasymas yra per ilgas.');
         }
+        if (data.description.length < 20) {
+            errors.push('ERROR: paslaugos aprasymas yra per trumpas.');
+        }
+
     }
 
     if (typeof data.img !== 'string') {
-        errors.push('ERROR: background nuoroda turi buti tekstine.');
+        errors.push('ERROR: profilio nuotraukos nuoroda turi buti tekstine.');
     } else {
         if (data.img === '') {
-            errors.push('ERROR: bakcground nuoroda negali buti tuscia.');
+            errors.push('ERROR: profilio nuotraukos nuoroda negali buti tuscia.');
         }
     }
 
     if (typeof data.name !== 'string') {
-        errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis');
+        errors.push('ERROR: vardas ir pavarde turi buti tekstiniai');
     }
     else {
         if (data.name === '') {
-            errors.push('ERROR: paslaugos pavadinimas negali buti tuscias.');
+            errors.push('ERROR: vardas ir pavarde negali buti tuscias.');
         }
         if (data.name.length < 5) {
-            errors.push('ERROR: paslaugos pavadinimas yra per ilgas.');
-        }
-
-        if (typeof data.profession !== 'string') {
-            errors.push('ERROR: paslaugos pavadinimas turi buti tekstinis');
-        }
-        else {
-            if (data.profession === '') {
-                errors.push('ERROR: paslaugos pavadinimas negali buti tuscias.');
-            }
-            if (data.profession.length < 5) {
-                errors.push('ERROR: paslaugos pavadinimas yra per ilgas.');
-            }
-
-
-            if (errors.length > 0) {
-                for (let i = 0; i < errors.length; i++) {
-                    console.error(errors[i]);
-                }
-
-                return false;
-            }
-            // negeneruojame neaktyviu paslaugu
-            if (!data.active) {
-                return false;
-            }
-
-            return true;
+            errors.push('ERROR: vardas ir pavarde yra per trumpas.');
         }
     }
+
+    if (typeof data.profession !== 'string') {
+        errors.push('ERROR: profesijos pavadinimas turi buti tekstinis');
+    }
+    else {
+        if (data.profession === '') {
+            errors.push('ERROR: profesijos pavadinimas negali buti tuscias.');
+        }
+        if (data.profession.length < 5) {
+            errors.push('ERROR: profesijos pavadinimas yra per trumpas.');
+        }
+        if (data.profession.length > 30) {
+            errors.push('ERROR: profesijos pavadinimas yra per ilgas.');
+        }
+    }
+
+    if (errors.length > 0) {
+        for (let i = 0; i < errors.length; i++) {
+            console.error(errors[i]);
+        }
+
+        return false;
+    }
+    // negeneruojame neaktyviu paslaugu
+    if (!data.active) {
+        return false;
+    }
+
+    return true;
 }
+
+
 export { isValidTest }
