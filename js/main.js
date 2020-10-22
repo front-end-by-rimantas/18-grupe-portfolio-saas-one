@@ -18,6 +18,8 @@ import { renderFAQ } from './components/faq/renderFAQ.js';
 // our-team import
 
 // address import
+import { ourAddressData } from './data/ourAddressData.js'
+import { renderAddress } from './components/address/renderAddress.js'
 
 // footer import
 
@@ -41,6 +43,7 @@ renderFAQ(faqData);
 // our-team logic
 
 // address logic
+renderAddress(ourAddressData);
 
 // footer logic
 
