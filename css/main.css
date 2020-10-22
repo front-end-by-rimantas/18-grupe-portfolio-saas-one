@@ -179,3 +179,48 @@ html {
         transform: translate(-50%, 200%);
     }
 }
+
+/* TRANSITIONS */
+.hero .hero-left,
+.container.app,
+.container.faq,
+.container.testimonials,
+footer {
+    animation: 1s ease 1 normal slideFromBottom;
+}
+.hero .hero-right > img {
+    animation: 1.5s ease 1 normal slideFromRight;
+}
+.container.feature {
+    animation: 1.5s ease 1 normal slideFromLeft;
+}
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(5%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(5%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-5%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
