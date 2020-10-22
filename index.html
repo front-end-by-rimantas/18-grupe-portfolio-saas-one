@@ -23,6 +23,18 @@
 </head>
 
 <body>
+    <!-- bg animations -->
+    <div class="hero-animations">
+        <img src="./img/shape-square.png" class="shape-square hero">
+        <img src="./img/shape-triangle.png" class="shape-triangle hero">
+        <img src="./img/shape-plus.png" class="shape-plus-one hero">
+        <img src="./img/shape-plus.png" class="shape-plus-two hero">
+        <img src="./img/shape-oval.png" class="shape-oval hero">
+        <img src="./img/shape-square.png" class="shape-square home-about">
+        <img src="./img/shape-triangle.png" class="shape-triangle home-about">
+        <img src="./img/shape-plus.png" class="shape-plus-one home-about">
+        <img src="./img/shape-plus.png" class="shape-plus-two home-about">
+    </div>
     <!-- header -->
     <header class="container">
         <div class="row">
@@ -30,12 +42,44 @@
                 <img src="./img/logo-color-2.svg" alt="header logo">
             </a>
             <nav class="header-navigation col-6 col-md-9">
-                <a href="#">Home.</a>
-                <a href="#">Pages.</a>
-                <a href="#">Blog.</a>
-                <a href="#">Portfolio.</a>
-                <a href="#">About.</a>
-                <a href="#">Contact.</a>
+                <a class="navbtn col-1" href="#">Home.</a>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Pages.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Service.</a>
+                        <a class="subbtn" href="#">About</a>
+                        <a class="subbtn" href="#">Contact</a>
+                        <a class="subbtn" href="#">Pricing</a>
+                        <div class="sub-dropdown">
+                            <a class="subbtn col-1" href="#">Case Study....</a>
+                            <div class="sub-dropdown-content">
+                                <a class="subbtn" href="#">Case Default</a>
+                                <a class="subbtn" href="#">Case Detail</a>
+                            </div>
+                        </div>
+                        <a class="subbtn" href="#"></a>Our Team</a>
+                        <a class="subbtn" href="#">Testimonials</a>
+                        <a class="subbtn" href="#"> FAQ</a>
+                        <a class="subbtn" href="#">Terms of use</a>
+                        <a class="subbtn" href="#">ERROR 404</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Blog.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Blog Default</a>
+                        <a class="subbtn" href="#">Blog Single</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Portfolio.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Portfolio Standard</a>
+                        <a class="subbtn" href="#">Portfolio Masonry</a>
+                    </div>
+                </div>
+                <a class="navbtn col-1" href="#">About.</a>
+                <a class="navbtn col-1" href="#">Contact.</a>
             </nav>
             <div class="toggle-menu col-lg-6 col-md-6">
                 <i class="fas fa-bars fa-2x"></i>
@@ -68,40 +112,18 @@
     <!-- homepage about -->
     <div class="container home-about">
         <div class="row">
-            <div class="left-block col-7 col-lg-12">
+            <div class="left-block col-7 col-lg-12" id="cards">
                 <div class="left-row col-3 col-lg-12">
-                    <div class="home-about-card">
-                        <div class="card-header">
-                            <i class="fas fa-layer-group fa-lg"></i>
-                        </div>
-                        <p class="title">Quick Access</p>
-                        <div class="card-paragraf">
-                            <p>Lorem ipsum dolor si met, an dusino si sinconstituto mir set gil amilu.</p>
-                        </div>
+                    <div class="home-about-card" id="home-about-card">
+
                     </div>
                 </div>
                 <div class="right-row col-3 col-lg-12">
-                    <div class="home-about-card">
-                        <div class="card-header">
-                            <i class="fas fa-layer-group fa-lg"></i>
-                        </div>
-                        <div class="card-title">
-                            <p class="title">Great Support</p>
-                        </div>
-                        <div class="card-paragraf">
-                            <p>Lorem ipsum dolor si met, an dusino si sinconstituto mir set gil amilu.</p>
-                        </div>
+                    <div class="home-about-card" id="home-about-card">
+
                     </div>
-                    <div class="home-about-card">
-                        <div class="card-header">
-                            <i class="fas fa-layer-group fa-lg"></i>
-                        </div>
-                        <div class="card-title">
-                            <p class="title">Quick Access</p>
-                        </div>
-                        <div class="card-paragraf">
-                            <p>Lorem ipsum dolor si met, an dusino si sinconstituto mir set gil amilu.</p>
-                        </div>
+                    <div class="home-about-card" id="home-about-card">
+
                     </div>
                 </div>
             </div>
@@ -121,64 +143,7 @@
                 <p>Our feature</p>
             </div>
             <div class="title col-12">Why you should choose our Saas</div>
-
-            <div class="feature-block col-12">
-                <div class="box">
-                    <div class="left" style="background-color:#FFF6D3;"> <i class="fas fa-copyright fa-2x"
-                            style=" color: #D6AC02;"></i> </div>
-                    <div class="right">
-                        <h3> Branding </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="box margin">
-                    <div class="left" style="background-color:#F1EBFE;"> <i class="fas fa-photo-video fa-2x"
-                            style=" color: #794ADE;"></i> </div>
-                    <div class="right">
-                        <h3> Photography </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="left" style="background-color:#E4FFEE;"><i class="fas fa-brain fa-2x"
-                            style=" color: #40975F;"></i></div>
-                    <div class="right">
-                        <h3> Analisys </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="left" style="background-color:#EAF9FF;"><i class="fas fa-cloud fa-2x "
-                            style=" color: #45B1E1;"></i></div>
-                    <div class="right">
-                        <h3> Cloud Data</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="box margin">
-                    <div class="left" style="background-color:#FFECEF;"><i class="fas fa-cogs fa-2x"
-                            style=" color: #FF4361;"></i></div>
-                    <div class="right">
-                        <h3> Customization </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="left" style="background-color: #EAF9FF;"><i class="fas fa-headset fa-2x "
-                            style=" color: #54B5E2;"></i></div>
-                    <div class="right">
-                        <h3> Customer Support </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-            </div>
+            <div id="feature_block" class="feature-block col-12"> </div>
         </div>
     </div>
     <!-- app -->
@@ -245,37 +210,19 @@
         </div>
     </div>
     <!-- FAQ -->
-    <div class="container FAQ">
+    <div class="container faq">
         <div class="row">
             <div class="section-title col-12">
                 <p>Frequent question</p>
             </div>
             <div class="title col-12">Diam maecenas sed enim ut sem gravida?</div>
-            <div class="FAQ-box col-12">
-                <div class="QA">
-                    <div class="question-and-icon">
-                        <a href="#" class="question">How would you integrate social media ad campaign?</a>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <p class="answer">Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et
-                        netus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Tellus
-                        integer feugiat scelerisque varius morbi enim nunc. Nulla aliquet enim tortor at auctor urna. Id
-                        semper risus in hendrerit gravida rutrum.</p>
-                    <div class="question-and-icon">
-                        <a href="#" class="question">Projects that need to be turned around?</a>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <div class="question-and-icon">
-                        <a href="#" class="question">How do you handle failure?</a>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <div class="question-and-icon">
-                        <a href="#" class="question">Is there any custome pricing system?</a>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
+            <div class="faq-box col-12">
+                <div class="qa" id="faq_block">
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- testimonals -->
     <div class="container testimonials">
@@ -287,10 +234,11 @@
 
             <div class="testimonial-block col-12">
                 <div class="arrow-left"> <i class="fas fa-long-arrow-alt-left fa-3x"></i> </div>
-                <div id="testimonials_block" class="center">
-                    <!-- <h2> Modern look & trending design </h2>
-                    <p class="p">Lorem  elit. Explicabo laudantiumnderit lorem lorem loremlabore lorem lorem loremlabore lorem lorem loremlabore officia odio atque laborum.</p>
-                     <div class="imagin"> <img src="img/boy.png" alt="profile"> </div>
+                <div class="center">
+                    <h2> Modern look & trending design </h2>
+                    <p class="p">Lorem elit. Explicabo laudantiumnderit lorem lorem loremlabore lorem lorem loremlabore
+                        lorem lorem loremlabore officia odio atque laborum.</p>
+                    <div class="imagin"> <img src="img/boy.png" alt="profile"> </div>
                     <p class="p name"><b> Mark Wilson</b> </p>
                     <p class="p clients">Clients Manager</p> -->
                 </div>
@@ -309,41 +257,11 @@
                 <img src="./img/our-team-bg.jpg" alt="Our-Team Backgrdound Circle">
             </div>
             <div class="our-team-block col-12">
-                <div class="profile">
-                    <img src="./img/team/1.png">
-                    <div class="profile-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="profile-name-position">
-                        <span>Miguel Ellis</span>
-                        <span>Project Manager</span>
-                    </div>
+                <div class="profile" id="teamProfile">
                 </div>
-                <div class="profile">
-                    <img src="./img/team/2.png">
-                    <div class="profile-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="profile-name-position">
-                        <span>Miguel Ellis</span>
-                        <span>Project Manager</span>
-                    </div>
+                <div class="profile" id="teamProfile">
                 </div>
-                <div class="profile">
-                    <img src="./img/team/3.png">
-                    <div class="profile-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="profile-name-position">
-                        <span>Miguel Ellis</span>
-                        <span>Project Manager</span>
-                    </div>
+                <div class="profile" id="teamProfile">
                 </div>
             </div>
         </div>
@@ -355,36 +273,10 @@
                 <p>Our Address</p>
             </div>
             <div class="title col-12"> Meet Client Satisfaction by using product</div>
-            <div class="adrs col-12">
-                <div class="adrs-box-wrap">
-                    <div class="adrs-box">
-                        <div class="adrs-icons"><i class="fas fa-map-marker-alt"></i></div>
-                        <h5 class="adrs-box-titles">Our Location</h5>
-                        <p class="adrs-paragraphs">Danmondi, 7563 King Meadow <br> Suite 896, USA</p>
-                    </div>
-                </div>
-                <div class="adrs-box-wrap">
-                    <div class="adrs-box">
-                        <div class="adrs-icons"><i class="fas fa-envelope-open"></i></div>
-                        <h5 class="adrs-box-titles">Email & Phone</h5>
-                        <a href="#" class="adrs-contacts">roganinc@coname.com</a>
-                        <a href="#" class="adrs-contacts">880 1723801729</a>
-                    </div>
-                </div>
-                <div class="adrs-box-wrap">
-                    <div class="adrs-box">
-                        <div class="adrs-icons"><i class="fas fa-border-all"></i></div>
-                        <h5 class="adrs-box-titles">Get In Touch</h5>
-                        <p class="adrs-paragraphs">Also find our social media below</p>
-                        <p class="adrs-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </p>
-                    </div>
-                </div>
+            <div id="address-js" class="adrs col-12">
             </div>
         </div>
+    </div>
     </div>
     <!-- footer -->
     <footer>

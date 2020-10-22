@@ -1,4 +1,7 @@
 /* HEADER */
+header.container {
+    padding: 0;
+}
 .header-logo,
 .header-button {
     display: flex;
@@ -13,29 +16,107 @@ header .toggle-menu {
     align-self: flex-end;
     align-items: center;
 }
-header .header-navigation a {
+    .header-navigation a {
+        text-decoration: none;
+    }
+header > .row > .header-navigation a.navbtn {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     color: #2b2350;
     line-height: 100px;
-    /* float: right; */
     margin: 0 15px;
     padding: 5px 0;
 }
-header .header-navigation a:hover {
-    color: blue;
-}
-header .button {
-    /* height: 28px; */
+
+header > .row > .header-navigation > a.navbtn:hover {
+    color: #7052FB;
 }
     header .button:hover {
         background-color: blue;
         color: white;
     }
+/* 
+FIXED HEADER 
+*/
+header.container.fixed {
+    position: fixed;
+    position: 0;
+    background: white;
+    padding: 0;
+    z-index: 100;
+    box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
+    width: 100%;
+}
+/* 
+HEADER DROPMENU 
+*/
+.dropdown, .sub-dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.dropdown-content, .sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 220px;
+    line-height: 50px;
+    padding: 30px;
+    border-radius: 7px;
+    animation-name: dropdown;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+.dropdown:hover .dropdown-content {
+    display: grid;
+    z-index: 1;
+}
+.sub-dropdown:hover .sub-dropdown-content {
+    display: grid;
+    z-index: 1;
+} 
+@keyframes dropdown {
+    0% {
+        margin-top: 10px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+/* .subnavbtn:hover,
+.navbtn:hover { 
+    cursor: pointer;
+}
+    .navbtn:hover .header-dropdown {
+        display: grid;  
+        background-color: red;;  
+    }
+    .navbtn:hover .dropdown.inside {
+        display: none;
+    }
+    .subnavbtn:hover .dropdown.inside {
+        display: grid;
+        right: -180px;
+        bottom: 150px;
+    } 
+        .navbtn:hover .dropdown .subbtn, .subnavbtn {
+            line-height: 40px;
+            text-decoration: none;
+            color: #8f8b9e;
+        }
+        .navbtn:hover .dropdown .subbtn:hover {
+            color: #7052FB;
+        } */
+
 /* HERO */
 .container.hero > .row {
     grid-column: 2 / span 2;
+    position: relative;
 }
 .hero .hero-left > p {
     margin: 0 15px 40px 15px;
@@ -212,7 +293,6 @@ header .button {
     }
     .app .left-column > .left-column-buttons > .button.white.round {
         margin-right: 20px;
-        transition: 0.3s;
     }
         .app .left-column > .left-column-buttons > .button.white.round > .fab {
             color: #7052fb;
@@ -223,6 +303,8 @@ header .button {
         .app .left-column > .left-column-buttons > .button.white.round:hover {
             color: white;
             background-color: #7052fb;
+            box-shadow: -1px 3px 10px black;
+
         }
         .app .left-column > .left-column-buttons > .button.white.round:hover .fab {
             color: white;
@@ -235,14 +317,14 @@ header .button {
 }
     .app .right-column > .mobile-1 {
         z-index: 2;
-        margin-left: 185px;
+        margin-left: 70px;
         max-width: 300px;
     }
     .app .right-column > .mobile-2 {
         position: absolute;
         max-width: 300px;
         z-index: -1;
-        right: 20px;
+        right: -10px;
         top: -50px;
     }
 /* PROJECTS */
@@ -277,19 +359,19 @@ header .button {
             font-weight: 500;
         }
 /* FAQ */
-    .FAQ > .row > .title {
+    .faq > .row > .title {
         margin: 20px 0;
         color: #2e2c38;
     }
-    .FAQ > .row > .FAQ-box {
+    .faq > .row > .faq-box {
         display: inline-block;
         width: 66%;
         margin: 0 17%;
     }
-        .FAQ > .row > .FAQ-box > .QA {
+        .faq > .row > .faq-box > .qa {
                 margin: 0 15px;
             }
-            .FAQ .QA > .question-and-icon {
+            .faq .qa > .question-and-icon {
                 display: inline-block;
                 width: 100%;
                 padding: 18px 20px;
@@ -297,22 +379,39 @@ header .button {
                 background-color: #fcfcfc;
                 border-radius: 4px;
                 position: relative;
+                cursor: pointer;
             }
-                .FAQ .QA > .question-and-icon > a.question {
+                .faq .qa > .question-and-icon:hover {
+                    text-decoration: underline;
+                }
+                .faq .qa > .question-and-icon > p.question {
                     font-size: 20px;
                     text-decoration: none;
                     font-weight: 500;
                     color: #2b2350;
                 }
-                .FAQ .QA > .question-and-icon > i {
+                .faq .qa > .question-and-icon > i {
                     position: absolute;
                     top: 40%;
                     right: 2%;
                     color: #aaa;
                 }
-            .FAQ .QA > p.answer {
+                    .faq .qa > .question-and-icon > i.violet {
+                        color: #B374FB;
+                        transform: rotate(180deg);
+                    }
+            .faq .qa > p.answer {
                 font-size: 16px;
                 padding: 20px 20px 10px;
+            }
+                .faq .qa > p.hidden {
+                display: none;
+            }
+            .faq .qa.show > p {
+                display: none;
+            }
+            .faq .qa.show > p.hidden {
+                display: inline-block;
             }
 /* TESTIMONIALS */
 .testimonials{
@@ -405,6 +504,8 @@ header .button {
             border-radius: 5px;
             background-color: #494949;
             background-size: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px 0 rgba(0,11,40,0.14);
         }
         .our-team .our-team-block > .profile > .profile-social {
             visibility: hidden;
@@ -425,18 +526,20 @@ header .button {
                 align-items: center;
                 border: 1px solid white;
                 border-radius: 50%;
+                margin: 3px;
              }
         .our-team .our-team-block > .profile > .profile-name-position {
             position: absolute;
             visibility: hidden;
             bottom: -110px;
             background-color: white;
-            width: calc(100% - 22px);
+            width: calc(100% - 20px);
             padding: 20px;
             text-align: center;
             height: calc(100% / 3.5);
             border-radius: 0 0 3px 3px;
             transition-duration: 2s;
+            
         }
             .our-team .our-team-block > .profile > .profile-name-position > span {
                     width: 100%;
@@ -449,12 +552,16 @@ header .button {
                 font-size: 20px;
             }
         /* Hover */
+        .our-team > .row > .our-team-block > .profile > .profile-social > a > i:hover {
+            background-color: #fff;
+            color: #FB6638;
+          }
         .our-team .our-team-block > .profile:hover .profile-social {
             visibility: visible;
         }
         .our-team .our-team-block > .profile:hover .profile-name-position {
             visibility: visible;
-            bottom: 10px;
+            bottom: 30px;
         }
         .our-team .our-team-block > .profile:hover {
             opacity: 0.9;
@@ -468,7 +575,15 @@ header .button {
         .address .adrs-box-wrap {
                 padding-left: 15px;
                 padding-right: 15px;
-                /* max-width: calc(100% / 3); */
+            }
+            .adrs-box-wrap {
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: 0.3s;
+            }
+            .adrs-box-wrap:hover {
+                box-shadow: 1px 1px 25px;
+                transform: scale(0.9);
             }
                 .address .adrs-box {
                     padding: 10px;
@@ -580,6 +695,26 @@ footer {
             footer .copyright-section > .footer-socials > a > i {
                 color: #9694a1;
             }
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
+
 
 
 @media (max-width: 990px) {
@@ -664,7 +799,27 @@ footer > .row {
 footer .footer-row {
     grid-template-columns: 1fr 1fr;
 }
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
 }
+
 @media (max-width: 750px) {
 /* HEADER */
     
@@ -741,7 +896,28 @@ footer > .row {
         footer.copyright-section > .footer-socials {
             justify-content: center;
         }
+
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
 }
+
 @media (max-width: 540px) {
 /* HEADER */
 
@@ -755,7 +931,7 @@ footer > .row {
 
 /* APP */
 .app .right-column > .mobile-2 {
-    right: 120px;
+    right: 20px;
 }
 /* PROJECTS */
 .projects .countup-wrap {
@@ -786,4 +962,25 @@ footer > .row {
     }
 /* FOOTER */
 
+/*PAGE-SERVICE*/
+
+/*PAGE-ABOUT*/
+
+/*PAGE-CONTACT*/
+
+/*PAGE-PRICING*/
+
+/*PAGE-CASE STUDY*/
+
+/*PAGE-OUT TEAM*/
+
+/*PAGE-TESTIMONIALS*/
+
+/*PAGE-FAQ*/
+
+/*PAGE-TERMS OF USE*/
+
+/*PAGE-ERROR*/
+
 }
+
