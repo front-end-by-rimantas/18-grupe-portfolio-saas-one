@@ -700,7 +700,17 @@ footer {
 /*PAGE-ABOUT*/
 
 /*PAGE-CONTACT*/
-
+.row > .form-header {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+    .row > .vertical-line {
+        width: 1px;
+        height: 100%;
+        border: 1px solid red
+    }
 /*PAGE-PRICING*/
 
 /*PAGE-CASE STUDY*/
