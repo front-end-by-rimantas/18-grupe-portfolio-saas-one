@@ -58,13 +58,7 @@ function isValidTest(data) {
                 errors.push('ERROR: paslaugos pavadinimas yra per ilgas.');
             }
 
-            if (typeof data.color !== 'string') {
-                errors.push('ERROR: color nuoroda turi buti tekstine.');
-            } else {
-                if (data.link === '') {
-                    errors.push('ERROR: color nuoroda negali buti tuscia.');
-                }
-            }
+
             if (errors.length > 0) {
                 for (let i = 0; i < errors.length; i++) {
                     console.error(errors[i]);
@@ -79,5 +73,6 @@ function isValidTest(data) {
 
             return true;
         }
-
-        export { isValidTest }
+    }
+}
+export { isValidTest }

@@ -1,10 +1,10 @@
-
+import { isValidTest } from './isValidTestimonial.js'
 function generateSingleTestimonial(data) {
     //input validation
 
-    // if (!isValidTestimonial(data)) {
-    //     return '';
-    // }
+    if (!isValidTest(data)) {
+        return '';
+    }
     //logic
 
     const HTML = `
