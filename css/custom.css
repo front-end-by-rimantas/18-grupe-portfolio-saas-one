@@ -653,7 +653,12 @@ footer {
             footer .footer-row nav a {
                 line-height: 30px;
                 text-decoration: none;
+                font-weight: 500;
+                color: #9694a1;
             }
+                footer .footer-row nav a:hover {
+                    color: #7052FB;
+                }
             footer .footer-row nav ul {
                 margin-bottom: 10px;
             }        
@@ -691,10 +696,15 @@ footer {
                 border: 1px solid #dadada;
                 text-decoration: none;
                 margin-right: 5px;
+                transition: all 0.5s;
             }
             footer .copyright-section > .footer-socials > a > i {
                 color: #9694a1;
             }
+                footer .copyright-section > .footer-socials > a:hover {
+                    background-color: #7052FB;
+                    color: #fff;
+                }
 /*PAGE-SERVICE*/
 
 /*PAGE-ABOUT*/
