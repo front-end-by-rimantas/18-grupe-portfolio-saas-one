@@ -16,6 +16,7 @@ function generateSingleFooter (data) {
     </nav>`
 
     return HTML;
+    
 }
 
 export { generateSingleFooter }

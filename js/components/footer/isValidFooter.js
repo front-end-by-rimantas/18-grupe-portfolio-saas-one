@@ -9,7 +9,7 @@ function isValidFooter (data)  {
     {
         errors.push('ERROR: data. negali buti toks ilgas');
     }
-    if ( data.title !== "")
+    if ( data.title === "")
     {
         errors.push('ERROR: irasyk data. pavadinima');
     }
@@ -69,15 +69,18 @@ function isValidFooter (data)  {
             }
           }
 
-          if (errors.length > 0 )
-          {
-              for ( let i = 0; i < errors.lenght; i++)
-              {
-                console.error(errors[i]);
-              }
-              return false;
-          }
-
+          
+    // error count
+    if (errors.length > 0) {
+        for (let i = 0; i < errors.length; i++) {
+            console.error(errors[i]);
+        } return false;
+    }
+    return true;
+    // inactive questions are not generated
+    // if (!faq.active) {
+        // return false;
+    // } return true;
         
 }
 
