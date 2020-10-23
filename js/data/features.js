@@ -3,7 +3,7 @@ const featureData = {
     features: [
     {
         icon: "fas fa-copyright fa-2x",
-        title: 'Branding',
+        title: 'Branding ',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         active: true,
         background: 'FFF6D3' ,

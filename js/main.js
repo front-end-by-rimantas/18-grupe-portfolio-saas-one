@@ -24,9 +24,11 @@ import { ourAddressData } from './data/ourAddressData.js'
 import { renderAddress } from './components/address/renderAddress.js'
 
 // footer import
+import { renderFooter } from './components/footer/renderFooter.js';
+import { footerData } from './data/footer.js'
 
 // background animations import
-
+import { renderBackToTop } from './components/back-to-top.js'
 
 // header logic
 
@@ -49,5 +51,7 @@ renderOurTeam(ourTeamData);
 renderAddress(ourAddressData);
 
 // footer logic
+renderFooter(footerData);
 
 // background animations logic
+renderBackToTop();
