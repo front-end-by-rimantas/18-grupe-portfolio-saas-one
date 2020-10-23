@@ -720,19 +720,30 @@ footer {
     line-height: 1;
     margin-bottom: 40px;
 }
-    .row > .form-header > .col-7 > .name {
+    .row > .col-7 > .name {
+        float: left;
         width: 50%;
     }
-        .row > .form-header > .col-7 > .name > .name-input {
-        width: 50%;
+        .row > .col-7 > .name > .name-input {
+            padding: 10px 20px;
+            border: 1px solid #f9f9f996;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            background: #f9f9f996;
     }
-    .row > .form-header > .col-7 > .last-name > .last-name-input {
-        width: 50%;
+    .row > .col-7 > .last-name {
     }
+        .row > .col-7 > .last-name > .last-name-input {
+            padding: 10px 20px;
+            border: 1px solid #f9f9f996;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            background: #f9f9f996;
+        }
     .row > .vertical-line {
         width: 1px;
         height: 100%;
-        border: 1px solid red
+        border: 1px solid red;
     }
 /*PAGE-PRICING*/
 
