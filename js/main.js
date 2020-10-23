@@ -28,7 +28,7 @@ import { renderFooter } from './components/footer/renderFooter.js';
 import { footerData } from './data/footer.js'
 
 // background animations import
-
+import { renderBackToTop } from './components/back-to-top.js'
 
 // header logic
 
@@ -54,3 +54,4 @@ renderAddress(ourAddressData);
 renderFooter(footerData);
 
 // background animations logic
+renderBackToTop();
