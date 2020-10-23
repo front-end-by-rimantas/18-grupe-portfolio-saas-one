@@ -669,7 +669,6 @@ footer {
         font-size: 16px;
         font-weight: 400;
         width: 95%;
-
     }
     footer .copyright-section {
         border-top: 1px solid #e4d9d9;
@@ -688,7 +687,10 @@ footer {
         footer .copyright-section > .footer-socials {
             display: flex;
         }
-            footer .copyright-section > .footer-socials > a {
+         footer .copyright-section > .footer-socials > a  { 
+             text-decoration: none;
+         }
+            footer .copyright-section > .footer-socials > a > i {
                 width: 45px;
                 height: 45px;
                 border-radius: 50%;
@@ -699,16 +701,13 @@ footer {
                 text-decoration: none;
                 margin-right: 15px;
                 transition: all 0.3s;
-            }
-            footer .copyright-section > .footer-socials > a > i {
                 color: #9694a1;
             }
-                footer .copyright-section > .footer-socials > a:hover {
+                footer .copyright-section > .footer-socials > a > i:hover {
                     background-color: #7052FB;
-                }
-                footer .copyright-section > .footer-socials > a:hover .foot-t {
                     color: #fff;
                 }
+           
 /*PAGE-SERVICE*/
 
 /*PAGE-ABOUT*/
