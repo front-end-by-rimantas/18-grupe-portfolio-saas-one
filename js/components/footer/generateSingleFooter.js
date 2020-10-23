@@ -1,14 +1,14 @@
 import {isValidFooter} from './isValidFooter.js'
 function generateSingleFooter (data) {
 
-    if (!isValidFooter(data)) {
-        return ''; 
-    } 
+    // if (!isValidFooter(data)) {
+    //     return ''; 
+    // } 
 
     const HTML = `
     <p>${data.title}</p>
     <nav>
-        <ul><a href="#">${data.first}</a></ul>
+        ${data.first.text === '' ? '' : `<ul><a href="${data.first.link}">${data.first.text}</a></ul>`}
         <ul><a href="#">${data.second}</a></ul>
         <ul><a href="#">${data.third} Support</a></ul>
         <ul><a href="#">${data.fourth}</a></ul>
