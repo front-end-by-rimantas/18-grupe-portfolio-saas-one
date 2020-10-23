@@ -293,7 +293,6 @@ HEADER DROPMENU
     }
     .app .left-column > .left-column-buttons > .button.white.round {
         margin-right: 20px;
-        transition: 0.3s;
     }
         .app .left-column > .left-column-buttons > .button.white.round > .fab {
             color: #7052fb;
@@ -304,6 +303,8 @@ HEADER DROPMENU
         .app .left-column > .left-column-buttons > .button.white.round:hover {
             color: white;
             background-color: #7052fb;
+            box-shadow: -1px 3px 10px black;
+
         }
         .app .left-column > .left-column-buttons > .button.white.round:hover .fab {
             color: white;
@@ -316,14 +317,14 @@ HEADER DROPMENU
 }
     .app .right-column > .mobile-1 {
         z-index: 2;
-        margin-left: 185px;
+        margin-left: 70px;
         max-width: 300px;
     }
     .app .right-column > .mobile-2 {
         position: absolute;
         max-width: 300px;
         z-index: -1;
-        right: 20px;
+        right: -10px;
         top: -50px;
     }
 /* PROJECTS */
@@ -503,6 +504,8 @@ HEADER DROPMENU
             border-radius: 5px;
             background-color: #494949;
             background-size: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px 0 rgba(0,11,40,0.14);
         }
         .our-team .our-team-block > .profile > .profile-social {
             visibility: hidden;
@@ -523,18 +526,20 @@ HEADER DROPMENU
                 align-items: center;
                 border: 1px solid white;
                 border-radius: 50%;
+                margin: 3px;
              }
         .our-team .our-team-block > .profile > .profile-name-position {
             position: absolute;
             visibility: hidden;
             bottom: -110px;
             background-color: white;
-            width: calc(100% - 22px);
+            width: calc(100% - 20px);
             padding: 20px;
             text-align: center;
             height: calc(100% / 3.5);
             border-radius: 0 0 3px 3px;
             transition-duration: 2s;
+            
         }
             .our-team .our-team-block > .profile > .profile-name-position > span {
                     width: 100%;
@@ -547,12 +552,16 @@ HEADER DROPMENU
                 font-size: 20px;
             }
         /* Hover */
+        .our-team > .row > .our-team-block > .profile > .profile-social > a > i:hover {
+            background-color: #fff;
+            color: #FB6638;
+          }
         .our-team .our-team-block > .profile:hover .profile-social {
             visibility: visible;
         }
         .our-team .our-team-block > .profile:hover .profile-name-position {
             visibility: visible;
-            bottom: 10px;
+            bottom: 30px;
         }
         .our-team .our-team-block > .profile:hover {
             opacity: 0.9;
@@ -566,7 +575,15 @@ HEADER DROPMENU
         .address .adrs-box-wrap {
                 padding-left: 15px;
                 padding-right: 15px;
-                /* max-width: calc(100% / 3); */
+            }
+            .adrs-box-wrap {
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: 0.3s;
+            }
+            .adrs-box-wrap:hover {
+                box-shadow: 1px 1px 25px;
+                transform: scale(0.9);
             }
                 .address .adrs-box {
                     padding: 10px;
@@ -636,7 +653,12 @@ footer {
             footer .footer-row nav a {
                 line-height: 30px;
                 text-decoration: none;
+                font-weight: 500;
+                color: #9694a1;
             }
+                footer .footer-row nav a:hover {
+                    color: #7052FB;
+                }
             footer .footer-row nav ul {
                 margin-bottom: 10px;
             }        
@@ -645,8 +667,9 @@ footer {
     }
     footer .footer-paragraf > p {
         font-size: 16px;
-        font-weight: 200;
+        font-weight: 400;
         width: 95%;
+
     }
     footer .copyright-section {
         border-top: 1px solid #e4d9d9;
@@ -660,6 +683,7 @@ footer {
         footer .copyright-section > p > a {
             text-decoration: none;
             color: #7052FB;
+            font-weight: 500;
         }
         footer .copyright-section > .footer-socials {
             display: flex;
@@ -673,11 +697,18 @@ footer {
                 align-items: center;
                 border: 1px solid #dadada;
                 text-decoration: none;
-                margin-right: 5px;
+                margin-right: 15px;
+                transition: all 0.3s;
             }
             footer .copyright-section > .footer-socials > a > i {
                 color: #9694a1;
             }
+                footer .copyright-section > .footer-socials > a:hover {
+                    background-color: #7052FB;
+                }
+                footer .copyright-section > .footer-socials > a:hover .foot-t {
+                    color: #fff;
+                }
 /*PAGE-SERVICE*/
 
 /*PAGE-ABOUT*/
@@ -958,7 +989,7 @@ footer > .row {
 
 /* APP */
 .app .right-column > .mobile-2 {
-    right: 120px;
+    right: 20px;
 }
 /* PROJECTS */
 .projects .countup-wrap {
