@@ -1,82 +1,81 @@
 
 const footerData = {
-    selector : '#footer_block',
-    footer : [
+    selector: '.footer_block',
+    footer: [
     {   
         title: 'Main Navigation',
-        first: {
-                    text: 'Hmepage',
-                    link: 'index.html'
+        links: [
+                {
+                    text: '',
+                    link: '#'
                 },
-        second: {
-                text: 'Copyright',
-                link: 'index.html'
+                {
+                    text: 'Copyright',
+                    link: '#'
                 },
-        third: {
-                text: 'Customer Support',
-                link: 'index.html'
+                {
+                    text: 'Customer Supportaaaaaaaaaaaaaaaaaaaaaa',
+                    link: '#'
                 },
-        fourth: {
-                text: 'About Us',
-                link: 'index.html'
+                {
+                    text: 'About Us',
+                    link: '#'
                 },
-        fifth: {
-                text: 'Copyright',
-                link: 'index.html'
+                {
+                    text: 'Copyright',
+                    link: '#'
                 }
+        ]
     },
     {   
         title: 'Information',
-        first: {
-                text: 'Information',
-                link: 'index.html'
+        links: [
+                {
+                    text: 'Return Policy',
+                    link: '#'
                 },
-        second: {
-                text: 'Return Policy',
-                link: 'index.html'
+                {
+                    text: 'Privacy Policy',
+                    link: '#'
                 },
-        third: {
-                text: 'Privacy Policy',
-                link: 'index.html'
+                {
+                    text: '',
+                    link: '#'
                 },
-        fourth: {
-                text: 'Terms & Conditions',
-                link: 'index.html'
+                {
+                    text: 'Site Map',
+                    link: '#'
                 },
-        fifth: {
-                text: 'Store Hours',
-                link: 'index.html'
+                {
+                    text: 'Store Hours',
+                    link: '#'
                 }
+                ]
     },
     {   
         title: 'Contact',
-        first: {
-                    text: 'Homepage',
-                    link: 'index.html'
+        links: [
+                {
+                    text: 'Support',
+                    link: '#'
                 },
-        second: {
-                    text: 'Copyright',
-                    link: 'index.html'
+                {
+                    text: 'Report Abuse',
+                    link: '#'
                 },
-        third: { 
-                    text: 'Customer Support',
-                    link: 'index.html' 
+                { 
+                    text: 'System Status',
+                    link: '#' 
                 },
-        fourth: {
-                text: 'About Us',
-                link: 'index.html'
+                {
+                    text: 'Tools & Integrations',
+                    link: '#'
                 },
-        fifth: {
-                text: 'Copyright',
-                link: 'index.html'
+                {
+                    text: 'API',
+                    link: '#'
                 }
-    }
-    {   title: 'Contact',
-        first: 'Support',
-        second: 'Report Abuse',
-        third: 'System Status',
-        fourth: 'Tools & Integrations',
-        fifth: 'API'
+                ]
     }
     ] 
 }

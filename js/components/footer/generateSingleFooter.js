@@ -1,20 +1,29 @@
-import {isValidFooter} from './isValidFooter.js'
+import {isValidFooter} from './isValidFooter.js';
+import { isValidFooterLink } from './isValidFooter.js';
 function generateSingleFooter (data) {
+    if (!isValidFooter(data)) {
+        return ''; 
+    } 
 
-    // if (!isValidFooter(data)) {
-    //     return ''; 
-    // } 
+    let renderedLinks = ``;
+    const linksCount = data.links.length;
+    for(let i = 0; i < linksCount; i++){
+        if (!isValidFooterLink(data.links[i])) {
+            continue;
+        }
+        const linkText = data.links[i].text;
+        const link = data.links[i].link;
+
+        renderedLinks += `<a href="${link}">${linkText}</a>`;
+    }
 
     const HTML = `
-    <p>${data.title}</p>
-    <nav>
-        ${data.first.text === '' ? '' : `<ul><a href="${data.first.link}">${data.first.text}</a></ul>`}
-        <ul><a href="#">${data.second}</a></ul>
-        <ul><a href="#">${data.third} Support</a></ul>
-        <ul><a href="#">${data.fourth}</a></ul>
-        <ul><a href="#">${data.fifth}</a></ul>
-    </nav>`
-
+                <p>${data.title}</p>
+                <nav>
+                    <ul>
+                    ${renderedLinks}
+                    </ul>
+                </nav>`;
     return HTML;
     
 }

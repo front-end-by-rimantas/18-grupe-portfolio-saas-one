@@ -640,6 +640,7 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 15px;
         padding: 100px 0 60px 0;
+        margin: 0 15px;
     }
         footer .footer-row p {
             color: #2b2350d9;
@@ -689,6 +690,7 @@ footer {
         }
          footer .copyright-section > .footer-socials > a  { 
              text-decoration: none;
+             padding-right: 15px;
          }
             footer .copyright-section > .footer-socials > a > i {
                 width: 45px;
@@ -699,10 +701,12 @@ footer {
                 align-items: center;
                 border: 1px solid #dadada;
                 text-decoration: none;
-                margin-right: 15px;
                 transition: all 0.3s;
                 color: #9694a1;
             }
+                footer .copyright-section > .footer-socials > a:last-of-type {
+                    padding-right: 0;
+                }
                 footer .copyright-section > .footer-socials > a > i:hover {
                     background-color: #7052FB;
                     color: #fff;
@@ -811,6 +815,7 @@ footer > .row {
 }
 footer .footer-row {
     grid-template-columns: 1fr 1fr;
+    margin: 0;
 }
 /*PAGE-SERVICE*/
 
@@ -892,9 +897,10 @@ footer > .row {
     padding-left: calc((100% - 540px) / 2);
     padding-right: calc((100% - 540px) / 2);
 }
-    footer.footer-row {
+    footer .footer-row {
         grid-template-columns: 1fr;
         text-align: center;
+        margin: 0;
     }
     footer .footer-paragraf > img { 
         display: block;
@@ -906,7 +912,7 @@ footer > .row {
         display: block;
         text-align: center;
     }
-        footer.copyright-section > .footer-socials {
+        footer .copyright-section > .footer-socials {
             justify-content: center;
         }
 
