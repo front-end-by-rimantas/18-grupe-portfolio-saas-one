@@ -9,7 +9,9 @@ function renderAddress(data) {
 
     const addressDOM = document.querySelector(data.selector);
     const addressCount = data.address.length;
-
+    if(!addressDOM){
+        return;
+    }
     for (let i = 0; i < addressCount; i++) {
         const address = data.address[i]
         if (i === 0) {
