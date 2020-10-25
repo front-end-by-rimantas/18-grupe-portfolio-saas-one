@@ -49,6 +49,32 @@ function isValidFooterLink (data) {
     return true;
 }
 
-export { isValidFooterLink }
+function isValidFooterSocial (data) {
+    let errors = [];
 
-export { isValidFooter }
+        if(data.icon === ''){
+            errors.push('ERROR: Icon nuorodos pavadinimas negali būti tuscias.');
+        } else {     
+            if(data.icon.length < 4){
+                errors.push('ERROR: Icon nuorodos pavadinimas negali būti trumpesnis nei 4 simboliai.');
+            }
+            if(data.links === ''){
+                errors.push('ERROR: Social nuoroda negali buti tuscia.');
+            }
+        }
+
+
+    if(errors.length > 0){
+        for(let i = 0; i < errors.length; i++){
+            console.error(errors[i]);
+        }
+        return false;
+    }
+    return true;
+}
+
+export { isValidFooterLink };
+
+export { isValidFooter };
+
+export { isValidFooterSocial };

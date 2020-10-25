@@ -9,4 +9,4 @@ function renderFooter (data) {
     }
 }
 
-export { renderFooter }
+export { renderFooter };

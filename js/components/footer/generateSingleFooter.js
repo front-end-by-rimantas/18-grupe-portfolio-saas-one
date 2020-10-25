@@ -25,7 +25,6 @@ function generateSingleFooter (data) {
                     </ul>
                 </nav>`;
     return HTML;
-    
 }
 
-export { generateSingleFooter }
+export { generateSingleFooter };
