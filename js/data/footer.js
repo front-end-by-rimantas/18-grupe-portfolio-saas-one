@@ -6,7 +6,7 @@ const footerData = {
         title: 'Main Navigation',
         links: [
                 {
-                    text: '',
+                    text: 'Homepage',
                     link: '#'
                 },
                 {
@@ -14,7 +14,7 @@ const footerData = {
                     link: '#'
                 },
                 {
-                    text: 'Customer Supportaaaaaaaaaaaaaaaaaaaaaa',
+                    text: 'Customer Support',
                     link: '#'
                 },
                 {
@@ -39,7 +39,7 @@ const footerData = {
                     link: '#'
                 },
                 {
-                    text: '',
+                    text: 'Terms & Conditions',
                     link: '#'
                 },
                 {

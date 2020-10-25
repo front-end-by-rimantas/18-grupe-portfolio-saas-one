@@ -651,6 +651,9 @@ footer {
         footer .footer-row nav {
             display: block;
         }
+            footer .footer-row nav ul {
+                list-style-type: none;
+            }
             footer .footer-row nav a {
                 line-height: 30px;
                 text-decoration: none;

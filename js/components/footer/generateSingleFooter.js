@@ -14,7 +14,7 @@ function generateSingleFooter (data) {
         const linkText = data.links[i].text;
         const link = data.links[i].link;
 
-        renderedLinks += `<a href="${link}">${linkText}</a>`;
+        renderedLinks += `<li><a href="${link}">${linkText}</a></li>`;
     }
 
     const HTML = `
