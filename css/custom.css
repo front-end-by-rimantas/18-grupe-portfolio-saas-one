@@ -735,7 +735,7 @@ footer {
 .options > .choose > .left { 
     width: 50%;
     display: inline;
-    background-color: orange;
+    background-color:  #F55E24;
     color: white;
     }
 
@@ -753,13 +753,52 @@ footer {
     column-gap: 1rem;
     
 }
+.border > .header > h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 15px;
+}
+.border > .header > .price{
+    font-size: 40px;
+    margin-top: 40px;
+}
+.border > .header > .button{
+    color: white;
+    background-color: #F55E24;
+    margin: 40px;
+    text-transform: capitalize;
+    width: 200px;
+}
 .border{
     border: 1px solid;
-    padding: 20px;
+    padding: 30px;
 }
-.premium{
+.details{
+    border-top: lightgrey 1px dashed;
+    padding-top: 30px;
+}
+.details > div > .fa-check{
+    color: green;
+}
+.details > div > .fa-times{
+    color: red;
+}
+.details > div > .fa{   
+} 
+.details > div > p{ 
+   display: inline-block;
+   background-color: grey;
+   font-size: 15px;
+} 
+.details > div{
+    margin-top: 20px;
+    display: inline;
+    float: left;
+    background-color: hotpink;
+    width: 100%;
+}
 
-}
 
 /*PAGE-CASE STUDY*/
 

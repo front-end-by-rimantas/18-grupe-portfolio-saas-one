@@ -28,7 +28,11 @@ import { renderFooter } from './components/footer/renderFooter.js';
 import { footerData } from './data/footer.js'
 
 // background animations import
-import { renderBackToTop } from './components/back-to-top.js'
+import { renderBackToTop } from './components/back-to-top.js';
+
+// pricing import
+import { renderPricing } from '../pages/pricing/renderPricing.js';
+import { pricingData } from '../pages/pricing/pricing-data.js'
 
 // header logic
 
@@ -55,3 +59,6 @@ renderFooter(footerData);
 
 // background animations logic
 renderBackToTop();
+
+// pricing logic
+renderPricing(pricingData);
