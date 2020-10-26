@@ -20,19 +20,19 @@ import { ourTeamData } from './data/ourTeamData.js';
 import { renderOurTeam } from './components/ourTeam/renderOurTeam.js';
 
 // address import
-import { ourAddressData } from './data/ourAddressData.js'
-import { renderAddress } from './components/address/renderAddress.js'
+import { ourAddressData } from './data/ourAddressData.js';
+import { renderAddress } from './components/address/renderAddress.js';
 
 // footer import
 import { renderFooter } from './components/footer/renderFooter.js';
-import { footerData } from './data/footer.js'
+import { footerData } from './data/footer.js';
 
 // background animations import
 import { renderBackToTop } from './components/back-to-top.js';
 
-// pricing import
+// page -> pricing import
 import { renderPricing } from '../pages/pricing/renderPricing.js';
-import { pricingData } from '../pages/pricing/pricing-data.js'
+import { pricingData } from '../pages/pricing/pricing-data.js';
 
 // header logic
 

@@ -2,16 +2,14 @@ import { generateSinglePricing } from './generateSinglePricing.js'
 
 function renderPricing(data) {
 
-    let HTML = "";
-    const pricingLenght = data.pricing.lenght;
-    const pricingDOM = document.querySelector(data.selector);
+
+    const pricingLenght = data.pricing.length;
+    const pricingDOM = document.querySelectorAll(data.selector);
 
     for (let i = 0; i < pricingLenght; i++) {
         const priceBlock = data.pricing[i];
-        HTML += generateSinglePricing(priceBlock);
+        pricingDOM[i].innerHTML = generateSinglePricing(priceBlock);
     }
-
-    return pricingDOM.innerHTML = HTML;
-
+    console.log(pricingDOM[0]);
 }
 export { renderPricing }

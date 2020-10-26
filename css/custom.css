@@ -726,53 +726,65 @@ footer {
     justify-content: center;
 }
 .choose{
-    /* width: 30%; */
     display: inline-block;
     align-items: center;
     text-align:center;
     border: 1px solid black;
+    width: 250px;
+    height: 55px;
 }
 .options > .choose > .left { 
-    width: 50%;
-    display: inline;
+    width: 110px;
+    display: inline-block;
+    float: left;
     background-color:  #F55E24;
     color: white;
+    height: 50px;
+    }
+.options >.choose> .right{
+    width: 110px;
+    display: inline-block;
+    background-color: papayawhip;
+    color: black;  
+    height: 50px;  
+    float: right;
+}
+
+.options >.choose p{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+    color: lightgreen;
     }
 
-.options >.choose> .right{
-    width: 50%;
-    display: inline;
-    background-color: papayawhip;
-    color: black;
-        
-}
+
 .boxes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     column-gap: 1rem;
-    
 }
-.border > .header > h3{
+.pricing_block > .header > h3{
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-top: 15px;
 }
-.border > .header > .price{
+.pricing_block > .header > .price{
     font-size: 40px;
     margin-top: 40px;
 }
-.border > .header > .button{
+.pricing_block > .header > .button{
     color: white;
     background-color: #F55E24;
     margin: 40px;
     text-transform: capitalize;
     width: 200px;
 }
-.border{
-    border: 1px solid;
+.pricing_block{
     padding: 30px;
+    border: lightgray 1px solid;
+    border-radius: 5px ;
 }
 .details{
     border-top: lightgrey 1px dashed;
@@ -780,22 +792,31 @@ footer {
 }
 .details > div > .fa-check{
     color: green;
+    
 }
 .details > div > .fa-times{
     color: red;
+    
 }
-.details > div > .fa{   
-} 
+.details > div > .fas{
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  float: left;
+}
+
 .details > div > p{ 
    display: inline-block;
-   background-color: grey;
-   font-size: 15px;
+   float: left;
+   font-size: 18px;
+   margin-left: 10px;
 } 
 .details > div{
     margin-top: 20px;
-    display: inline;
+    display: inline-block;
     float: left;
-    background-color: hotpink;
     width: 100%;
 }
 
