@@ -1,0 +1,107 @@
+.fill-form-row {
+    padding-bottom: 200px;
+}
+.fill-form-row,
+.fill-form-title-row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+    .fill-form-row > .vertical-line-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .fill-form-row > .vertical-line-box > .vertical-line {
+        width: 1px;
+        height: 100%;
+        border: 1px solid #f1f1f1;
+    }
+    .fill-form-title {
+        font-size: 5em;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+    .fill-form-row > .col-7 > .name-row > .name-box {
+        padding-right: 15px;
+    }
+    .fill-form-row > .col-7 > .name-row > .lastname-box {
+        padding-left: 15px;
+    }
+    .fill-form-row > .col-7 > .name-row > .name-box > .name,
+    .fill-form-row > .col-7 > .name-row > .lastname-box > .lastname {
+        width: 100%;
+    }
+    .fill-form-row > .col-7 > .name-row > .name-box > .name,
+    .fill-form-row > .col-7 > .name-row > .lastname-box > .lastname,
+    .fill-form-row > .col-7 > .email,
+    .fill-form-row > .col-7 > .comments {
+        padding: 10px 20px;
+        border: 1px solid #f9f9f996;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        background: #f9f9f996;
+        outline: none;
+    }
+    .fill-form-row > .col-7 > .name-row > .name-box > .name:focus,
+    .fill-form-row > .col-7 > .name-row > .lastname-box > .lastname:focus,
+    .fill-form-row > .col-7 > .email:focus,
+    .fill-form-row > .col-7 > .comments:focus {
+        background-color: white;
+        box-shadow: 1px 1px 50px -15px;
+    } 
+    .fill-form-row > .col-7 > .email {
+        margin-bottom: 20px;
+    }
+    .fill-form-row > .col-7 > .comments {
+        width: 100%;
+        height: 200px;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .fill-form-row > .col-7 > input {
+        width: 100%;
+    }
+    .name-row > .name-box {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    .name-row > .lastname-box {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    .fillform-title2 {
+        font-size: 2.7em;
+    }
+    .fillform-paragraph {
+        padding: 20px 0;
+    }
+    .download-link {
+        line-height: 1;
+    }
+    .download-link > a > i {
+        margin-right: 5px;
+    }
+    .download-link > a {
+        color: #44424a;
+        font-size: 18px;
+        text-decoration: none;
+    }
+/* address */
+
+.row > .col-4 > .adrs-title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.row > .col-4 > .adrs-box {
+    padding: 12px 0;
+    line-height: 28px;
+}
+.row > .col-4 > .adrs-box > .adrs-contact > .fas {
+    line-height: 28px;
+    margin-right: 10px;
+}
