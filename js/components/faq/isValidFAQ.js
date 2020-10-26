@@ -27,6 +27,15 @@ function isValidFAQ(faq) {
         }
     }
 
+    // question type test
+    if (typeof faq.questionType !== 'string') {
+        errors.push('ERROR: klausimo tipas turi buti tekstinis.');
+    } else {
+        if (faq.questionType === '') {
+            errors.push('ERROR: klausimo tipas negali buti tuscias.');
+        }
+    }
+
     // answer test
     if (typeof faq.answer !== 'string') {
         errors.push('ERROR: atsakymas turi buti tekstinis.');

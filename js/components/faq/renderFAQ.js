@@ -7,13 +7,17 @@ function renderFAQ(data) {
     let HTML = '';
     const faqDOM = document.querySelector(data.selector);
     const faqCount = data.faq.length;
-    if(!faqDOM){
+
+    if (!faqDOM) {
         return;
     }
+
     for (let i = 0; i < faqCount; i++) {
-        const faq = data.faq[i];
-        
-        HTML += generateSingleFAQ(faq, i === 0 ? true : false);
+        if (data.faq[i].questionType === 'General') {
+            const faq = data.faq[i];
+
+            HTML += generateSingleFAQ(faq, i === 0 ? true : false);
+        }
     }
 
     // post logic validation
@@ -30,7 +34,7 @@ function renderFAQ(data) {
         const question = allQuestionDOM[i];
         const icon = allIconDOM[i];
 
-        question.addEventListener('click', () => { 
+        question.addEventListener('click', () => {
             if (question.classList.contains('show')) {
                 question.classList.remove('show');
                 icon.classList.remove('violet');
@@ -40,7 +44,7 @@ function renderFAQ(data) {
             } else {
                 document.querySelector('.qa .show').classList.remove('show');
                 question.classList.add('show');
-                
+
                 document.querySelector('.violet').classList.remove('violet');
                 icon.classList.add('violet');
             }
