@@ -13,13 +13,12 @@ function renderFAQ(data) {
     }
 
     for (let i = 0; i < faqCount; i++) {
-        if (data.faq[i].questionType === 'General') {
+        if (data.faq[i].category === 'gen') {
             const faq = data.faq[i];
 
-            HTML += generateSingleFAQ(faq, i === 0 ? true : false);
+            HTML += generateSingleFAQ(data, faq, i === 0 ? true : false);
         }
     }
-
     // post logic validation
 
     //output

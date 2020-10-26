@@ -11,7 +11,7 @@ import { renderFeature } from './components/feature/renderFeature.js';
 // projects import
 
 // faq import
-import { faqData } from './data/faq.js';
+import { faqData, categories } from './data/faq.js';
 import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
 
@@ -55,3 +55,11 @@ renderFooter(footerData);
 
 // background animations logic
 renderBackToTop();
+
+// ----- perkelti:
+//
+// page - faq import:
+import { renderMPfaq } from '../pages/faq/js/renderMPfaq.js';
+
+// page - faq logic:
+renderMPfaq(faqData, categories);
