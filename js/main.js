@@ -14,6 +14,8 @@ import { renderFeature } from './components/feature/renderFeature.js';
 import { faqData } from './data/faq.js';
 import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
+import { testimonialsData } from './data/testimonials.js';
+import { renderTestimonial } from './components/testimonials/renderTestimonial.js';
 
 // our-team import
 import { ourTeamData } from './data/ourTeamData.js';
@@ -29,7 +31,7 @@ import { renderFooterSocial } from './components/footer/renderFooterSocial.js';
 import { footerData } from './data/footer.js'
 
 // background animations import
-
+import { renderBackToTop } from './components/back-to-top.js'
 
 // header logic
 
@@ -44,6 +46,7 @@ renderFeature(featureData);
 // faq logic
 renderFAQ(faqData);
 // testimonials logic
+renderTestimonial(testimonialsData);
 
 // our-team logic
 renderOurTeam(ourTeamData);
@@ -56,3 +59,4 @@ renderFooter(footerData);
 renderFooterSocial(footerData);
 
 // background animations logic
+renderBackToTop();
