@@ -29,7 +29,7 @@ const headerData = {
                 {
                     title: 'Case Study....',
                     link: '#',
-                    subdropdown: [
+                    dropdown: [
                         {
                             title: 'Case Default',
                             link: '#',
