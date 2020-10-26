@@ -716,6 +716,7 @@ footer {
 /*PAGE-CONTACT*/
 
 /*PAGE-PRICING*/
+
 .section-title > p{
    color: #F55E24;
    background-color: #FEEBE4;
@@ -724,40 +725,57 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center;
-}
-.choose{
-    display: inline-block;
-    align-items: center;
-    text-align:center;
-    border: 1px solid black;
-    width: 250px;
+    position: relative;
     height: 55px;
 }
+.choose{
+    border-radius: 5px;
+    box-shadow: mediumblue;
+    width: 250px;
+    height: 55px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);  
+    cursor:pointer; 
+     box-shadow: 0 10px 25px 0 rgba(112,111,111,0.3);
+}
+.choose > .toggle-button{
+    background-color: orange;
+    width: 120px;
+    height: 45px;
+    transition: all 300ms ease;
+    margin: 5px;
+    border-radius: 5px;
+     box-shadow: 0 10px 25px 0 rgba(112,111,111,0.3);
+}
+}
+.choose.active{
+    background-color: white;
+}
+.choose.active>.toggle-button{
+    margin-left: 125px;
+}
+
 .options > .choose > .left { 
-    width: 110px;
+    width: 125px;
     display: inline-block;
     float: left;
-    background-color:  #F55E24;
     color: white;
     height: 50px;
     }
 .options >.choose> .right{
-    width: 110px;
+    width: 125px;
     display: inline-block;
-    background-color: papayawhip;
     color: black;  
     height: 50px;  
     float: right;
 }
-
 .options >.choose p{
   display: flex;
   justify-content: center;
   align-content: center;
-    color: lightgreen;
+  line-height: 50px;
     }
-
-
 .boxes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -1,5 +1,13 @@
 import { generateSinglePricing } from './generateSinglePricing.js'
 
+
+const button = document.querySelector('.choose');
+
+button.addEventListener('click', () => {
+    button.classList.toggle('active');
+})
+
+
 function renderPricing(data) {
 
 
