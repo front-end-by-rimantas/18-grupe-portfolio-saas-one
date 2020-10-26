@@ -54,22 +54,35 @@
         </div>
     </header>
     <!-- fill form -->
-    <div class="container fill-form">
-        <div class="row">
-            <h1 class="form-header col-12">Fill the form. <br> It's easy.</h1>
+    <div class="container fill-form col-12">
+        <div class="row fill-form-title-row">
+            <div class="fill-form-title col-12">Fill the form.<br>It's easy.</div>
+        </div>
+        <div class="row fill-form-row">
             <div class="col-7">
-                <div class="name">
-                    <input class="name-input" type="text" placeholder="First Name">
-                </div>
-                <div class="last-name">
-                    <input class="last-name-input" type="text" placeholder="Last Name">
-                </div>
-                <input class="email" type="text" placeholder="Email">
-                <input class="comment" type="text" placeholder="Your Comment">
+                <div class="name-row">
+                    <div class="name-box">
+                        <input class="name" type="text" name="name" placeholder="Name" autocomplete="given-name">
+                    </div>
+                    <div class="lastname-box">
+                        <input class="lastname" type="text" name="lastname" placeholder="Last name" autocomplete="family-name">
+                    </div>
+                    </div>
+                    <input class="email" type="email" name="email" placeholder="Your Email" autocomplete="email">
+                    <textarea class="comments" placeholder="Your comments" name="comment"></textarea>
             </div>
-            <div class="vertical-line"></div>
+            <div class="vertical-line-box">
+                <div class="col-1 vertical-line"></div>
+            </div>
             <div class="col-4">
-                NEED PRESENTATION
+                <h2 class="fillform-title2">Need presentation?</h2>
+                <p class="fillform-paragraph">
+                    Interdum velit laoreet id donec ultrices. Pharetra diam sit amet nisl. Volutpat lacus laoreet non curabitur gravida
+                    arcu. Fames ac turpis egestas integer eget aliquet. Quis risus sed vulputate odio ut enim.
+                </p>
+                <div class="download-link">
+                    <a href="">Company profile</a>
+                </div>
             </div>
         </div>
     </div>
