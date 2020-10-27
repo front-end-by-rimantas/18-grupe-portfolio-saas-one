@@ -1,7 +1,9 @@
+import { isValidContact } from "./isValidContact.js";
+
 function renderSingleContact(contact) {
-    // if (!isValidAddressHTML(contact)) {
-    //     return '';
-    // }
+    if (!isValidContact(contact)) {
+        return '';
+    }
     const HTML = `<h3 class="adrs-title">${contact.contactTitle}</h3>
                 <p class="adrs-paragraph">${contact.text}</p>
                 <div class="adrs-box">
