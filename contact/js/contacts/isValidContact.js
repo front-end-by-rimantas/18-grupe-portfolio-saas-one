@@ -5,14 +5,6 @@ function isValidContact(contact) {
         errors.push('ERROR: Kontaktų laukelių tipas turi būti Boolean.');
     }
 
-    // ICON validacija
-    if (typeof contact.iconLocation && typeof contact.iconEmail && typeof contact.iconPhone !== 'string') {
-        errors.push('ERROR: Kontaktų icon tipas turi būti tekstinis.');
-    }
-    if (contact.iconLocation && contact.iconEmail && contact.iconPhone === '') {
-        errors.push('ERROR: Kontaktų icon negali būti tuščias.');
-    }
-
     // TITLE validacija
     if (typeof contact.contactTitle !== 'string') {
         errors.push('ERROR: Kontaktų title turi būti tekstinis.');
@@ -24,8 +16,19 @@ function isValidContact(contact) {
         errors.push('ERROR: Kontaktų title yra per ilgas.');
     }
 
-    // TEXT validacija
+    // ICON validacija
+    if (typeof contact.iconLocation && typeof contact.iconEmail && typeof contact.iconPhone !== 'string') {
+        errors.push('ERROR: Kontaktų icon tipas turi būti tekstinis.');
+    }
+    if (contact.iconLocation && contact.iconEmail && contact.iconPhone === '') {
+        errors.push('ERROR: Kontaktų icon negali būti tuščias.');
+    }
+    // EMAIL validacija
+    if (!/(.+)@(.+){2,}\.(.+){2,}/.test(contact.contactEmail)) {
+        errors.push('ERROR: Kontaktų email netinkamas.')
+    }
 
+    // TEXT validacija
     if (typeof contact.contactAddress && typeof contact.contactEmail && typeof contact.contactPhone !== 'string') {
         errors.push('ERROR: Kontaktų laukelių text tipas turi būti tekstinis.');
     }
@@ -35,15 +38,15 @@ function isValidContact(contact) {
     if (contact.contactAddress > 150) {
         errors.push('ERROR: Kontaktų address laukelis per ilgas.');
     }
-    if (contact.contactEmail > 30) {
-        errors.push('ERROR: Kontaktų email laukelis per ilgas.');
-    }
-    if (contact.contactPhone > 20) {
-        errors.push('ERROR: Kontaktų telefono laukelis per ilgas.');
+
+    // PHONE validacija
+    if (Number(contact.contactPhone)) {
+
+    } else {
+        errors.push('ERROR: Kontaktų telefono numeris turi būti sudarytas iš skaičių.');
     }
 
     // ERRORS
-
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
             console.error(errors[i]);

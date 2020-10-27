@@ -34,7 +34,7 @@ const ourAddressData = {
             contactAddress: 'Danmondi, 7563 King Meadow Suite 896, USA',
             contactEmail: 'roganinc@coname.com',
             contactPhone: '8801723801729',
-            text: 'Skrido oro lėktuvėlis jam sugedo motorėlis, kiek reikės vinių, pasakysi TU! ✈✈✈',
+            text: 'Skrido oro lėktuvėlis jam sugedo motorėlis, kiek reikės vinių, pasakysi TU! ✈✈✈ 🌃🌃🌃',
             active: true
         }
     ]
