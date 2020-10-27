@@ -32,6 +32,35 @@ import { footerData } from './data/footer.js'
 // background animations import
 import { renderBackToTop } from './components/back-to-top.js'
 
+// <--Multipages logic: start-->
+// page - services logic
+
+// page - about logic
+
+// page - contact logic
+
+// page - pricing logic
+
+// page - case study logic
+
+// page - our team logic
+
+// page - testimonials logic
+
+// page - faq logic
+
+// page - terms of use logic
+
+// page - 404  logic
+
+// page - case study
+
+// page - portfolio
+
+// page - blog
+
+// <--Multipages logic: end-->
+
 // header logic
 
 // about logic
@@ -58,3 +87,32 @@ renderFooter(footerData);
 
 // background animations logic
 renderBackToTop();
+
+// <--Multipages logic: start-->
+    // page - services logic
+
+    // page - about logic
+
+    // page - contact logic
+
+    // page - pricing logic
+
+    // page - case study logic
+
+    // Ppage - our team logic
+
+    // page - testimonials logic
+
+    // page - faq logic
+
+    // page - terms of use logic
+
+    // page - 404  logic
+
+    // page - case study
+
+    // page - portfolio
+
+    // page - blog
+
+// <--Multipages logic: end-->
