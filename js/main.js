@@ -40,7 +40,10 @@ import { renderBackToTop } from './components/back-to-top.js'
 
 // page - contact logic
 import { renderContact } from '../contact/js/contacts/renderContact.js'
+import { formData } from './data/formData.js'
+import { renderForm } from '../contact/js/form/formInfo.js'
 renderContact(ourAddressData);
+renderForm(formData)
 // page - pricing logic
 
 // page - case study logic
