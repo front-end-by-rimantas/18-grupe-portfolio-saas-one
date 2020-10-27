@@ -15,15 +15,52 @@ import { renderFeature } from './components/feature/renderFeature.js';
 import { faqData } from './data/faq.js';
 import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
+import { testimonialsData } from './data/testimonials.js';
+import { renderTestimonial } from './components/testimonials/renderTestimonial.js';
 
 // our-team import
+import { ourTeamData } from './data/ourTeamData.js';
+import { renderOurTeam } from './components/ourTeam/renderOurTeam.js';
 
 // address import
+import { ourAddressData } from './data/ourAddressData.js'
+import { renderAddress } from './components/address/renderAddress.js'
 
 // footer import
+import { renderFooter } from './components/footer/renderFooter.js';
+import { footerData } from './data/footer.js'
 
 // background animations import
+import { renderBackToTop } from './components/back-to-top.js'
 
+// <--Multipages logic: start-->
+// page - services logic
+
+// page - about logic
+
+// page - contact logic
+
+// page - pricing logic
+
+// page - case study logic
+
+// page - our team logic
+
+// page - testimonials logic
+
+// page - faq logic
+
+// page - terms of use logic
+
+// page - 404  logic
+
+// page - case study
+
+// page - portfolio
+
+// page - blog
+
+// <--Multipages logic: end-->
 
 // header logic
 new HeaderNav(headerData);
@@ -38,11 +75,45 @@ renderFeature(featureData);
 // faq logic
 renderFAQ(faqData);
 // testimonials logic
+renderTestimonial(testimonialsData);
 
 // our-team logic
+renderOurTeam(ourTeamData);
 
 // address logic
+renderAddress(ourAddressData);
 
 // footer logic
+renderFooter(footerData);
 
 // background animations logic
+renderBackToTop();
+
+// <--Multipages logic: start-->
+    // page - services logic
+
+    // page - about logic
+
+    // page - contact logic
+
+    // page - pricing logic
+
+    // page - case study logic
+
+    // Ppage - our team logic
+
+    // page - testimonials logic
+
+    // page - faq logic
+
+    // page - terms of use logic
+
+    // page - 404  logic
+
+    // page - case study
+
+    // page - portfolio
+
+    // page - blog
+
+// <--Multipages logic: end-->

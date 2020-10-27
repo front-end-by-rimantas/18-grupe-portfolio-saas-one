@@ -1,6 +1,6 @@
 import { generateSingleFeature } from "./generateSingleFeature.js";
 
-function renderFeature (data){
+function renderFeature(data) {
 
     //input validation
 
@@ -8,16 +8,19 @@ function renderFeature (data){
     let HTML = '';
     const featuresDOM = document.querySelector(data.selector);
     const featuresCount = data.features.length;
-  
-    for (let i = 0 ; i < featuresCount ; i++){
+    if(!featuresDOM){
+        return;
+    }
+    for (let i = 0; i < featuresCount; i++) {
         const feature = data.features[i];
-        HTML += generateSingleFeature(feature)
+        
+        HTML += generateSingleFeature(feature);        
     }
 
     // post logic validation
-    
+
     return featuresDOM.innerHTML = HTML;
 }
 
-export {renderFeature}
+export { renderFeature }
 

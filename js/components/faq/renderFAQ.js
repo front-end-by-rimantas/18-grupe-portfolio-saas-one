@@ -7,10 +7,13 @@ function renderFAQ(data) {
     let HTML = '';
     const faqDOM = document.querySelector(data.selector);
     const faqCount = data.faq.length;
-
+    if(!faqDOM){
+        return;
+    }
     for (let i = 0; i < faqCount; i++) {
         const faq = data.faq[i];
-        HTML += generateSingleFAQ(faq);
+        
+        HTML += generateSingleFAQ(faq, i === 0 ? true : false);
     }
 
     // post logic validation
@@ -18,19 +21,29 @@ function renderFAQ(data) {
     //output
     faqDOM.innerHTML = HTML;
 
-    // find .Question element
-    const allQuestionDOM = document.querySelectorAll('.question-and-icon');
+    // find .question element
+    const allQuestionDOM = document.querySelectorAll('.qa > .qa');
     const allIconDOM = document.querySelectorAll('.fa-angle-down');
 
     // events when clicked on .question-and-icon element
     for (let i = 0; i < allQuestionDOM.length; i++) {
-        const Question = allQuestionDOM[i];
-        const Icon = allIconDOM[i];
-        Question.addEventListener('click', () => {
-            Question.closest('.qa').classList.toggle('show');
-        })
-        Question.addEventListener("click", function () {
-            Icon.classList.toggle('violet');
+        const question = allQuestionDOM[i];
+        const icon = allIconDOM[i];
+
+        question.addEventListener('click', () => { 
+            if (question.classList.contains('show')) {
+                question.classList.remove('show');
+                icon.classList.remove('violet');
+            } else if (document.querySelector('.qa .show') === null && document.querySelector('.violet') === null) {
+                question.classList.add('show');
+                icon.classList.add('violet');
+            } else {
+                document.querySelector('.qa .show').classList.remove('show');
+                question.classList.add('show');
+                
+                document.querySelector('.violet').classList.remove('violet');
+                icon.classList.add('violet');
+            }
         });
     }
 }

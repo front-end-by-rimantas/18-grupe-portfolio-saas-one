@@ -3,12 +3,12 @@ function isValidFAQ(faq) {
 
     // faq activity type
     if (typeof faq.active !== 'boolean') {
-        errors.push('ERROR: klausimo aktyvumo statusas turi buti boolean.')
+        errors.push('ERROR: klausimo aktyvumo statusas turi buti boolean.');
     }
 
     // icon test
     if (typeof faq.icon !== 'string') {
-        errors.push('ERROR: icon turi buti tekstinis.')
+        errors.push('ERROR: icon turi buti tekstinis.');
     } else {
         if (faq.icon === '') {
             errors.push('ERROR: icon pavadinimas negali buti tuscias.');
@@ -17,7 +17,7 @@ function isValidFAQ(faq) {
 
     // question test
     if (typeof faq.question !== 'string') {
-        errors.push('ERROR: klausimas turi buti tekstinis.')
+        errors.push('ERROR: klausimas turi buti tekstinis.');
     } else {
         if (faq.question === '') {
             errors.push('ERROR: klausimas negali buti tuscias.');
@@ -42,7 +42,7 @@ function isValidFAQ(faq) {
     // error count
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
-            console.error(errors[i])
+            console.error(errors[i]);
         } return false;
     }
 
