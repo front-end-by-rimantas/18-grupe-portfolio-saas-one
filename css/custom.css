@@ -752,11 +752,17 @@ footer {
 .choose.active{
     background-color: white;
 }
+.choose.active> .left >p{
+    color: black;
+}
+.choose.active> .right >p{
+    color: white;
+}
 .choose.active>.toggle-button{
     margin-left: 125px;
 }
 
-.options > .choose > .left { 
+.options > .choose > .left  { 
     width: 125px;
     display: inline-block;
     float: left;
@@ -770,12 +776,18 @@ footer {
     height: 50px;  
     float: right;
 }
-.options >.choose p{
+.choose p{
   display: flex;
   justify-content: center;
   align-content: center;
   line-height: 50px;
+  color: white;
+  font-weight: bold;
     }
+.choose > .right p{
+  color: black;
+    }
+
 .boxes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
