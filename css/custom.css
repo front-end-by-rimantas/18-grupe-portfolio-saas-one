@@ -714,28 +714,6 @@ footer {
                     background-color: #7052FB;
                     color: #fff;
                 }
-           
-/*PAGE-SERVICE*/
-
-/*PAGE-ABOUT*/
-
-/*PAGE-CONTACT*/
-
-/*PAGE-PRICING*/
-
-/*PAGE-CASE STUDY*/
-
-/*PAGE-OUT TEAM*/
-
-/*PAGE-TESTIMONIALS*/
-
-/*PAGE-FAQ*/
-
-/*PAGE-TERMS OF USE*/
-
-/*PAGE-ERROR*/
-
-
 
 @media (max-width: 990px) {
 /* HEADER */
@@ -820,25 +798,6 @@ footer .footer-row {
     grid-template-columns: 1fr 1fr;
     margin: 0;
 }
-/*PAGE-SERVICE*/
-
-/*PAGE-ABOUT*/
-
-/*PAGE-CONTACT*/
-
-/*PAGE-PRICING*/
-
-/*PAGE-CASE STUDY*/
-
-/*PAGE-OUT TEAM*/
-
-/*PAGE-TESTIMONIALS*/
-
-/*PAGE-FAQ*/
-
-/*PAGE-TERMS OF USE*/
-
-/*PAGE-ERROR*/
 }
 
 @media (max-width: 750px) {
@@ -918,26 +877,6 @@ footer > .row {
         footer .copyright-section > .footer-socials {
             justify-content: center;
         }
-
-/*PAGE-SERVICE*/
-
-/*PAGE-ABOUT*/
-
-/*PAGE-CONTACT*/
-
-/*PAGE-PRICING*/
-
-/*PAGE-CASE STUDY*/
-
-/*PAGE-OUT TEAM*/
-
-/*PAGE-TESTIMONIALS*/
-
-/*PAGE-FAQ*/
-
-/*PAGE-TERMS OF USE*/
-
-/*PAGE-ERROR*/
 }
 
 @media (max-width: 540px) {
@@ -982,27 +921,5 @@ footer > .row {
     .address .adrs-contacts {
         width: 100%;
     }
-/* FOOTER */
-
-/*PAGE-SERVICE*/
-
-/*PAGE-ABOUT*/
-
-/*PAGE-CONTACT*/
-
-/*PAGE-PRICING*/
-
-/*PAGE-CASE STUDY*/
-
-/*PAGE-OUT TEAM*/
-
-/*PAGE-TESTIMONIALS*/
-
-/*PAGE-FAQ*/
-
-/*PAGE-TERMS OF USE*/
-
-/*PAGE-ERROR*/
-
 }
 
