@@ -7,10 +7,39 @@ class HeaderNav {
         this.render()
     }
 
+
+    // DATA VALIDATION FUNCTION
+    isValidHeader(headerMenu) {
+        let errors = [];
+
+
+        if (headerMenu.title === "") {
+            errors.push("ERROR: Title negali but tuscias tekstas");
+        }
+        if (typeof headerMenu.title !== 'string') {
+            errors.push("ERROR: Title turi but tekstas");
+        }
+        if (headerMenu.title.length > 20) {
+            errors.push("ERROR: Title negali but ilgesnis nei 15 simboliu");
+        }
+        if (errors.length > 0) {
+            for (let i = 0; i < errors.length; i++) {
+                console.error(errors[i]);
+            }
+            return false;
+        }
+        return true;
+    }
+
     generateHTML(headerMenu) {
         let navHTML = '';
 
+        // DATA VALIDATION
         for (let menuItem of headerMenu) {
+            if (!this.isValidHeader(menuItem)) {
+                return '';
+            }
+
             if (!menuItem.dropdown) {
                 navHTML += `
                     <a class="navbtn" href="${menuItem.link}">${menuItem.title}</a>

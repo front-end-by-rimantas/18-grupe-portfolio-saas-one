@@ -7,7 +7,6 @@ const headerData = {
         },
         {
             title: 'Pages.',
-
             link: '#',
             dropdown: [
                 {
@@ -60,7 +59,6 @@ const headerData = {
         },
         {
             title: 'Blog.',
-
             link: '#',
             dropdown: [
                 {
@@ -75,7 +73,6 @@ const headerData = {
         },
         {
             title: 'Portfolio.',
-
             link: '#',
             dropdown: [
                 {
@@ -90,13 +87,10 @@ const headerData = {
         },
         {
             title: 'About.',
-
             link: '#',
-
         },
         {
             title: 'Contact.',
-
             link: '#',
 
         }

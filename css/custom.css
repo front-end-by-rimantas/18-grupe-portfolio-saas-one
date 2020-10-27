@@ -7,6 +7,7 @@ header.container {
     z-index: 100;
     box-shadow: 0 10px 20px 0 rgba(79,35,35,.08);
     width: 100%;
+    height: 95px;
 }
 .header-logo {
     display: flex;
@@ -701,7 +702,11 @@ header .header-navigation {
 header .toggle-menu {
     display: flex;
     justify-self: end;
+    margin-top: 25px;
 }
+    header .toggle-menu:hover {
+        cursor: pointer;
+    }
 header .header-button {
     display: none;
 }
