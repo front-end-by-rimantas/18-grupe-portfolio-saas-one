@@ -22,8 +22,8 @@ import { ourTeamData } from './data/ourTeamData.js';
 import { renderOurTeam } from './components/ourTeam/renderOurTeam.js';
 
 // address import
-import { ourAddressData } from './data/ourAddressData.js'
-import { renderAddress } from './components/address/renderAddress.js'
+import { ourAddressData } from './data/ourAddressData.js';
+import { renderAddress } from './components/address/renderAddress.js';
 
 // footer import
 import { renderFooter } from './components/footer/renderFooter.js';
