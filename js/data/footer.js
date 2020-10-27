@@ -1,28 +1,104 @@
 
 const footerData = {
-    selector : '#footer_block',
-    footer : [
-      { title: 'Main Navigation',
-        first: 'Homepage',
-        second: 'Copyright',
-        third: 'Customer Support',
-        fourth: 'About Us',
-        fifth: 'Get In Touch'
+    selector: '.footer_block',
+    footer: [
+    {   
+        title: 'Main Navigation',
+        links: [
+            {
+                text: 'Homepage',
+                link: '#'
+            },
+            {
+                text: 'Copyright',
+                link: '#'
+            },
+            {
+                text: 'Customer Support',
+                link: '#'
+            },
+            {
+                text: 'About Us',
+                link: '#'
+            },
+            {
+                text: 'Copyright',
+                link: '#'
+            }
+        ]
     },
-    {   title: 'Information',
-        first: 'Return Policy',
-        second: 'Privacy Policy',
-        third: 'Terms & Conditions',
-        fourth: 'Site Map',
-        fifth: 'Store Hours'
+    {   
+        title: 'Information',
+        links: [
+            {
+                text: 'Return Policy',
+                link: '#'
+            },
+            {
+                text: 'Privacy Policy',
+                link: '#'
+            },
+            {
+                text: 'Terms & Conditions',
+                link: '#'
+            },
+            {
+                text: 'Site Map',
+                link: '#'
+            },
+            {
+                text: 'Store Hours',
+                link: '#'
+            }
+        ]
     },
-    {   title: 'Contact',
-        first: 'Support',
-        second: 'Report Abuse',
-        third: 'System Status',
-        fourth: 'Tools & Integrations',
-        fifth: 'API'
+    {   
+        title: 'Contact',
+        links: [
+            {
+                text: 'Support',
+                link: '#'
+            },
+            {
+                text: 'Report Abuse',
+                link: '#'
+            },
+            { 
+                text: 'System Status',
+                link: '#' 
+            },
+            {
+                text: 'Tools & Integrations',
+                link: '#'
+            },
+            {
+                text: 'API',
+                link: '#'
+            }
+        ]
     }
-    ] 
+    ],
+    social: [
+        {
+            // facebook:
+            icon: 'fab fa-facebook-f',
+            link: '#'
+        },
+        {
+            // twitter:
+            icon: 'fab fa-twitter',
+            link: '#'
+        },
+        {
+            // google:
+            icon: 'fab fa-google-plus-g',
+            link: '#'
+        },
+        {
+            // linkedin:
+            icon: 'fab fa-linkedin-in',
+            link: '#'
+        }
+    ]
 }
 export { footerData }
