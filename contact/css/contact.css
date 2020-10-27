@@ -101,6 +101,13 @@
     padding: 12px 0;
     line-height: 28px;
 }
+.row > .col-4 > .adrs-box > .adrs-contact {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.row > .col-4 > .adrs-box > .adrs-contact:hover {
+    color: #007bff;
+}
 .row > .col-4 > .adrs-box > .adrs-contact > .fas {
     line-height: 28px;
     margin-right: 10px;
