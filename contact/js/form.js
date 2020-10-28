@@ -17,7 +17,7 @@ function form() {
 
     buttonDOM.addEventListener('click', (e) => {
         console.log(e.preventDefault());
-
+    });
         const messageDOM = document.getElementById('#message')
         const HTML = `<div class="message">
                     <h3>Rimantai,</h3>
@@ -25,7 +25,6 @@ function form() {
                     <p>Jeigu perskaičius žinutę norėsi atsišaudyti, štai žmogaus email: ${email}</p>
                     <p>Jums skirta žinutė: ${message}</p>
                 </div>`;
-        return messageDOM.innerHTML = HTML;
-    });
+    return messageDOM.innerHTML = HTML;
 };
 export { form }
