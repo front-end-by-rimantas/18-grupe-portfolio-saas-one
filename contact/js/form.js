@@ -17,12 +17,11 @@ function form() {
         lastname += lastnameDOM.value;
         email += emailDOM.value;
         comment += commentDOM.value;
-        
-        console.log(name);
+
         const messageDOM = document.querySelector('#message')
         const HTML = `<div class="message">
         <h3>Rimantai,</h3>
-        <p>Linkėjimus jums siunčia ${name} ${lastname}</p>
+        <p>Linkėjimus jums siunčia: ${name} ${lastname}</p>
         <p>Jeigu perskaičius žinutę norėsi atsišaudyti, štai žmogaus email: ${email}</p>
         <p>Jums skirta žinutė: ${comment}</p>
         </div>`;
