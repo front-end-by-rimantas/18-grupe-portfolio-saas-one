@@ -40,26 +40,25 @@ class Projects {
         for (let num of this.data) {
 
             HTML += ` <div class="counter">
-                        <div class="proj-numb clr">${num.number}</div>
-                        <div class="proj-let clr">${num.amount}</div>
-                    </div>`
-        }
+                        <div class="proj-numb clr" style="color:${num.color}">${num.number}</div>
+                        <div class="proj-let clr" style="color:${num.color}">${num.amount}</div>
+                          <div ><p> ${num.title}</p> </div>
+                    </div >`
 
+        }
 
         this.DOM.insertAdjacentHTML(this.insertionPosision, HTML);
         this.projectsDOM = this.DOM.querySelectorAll(".counter");
-        this.projectsNumberDOM = this.DOM, querySelectorAll('.counter > .proj-numb')
-
-        console.log(this.projectsNumberDOM)
-        // KODEL NEREIKIA, NES KAI ATKOMENTUOTA META ERROR, BET ATVAIZDUOJA?
-
+        this.projectsNumberDOM = this.DOM.querySelectorAll('.counter > .proj-numb')
     }
 
     scrollAnimation() {
         const screenBottomY = scrollY + innerHeight;
 
+
         for (let i = 0; i < this.data.length; i++) {
             const num = this.projectsNumberDOM[i];
+
 
             if (num.dataset.run) {
                 continue;
@@ -70,16 +69,18 @@ class Projects {
                 num.dataset.run = true;
 
                 let currentValue = 0;
-                const finalValue = this.data[i].value;
+                const finalValue = this.data[i].number;
                 const timeAmount = 1;                   // seconds
                 const fps = 24;                         // frames per second
                 let step = 0;
                 const totalSteps = timeAmount * fps;
+                console.log(totalSteps)
 
                 const timer = setInterval(() => {
                     step++;
                     currentValue = Math.ceil(finalValue / totalSteps * step);
                     this.projectsNumberDOM[i].innerText = currentValue;
+
 
                     if (currentValue >= finalValue) {
                         clearInterval(timer);
