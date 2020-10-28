@@ -7,7 +7,7 @@ function renderAddress(data) {
     let HTML1 = '';
     let HTML2 = '';
 
-    const addressDOM = document.querySelector(data.selectorHome);
+    const addressDOM = document.querySelector(data.selector);
     const addressCount = data.address.length;
     if(!addressDOM){
         return;

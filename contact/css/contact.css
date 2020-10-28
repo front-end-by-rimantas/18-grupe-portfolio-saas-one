@@ -90,6 +90,11 @@
         font-size: 18px;
         text-decoration: none;
     }
+    .message {
+        margin-top: 50px;
+        padding: 10px;
+        box-shadow: 1px 1px 50px -15px;
+    }
 /* address */
 
 .row > .col-4 > .adrs-title {
@@ -111,4 +116,14 @@
 .row > .col-4 > .adrs-box > .adrs-contact > .fas {
     line-height: 28px;
     margin-right: 10px;
+}
+
+@media (max-width: 990px) {
+
+}
+@media (max-width: 750px) {
+
+}
+@media (max-width: 540px) {
+
 }

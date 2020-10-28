@@ -39,11 +39,9 @@ import { renderBackToTop } from './components/back-to-top.js'
 // page - about logic
 
 // page - contact logic
-import { renderContact } from '../contact/js/contacts/renderContact.js'
-import { formData } from './data/formData.js'
-import { renderForm } from '../contact/js/form/formInfo.js'
+import { renderContact } from '../contact/js/renderContact.js';
+import { form } from '../contact/js/form.js';
 renderContact(ourAddressData);
-renderForm(formData)
 // page - pricing logic
 
 // page - case study logic

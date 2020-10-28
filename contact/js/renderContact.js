@@ -2,7 +2,7 @@ import { renderSingleContact } from './renderSingleContact.js'
 
 function renderContact(data) {
     let HTML = '';
-    const contactDOM = document.querySelector(data.selector);
+    const contactDOM = document.querySelector(data.selectorContact);
     const contactCount = data.contact.length;
     if (!contactDOM) {
         return;

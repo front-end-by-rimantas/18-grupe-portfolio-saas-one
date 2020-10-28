@@ -1,6 +1,5 @@
 const ourAddressData = {
     selector: '#address-js',
-    // selectorContact: '#addresscontact-js',
     address: [
         {
             icon: '<i class="fas fa-map-marker-alt"></i>',
@@ -25,6 +24,7 @@ const ourAddressData = {
             active: true
         }
     ],
+    selectorContact: '#addresscontact-js',
     contact: [
         {
             contactTitle: 'Our Contact',

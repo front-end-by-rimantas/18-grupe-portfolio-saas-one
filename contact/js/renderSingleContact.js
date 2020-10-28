@@ -10,10 +10,10 @@ function renderSingleContact(contact) {
                     <p class="adrs-contact">${contact.iconLocation}</i>${contact.contactAddress}</p>
                 </div>
                 <div class="adrs-box">
-                    <a href="" class="adrs-contact">${contact.iconEmail}${contact.contactEmail}</a>
+                    <a href="mailto: ${contact.contactEmail}" class="adrs-contact">${contact.iconEmail}${contact.contactEmail}</a>
                 </div>
                 <div class="adrs-box">
-                    <a href="" class="adrs-contact">${contact.iconPhone}${contact.contactPhone}</a>
+                    <a href="tel: ${contact.contactPhone}" class="adrs-contact">${contact.iconPhone}${contact.contactPhone}</a>
                 </div>`;
     return HTML;
 }
