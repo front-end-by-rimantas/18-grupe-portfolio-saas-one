@@ -1,0 +1,18 @@
+
+
+
+/* FOOTER */
+footer {
+    background-color: #ffdfb81c;
+}
+
+    footer .footer-row nav a:hover {
+        color: #f55e24;
+    }
+    footer .copyright-section > p > a {
+        color: #f55e24;
+    }
+    footer .copyright-section > .footer-socials > a > i:hover {
+        background-color: #f55e24;;
+        color: #fff;
+    }
