@@ -1,5 +1,6 @@
 // header import
-
+import { headerData } from './data/header.js';
+import { HeaderNav } from './components/header/HeaderNav.js';
 // about import
 import { homeAboutData } from './data/homeAboutData.js';
 import { renderHomeAbout } from './components/home-about/renderHomeAbout.js';
@@ -63,7 +64,7 @@ import { renderBackToTop } from './components/back-to-top.js'
 // <--Multipages logic: end-->
 
 // header logic
-
+new HeaderNav(headerData);
 // about logic
 renderHomeAbout(homeAboutData);
 
