@@ -9,6 +9,8 @@ import { featureData } from './data/features.js';
 import { renderFeature } from './components/feature/renderFeature.js';
 
 // projects import
+import { projectsData } from './data/projects.js'
+import { Projects } from './components/projects/Projects.js'
 
 // faq import
 import { faqData } from './data/faq.js';
@@ -71,6 +73,7 @@ renderHomeAbout(homeAboutData);
 renderFeature(featureData);
 
 // projects logic
+new Projects(projectsData);
 
 // faq logic
 renderFAQ(faqData);
