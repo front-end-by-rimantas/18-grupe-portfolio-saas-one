@@ -28,6 +28,7 @@ import { renderAddress } from './components/address/renderAddress.js'
 
 // footer import
 import { renderFooter } from './components/footer/renderFooter.js';
+import { renderFooterSocial } from './components/footer/renderFooterSocial.js';
 import { footerData } from './data/footer.js'
 
 // background animations import
@@ -85,6 +86,7 @@ renderAddress(ourAddressData);
 
 // footer logic
 renderFooter(footerData);
+renderFooterSocial(footerData);
 
 // background animations logic
 renderBackToTop();

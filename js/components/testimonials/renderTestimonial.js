@@ -9,7 +9,9 @@ function renderTestimonial(data) {
     let HTML = '';
     const testDOM = document.querySelector(data.selector);
     const testCount = data.testimonial.length;
-
+    if(!testDOM){
+        return;
+    }
     for (let i = 0; i < 1; i++) {
         const test = data.testimonial[i];
         HTML += generateSingleTestimonial(test);
