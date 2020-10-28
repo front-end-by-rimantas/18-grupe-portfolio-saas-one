@@ -1,9 +1,9 @@
 class HeaderNav {
     constructor(params) {
-        console.log(params);
+        // console.log(params);
         this.DOM = document.querySelector(params.selector);
         this.headerMenu = params.headerMenu;
-        console.log(this.headerMenu);
+        // console.log(this.headerMenu);
         this.render()
     }
 

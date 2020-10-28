@@ -324,7 +324,25 @@ HEADER DROPMENU
         text-align: center;
         font-weight: 600;
     }
-        .projects .download > .counter > .clr {
+    .counter  {
+     text-align: center;
+    }
+    .counter > .proj-numb{
+          display: inline;
+        width: 100%;
+        font-size: 60px;
+        color: #36f;
+        font-weight: bold;
+    }
+      .counter > .proj-let{
+          display: inline;
+        width: 100%;
+        font-size: 60px;
+        color: #36f;
+        font-weight: bold;
+    }
+    
+        /* .projects .download > .counter > .clr {
             color: #8687f3;
         }
         .projects .show > .counter > .clr {
@@ -341,7 +359,7 @@ HEADER DROPMENU
             }
         .projects .countup-wrap p {
             font-weight: 500;
-        }
+        } */
 /* FAQ */
     .faq > .row > .title {
         margin: 20px 0;
