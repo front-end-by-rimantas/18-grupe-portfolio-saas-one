@@ -11,7 +11,7 @@ import { renderFeature } from './components/feature/renderFeature.js';
 // projects import
 
 // faq import
-import { faqData, categories } from './data/faq.js';
+import { homeFAQ, faqFAQ, categories } from './data/faq.js';
 import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
 
@@ -41,7 +41,7 @@ renderFeature(featureData);
 // projects logic
 
 // faq logic
-renderFAQ(faqData);
+renderFAQ(homeFAQ);
 // testimonials logic
 
 // our-team logic
@@ -62,4 +62,4 @@ renderBackToTop();
 import { renderMPfaq } from '../pages/faq/js/renderMPfaq.js';
 
 // page - faq logic:
-renderMPfaq(faqData, categories);
+renderMPfaq(faqFAQ, categories);

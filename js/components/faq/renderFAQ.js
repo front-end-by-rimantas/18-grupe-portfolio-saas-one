@@ -7,7 +7,7 @@ function renderFAQ(data) {
     let HTML = '';
     const faqDOM = document.querySelector(data.selector);
     const faqCount = data.faq.length;
-
+    // console.log(data);
     if (!faqDOM) {
         return;
     }
