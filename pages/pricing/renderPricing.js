@@ -1,16 +1,14 @@
 import { generateSinglePricing } from './generateSinglePricing.js'
 
+const allButtons = document.querySelectorAll('.choose');
 
-const button = document.querySelector('.choose');
-console.log(button);
-button.addEventListener('click', () => {
-    button.classList.toggle('active');
-})
-
+for (let btn of allButtons) {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+    })
+}
 
 function renderPricing(data) {
-
-
     const pricingLenght = data.pricing.length;
     const pricingDOM = document.querySelectorAll(data.selector);
 
@@ -18,6 +16,6 @@ function renderPricing(data) {
         const priceBlock = data.pricing[i];
         pricingDOM[i].innerHTML = generateSinglePricing(priceBlock);
     }
-
 }
+
 export { renderPricing }

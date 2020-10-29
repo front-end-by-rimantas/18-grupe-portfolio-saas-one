@@ -36,5 +36,3 @@ function generateSinglePricing(data) {
 }
 
 export { generateSinglePricing }
-
-
