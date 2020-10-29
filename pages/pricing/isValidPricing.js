@@ -34,11 +34,28 @@ if (typeof paragraph !== "string") {
     }
 }
 
-if (typeof price !== "string")
 
+function isValidImage(data) {
+    let errors = [];
 
+    if (typeof image !== "string") {
+        errors.push("ERROR: image turi buti tekstinis");
+    } else {
+        if (image === "") {
+            errors.push("ERROR: image negali buti tuscias");
+        }
+    }
 
-
+    if (errors.length > 0) {
+        for (let i = 0; i < errors.length; i++) {
+            console.error(errors[i]);
+        }
+        return false;
+    }
+    return true;
 }
 
-import { isValidPricing }
+
+export { isValidPricing };
+
+export { isValidImage };

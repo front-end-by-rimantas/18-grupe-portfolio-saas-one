@@ -1,9 +1,10 @@
-import {isValidFooter} from './isValidFooter.js'
-function generateSingleFooter (data) {
+import { isValidFooter } from './isValidFooter.js'
+function generateSingleFooter(data) {
 
     if (!isValidFooter(data)) {
-        return ''; 
-    } 
+        return '';
+    }
+
 
     const HTML = `
     <p>${data.title}</p>
@@ -16,7 +17,7 @@ function generateSingleFooter (data) {
     </nav>`
 
     return HTML;
-    
+
 }
 
 export { generateSingleFooter }

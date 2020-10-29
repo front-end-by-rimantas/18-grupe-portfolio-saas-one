@@ -1,19 +1,9 @@
-// import { isValidImage } from "./isValidPricing";
+function generalSingleThird() {
 
-// import { isValidPricing } from './isValidPricing.js'
-function generateSinglePricing(data) {
-
-    // if (!isValidPricing(data)) {
-    //     return '';
-    // }
-
-    const HTML = `<div class="header">
-                ${data.image === false ? '' : `<img src="${data.image} " alt="paveikslelis">`}           
+    const HTML = `<h2 class="price"> &#36;${data.price} </h2>
+                <div class="header">
                 <h3> ${data.title}</h3 >
-                        <p>${data.paragraph}</p>
-                        <h2 class="price"> &#36;${data.price} </h2>
-                        <p> ${data.priceTitle} </p>
-                        <div class="button"> choose this plan </div>
+                        <p>${data.paragraph}</p>                        
                     </div >
     <div class="details">
         <div>
@@ -36,11 +26,12 @@ function generateSinglePricing(data) {
             <i class="${data.FifthIcon}"></i>
             <p>No Updates</p>
         </div>
+        <div class="button"> choose this plan </div>
+        <p> use our free product </p>
     </div>`;
 
     return HTML;
+
 }
 
-export { generateSinglePricing }
-
-
+export { generalSingleThird }
