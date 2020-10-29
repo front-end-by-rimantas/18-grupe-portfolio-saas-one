@@ -44,7 +44,7 @@ import { renderBackToTop } from './components/back-to-top.js'
 import { renderContact } from '../contact/js/renderContact.js';
 import { form } from '../contact/js/form.js';
 renderContact(ourAddressData);
-form()
+form();
 // page - pricing logic
 
 // page - case study logic
