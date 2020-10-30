@@ -1,6 +1,5 @@
 class HeaderNav {
     constructor(params) {
-
         this.DOM = document.querySelector(params.selector);
         this.headerMenu = params.headerMenu;
         this.render()
