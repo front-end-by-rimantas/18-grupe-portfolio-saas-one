@@ -42,14 +42,50 @@
             <a class="header-logo col-3 col-lg-6 col-md-6" href="#">
                 <img src="./img/logo-color-2.svg" alt="header logo">
             </a>
-            <nav class="header-navigation col-6 col-md-9" id="header_nav">
+            <nav class="header-navigation col-6 col-md-9">
+                <a class="navbtn col-1" href="#">Home.</a>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Pages.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Service.</a>
+                        <a class="subbtn" href="#">About</a>
+                        <a class="subbtn" href="#">Contact</a>
+                        <a class="subbtn" href="#">Pricing</a>
+                        <div class="sub-dropdown">
+                            <a class="subbtn col-1" href="#">Case Study....</a>
+                            <div class="sub-dropdown-content">
+                                <a class="subbtn" href="#">Case Default</a>
+                                <a class="subbtn" href="#">Case Detail</a>
+                            </div>
+                        </div>
+                        <a class="subbtn" href="#"></a>Our Team</a>
+                        <a class="subbtn" href="#">Testimonials</a>
+                        <a class="subbtn" href="#"> FAQ</a>
+                        <a class="subbtn" href="#">Terms of use</a>
+                        <a class="subbtn" href="#">ERROR 404</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Blog.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Blog Default</a>
+                        <a class="subbtn" href="#">Blog Single</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="navbtn col-1" href="#">Portfolio.</a>
+                    <div class="dropdown-content">
+                        <a class="subbtn" href="#">Portfolio Standard</a>
+                        <a class="subbtn" href="#">Portfolio Masonry</a>
+                    </div>
+                </div>
+                <a class="navbtn col-1" href="#">About.</a>
+                <a class="navbtn col-1" href="#">Contact.</a>
             </nav>
-            <a class="toggle-menu col-lg-6 col-md-6">
+            <div class="toggle-menu col-lg-6 col-md-6">
                 <i class="fas fa-bars fa-2x"></i>
-            </a>
-            <div class="header-button col-3">
-                <a class="button white" href="#">Purchase now</a>
             </div>
+            <div class="header-button col-3"><a class="button white" href="#">Purchase now</a></div>
         </div>
     </header>
     <!-- hero -->
@@ -139,40 +175,12 @@
     <!-- projects -->
     <div class="container projects">
         <div class="row">
-            <div class="section-title p col-12">
+            <div class="section-title p col-12 ">
                 <p>Our client & Projects</p>
             </div>
-            <div class="title col-12">Rutrum quisque non tellus orci ac auctor augue mauris augue.</div>
-            <div class="countup-wrap col-12">
-                <div class="download">
-                    <div class="counter">
-                        <span class="proj-numb clr">14</span>
-                        <span class="proj-let clr">K+</span>
-                    </div>
-                    <p>Total downloads</p>
-                </div>
-                <div class="show">
-                    <div class="counter">
-                        <span class="proj-numb clr">13</span>
-                        <span class="proj-let clr">M+</span>
-                    </div>
-                    <p>Total Show</p>
-                </div>
-                <div class="projects">
-                    <div class="counter">
-                        <span class="proj-numb clr">244</span>
-                        <span class="proj-let clr">+</span>
-                    </div>
-                    <p>Total Projects</p>
-                </div>
-                <div class="cases">
-                    <div class="counter">
-                        <span class="proj-numb clr">53</span>
-                        <span class="proj-let clr">M+</span>
-                    </div>
-                    <p>Total Cases</p>
-                </div>
-            </div>
+            <div class="title col-12">Rutrum quisque non tellus orci ac auctor augue mauris augue. </div>
+            <div id="projects_block" class="countup-wrap col-12"> </div>
+
         </div>
     </div>
     <!-- FAQ -->
