@@ -312,11 +312,12 @@ HEADER DROPMENU
         top: -50px;
     }
 /* PROJECTS */
-    .projects > .row > .project-wrap > .section-title {
-        margin-bottom: 10px;
-    }
-    .projects > .row > .project-wrap > .title {
+    .projects > .row > .title {
         margin-bottom: 20px;
+        text-align: center;
+        width: 80%;
+        float: none;
+        margin: auto;
     }
     .projects .countup-wrap {
         display: grid;
@@ -324,24 +325,17 @@ HEADER DROPMENU
         text-align: center;
         font-weight: 600;
     }
-        .projects .download > .counter > .clr {
-            color: #8687f3;
-        }
-        .projects .show > .counter > .clr {
-            color: #ee9f76;
-        }
-        .projects > .counter > .clr {
-            color: #e882ff;
-        }
-        .projects .cases > .counter > .clr {
-            color: #f42ade;
-        }
-            .projects .clr {
-                font-size: 50px;
-            }
-        .projects .countup-wrap p {
-            font-weight: 500;
-        }
+    .counter  {
+     text-align: center;
+    margin-top: 20px;
+    }
+    .counter > .proj-numb,
+    .counter > .proj-let{
+        display: inline;
+        width: 100%;
+        font-size: 50px;
+        font-weight: bold;
+    }
 /* FAQ */
     .faq > .row > .title {
         margin: 20px 0;
