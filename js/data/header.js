@@ -3,95 +3,95 @@ const headerData = {
     headerMenu: [
         {
             title: 'Home.',
-            link: '#',
+            link: '/',
         },
         {
             title: 'Pages.',
-            link: '#',
+            link: '/',
             dropdown: [
                 {
                     title: 'Service.',
-                    link: '#',
+                    link: '/pages/service/',
                 },
                 {
                     title: 'About',
-                    link: '#',
+                    link: '/about/',
                 },
                 {
                     title: 'Contact',
-                    link: '#',
+                    link: '/contact/',
                 },
                 {
                     title: 'Pricing',
-                    link: '#',
+                    link: '/pages/pricing',
                 },
                 {
                     title: 'Case Study....',
-                    link: '#',
+                    link: '/',
                     dropdown: [
                         {
                             title: 'Case Default',
-                            link: '#',
+                            link: '/pages/case-default/',
                         },
                         {
                             title: 'Case Detail',
-                            link: '#',
+                            link: '/pages/case-detail/',
                         }
                     ]
                 },
                 {
                     title: 'Our Team',
-                    link: '#',
+                    link: '/pages/our team/',
                 },
                 {
                     title: 'FAQ',
-                    link: '#',
+                    link: '/pages/faq/',
                 },
                 {
                     title: 'Terms of use',
-                    link: '#',
+                    link: '/pages/terms-of-use',
                 },
                 {
                     title: 'ERROR 404',
-                    link: '#',
+                    link: '/pages/error-404/',
                 }
             ]
         },
         {
             title: 'Blog.',
-            link: '#',
+            link: '/',
             dropdown: [
                 {
                     title: 'Blog Default',
-                    link: '#',
+                    link: '/blog-default/',
                 },
                 {
                     title: 'Blog Single',
-                    link: '#',
+                    link: '/blog-single/',
                 }
             ]
         },
         {
             title: 'Portfolio.',
-            link: '#',
+            link: '/',
             dropdown: [
                 {
                     title: 'Portfolio Standard',
-                    link: '#',
+                    link: '/portfolio-standard/',
                 },
                 {
                     title: 'Portfolio Masonry',
-                    link: '#',
+                    link: '/portfolio-masonry/',
                 }
             ]
         },
         {
             title: 'About.',
-            link: '#',
+            link: '/about/',
         },
         {
             title: 'Contact.',
-            link: '#',
+            link: '/contact/',
 
         }
     ]

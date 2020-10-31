@@ -1,5 +1,8 @@
 const ourTeamData = {
-    selector: '#teamProfile',
+    selector: {
+        static: '.static-our-team-block',
+        hp: '.hp-our-team-block'
+    },
     team: [
     {
         profilePicture: '1.png',
@@ -42,14 +45,14 @@ const ourTeamData = {
         active: true
     },
     {
-        profilePicture: '1.png',
+        profilePicture: '4.png',
         name: 'Miguel',
         surname: 'Ellis',
         position: 'Project Manager',
         facebook: '#',
         twitter: '#',
         linkedin: '#',
-        active: false
+        active: true
     }
     ]
 }

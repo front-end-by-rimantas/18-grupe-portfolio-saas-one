@@ -449,11 +449,13 @@ HEADER DROPMENU
             box-shadow: 0 18px 25px 0 rgba(112,111,111,0.3);
         }
 /* OUR TEAM */
-.our-team .title {
-    margin-top: 20px;
-}
 .our-team > .row {
     padding: 80px 0;
+    text-align: center;
+}
+.our-team > .row > p {
+    justify-self: center;
+    width: 50%;
 }
 .our-team .our-team-bg {
     position: absolute;
