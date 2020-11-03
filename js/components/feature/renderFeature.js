@@ -8,13 +8,13 @@ function renderFeature(data) {
     let HTML = '';
     const featuresDOM = document.querySelector(data.selector);
     const featuresCount = data.features.length;
-    if(!featuresDOM){
+    if (!featuresDOM) {
         return;
     }
     for (let i = 0; i < featuresCount; i++) {
         const feature = data.features[i];
-        
-        HTML += generateSingleFeature(feature);        
+
+        HTML += generateSingleFeature(feature);
     }
 
     // post logic validation

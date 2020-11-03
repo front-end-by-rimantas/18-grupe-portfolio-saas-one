@@ -11,7 +11,7 @@ const testimonialsData = {
             active: true
         },
         {
-            title: 'Modern look & trending design',
+            title: 'Project manager',
             description: 'Lorem  elit. Explicabo laudantiumnderit lorem lorem loremlabore lorem lorem loremlabore lorem lorem loremlabore officia odio atque laborum.',
             img: "img/boy.png",
             name: 'Miguel Ellis',
@@ -19,7 +19,7 @@ const testimonialsData = {
             active: true
         },
         {
-            title: 'Modern look & trending design',
+            title: 'Profesion photographer',
             description: 'Lorem  elit. Explicabo laudantiumnderit lorem lorem loremlabore lorem lorem loremlabore lorem lorem loremlabore officia odio atque laborum.',
             img: "img/boy.png",
             name: 'Mark Wilson',

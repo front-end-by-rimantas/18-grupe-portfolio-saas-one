@@ -74,7 +74,7 @@ class Projects {
                 const fps = 24;                         // frames per second
                 let step = 0;
                 const totalSteps = timeAmount * fps;
-                console.log(totalSteps)
+
 
                 const timer = setInterval(() => {
                     step++;

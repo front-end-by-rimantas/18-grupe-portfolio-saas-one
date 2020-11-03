@@ -412,6 +412,10 @@ HEADER DROPMENU
     .testimonials .center {
         grid-column: 2/3;
     }
+    .testimonial{
+        display: inline-block;
+        width: 100%;
+    }
     .testimonials .arrow-right{
         grid-column: 3/4;
         align-self: center;
@@ -420,31 +424,31 @@ HEADER DROPMENU
         color: #B374FB;
         cursor: pointer;
     }
-        .testimonials .testimonial-block > .center > h2{
+        .testimonial > h2{
             font-size: 20px;
         }
-        .testimonials .testimonial-block > .center > .p {
+        .testimonial .p {
             margin: 20px;
             font-size: 20px;
             line-height: 35px;
         }
-        .testimonials .testimonial-block > .center > .p> b {
+        .testimonial .p b {
             font-size: 20px;
             line-height: 35px;
             margin: 0;
         }
-        .testimonials .testimonial-block > .center > .clients {
+        .testimonial .clients {
             margin: 0;
             font-size: 15px;
         }
-        .testimonials .testimonial-block > .center > .name {
+        .testimonial .name {
             margin-bottom: 0;
             margin-top: 20px;
         }
-        .testimonials .testimonial-block > .center > .imagin{
+        .testimonial .imagin{
             display: inline;
         }
-        .testimonials .testimonial-block > .center > .imagin > img{
+        .testimonial img{
             border-radius: 50%;
             box-shadow: 0 18px 25px 0 rgba(112,111,111,0.3);
         }
