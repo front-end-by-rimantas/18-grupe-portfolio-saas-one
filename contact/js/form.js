@@ -52,7 +52,6 @@ function form() {
         const messageDOM = document.querySelector('#message')
         const HTML = `<div class="message">
         <button id="close"><a class="fas fa-times"></a></button>
-        <h3 style="font-size: 25px">Rimantai,</h3>
         <p class="message-style">Linkėjimus jums siunčia: <p>${name} ${lastname}</p></p>
         <p class="message-style">Jeigu perskaičius žinutę norėsi atsišaudyti, štai žmogaus email: <p>${email}</p></p>
         <p class="message-style">Jums skirta žinutė: <p>${comment}</p></p>
