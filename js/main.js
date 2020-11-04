@@ -18,6 +18,7 @@ import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
 import { testimonialsData } from './data/testimonials.js';
 import { renderTestimonial } from './components/testimonials/renderTestimonial.js';
+//import { left } from '.data/testimonials/renderTestimonial.js';
 
 // our-team import
 import { ourTeamData } from './data/ourTeamData.js';

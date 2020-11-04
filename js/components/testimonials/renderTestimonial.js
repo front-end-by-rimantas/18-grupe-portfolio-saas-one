@@ -17,6 +17,10 @@ function renderTestimonial(data) {
         HTML += generateSingleTestimonial(test);
     }
 
+    // var i = data.testimonial.length;
+    // console.log(i);
+
+
     function left() {
         if (i < testCount) {
             i = i + 1;
@@ -47,10 +51,7 @@ function renderTestimonial(data) {
 
 
 
-    const slide = document.querySelectorAll(".testimonial")
-    console.log(slide[2]);
 
-    var i = slide.length;
 
     return;
 }
