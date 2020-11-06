@@ -1,4 +1,5 @@
 const categories = {
+    selector: '#faq_menu',
     gen: 'General Questions',
     lic: 'Licensing Questions'
 }

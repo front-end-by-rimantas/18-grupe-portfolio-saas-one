@@ -15,3 +15,28 @@
         margin-bottom: 10px;
         font-weight: 700;
     }
+
+.faqMP.menu-box {
+    background: #f2f2f25c;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+    .faqMP.menu-box > .faqMP.menu-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .faqMP.menu-box > .faqMP.menu-gen,
+    .faqMP.menu-box > .faqMP.menu-lic {
+        color:#757575;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+@media (max-width: 990px) {
+    .faqMP.menu-box {
+        display: none;
+    }
+}

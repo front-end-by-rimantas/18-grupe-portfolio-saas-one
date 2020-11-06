@@ -1,13 +1,15 @@
 import { categories } from '../../../js/data/faq.js';
 import { generateSingleMPfaq, generateSingleTitleMPfaq } from './generateSingleMPfaq.js'
 
-function renderMPfaq(data) {
-    let HTML = '';
+function renderMPfaq(data, categories) {
+    let qaHTML = '';
+    let menuHTML = '';
     let currentCategory = '';
     const faqMPDOM = document.querySelector(data.selector);
+    const faqMenuDOM = document.querySelector(categories.selector)
 
     // mini validation
-    if (!faqMPDOM) {
+    if (!faqMPDOM && !faqMenuDOM) {
         return;
     }
 
@@ -26,13 +28,25 @@ function renderMPfaq(data) {
         let faqMP = questions[i];
 
         if (currentCategory !== faqMP.category) {
-            HTML += generateSingleTitleMPfaq(categories, faqMP);
+            qaHTML += generateSingleTitleMPfaq(categories, faqMP);
             currentCategory = faqMP.category;
         }
 
-        HTML += generateSingleMPfaq(faqMP)
+        qaHTML += generateSingleMPfaq(faqMP);
+    }
 
-    } return faqMPDOM.innerHTML = HTML;
+    // generation of menu
+    menuHTML += `<div class="faqMP menu-box">
+                    <div class="faqMP menu-title">Questions</div>
+                    <div class="faqMP menu-gen">${categories.gen}</div>
+                    <div class="faqMP menu-lic">${categories.lic}</div>
+                 </div>`;
+
+    // HTML generation
+    faqMPDOM.innerHTML = qaHTML;
+    faqMenuDOM.innerHTML = menuHTML;
+
+    return qaHTML + menuHTML;
 }
 
 export { renderMPfaq }
