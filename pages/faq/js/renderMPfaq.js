@@ -5,11 +5,11 @@ function renderMPfaq(data) {
     let HTML = '';
     const faqMPDOM = document.querySelector(data.selector);
 
-    // filtravimas
     if (!faqMPDOM) {
         return;
     }
 
+    // filtravimas
     const questions = [];
     for (let cat of data.order) {
         for (let q of data.faq) {
@@ -18,6 +18,7 @@ function renderMPfaq(data) {
             }
         }
     }
+    console.log(questions);
 
     // HTML generavimas
     HTML = generateSingleTitleMPfaq(categories)
