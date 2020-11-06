@@ -8,8 +8,10 @@ function generateSingleTitleMPfaq(categories, faqMP) {
 
 function generateSingleMPfaq(faqMP) {
   const qaHTML = `<p class="question">${faqMP.question}</p>
-                  <p class="answer">${faqMP.answer}</p>`;
+                  <p class="answer">${faqMP.answer}</p>
+                  <hr class="hr dash"></hr>`;
 
   return qaHTML;
 }
+
 export { generateSingleTitleMPfaq, generateSingleMPfaq }

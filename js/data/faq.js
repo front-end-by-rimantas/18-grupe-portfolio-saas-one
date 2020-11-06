@@ -1,6 +1,6 @@
 const categories = {
-    gen: 'General questions',
-    lic: 'Licensing questions'
+    gen: 'General Questions',
+    lic: 'Licensing Questions'
 }
 
 const faqData = {
