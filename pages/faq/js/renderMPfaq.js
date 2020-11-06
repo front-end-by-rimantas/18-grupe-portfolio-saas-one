@@ -3,13 +3,15 @@ import { generateSingleMPfaq, generateSingleTitleMPfaq } from './generateSingleM
 
 function renderMPfaq(data) {
     let HTML = '';
+    let currentCategory = '';
     const faqMPDOM = document.querySelector(data.selector);
 
+    // mini validation
     if (!faqMPDOM) {
         return;
     }
 
-    // filtravimas
+    // sorting questions by order
     const questions = [];
     for (let cat of data.order) {
         for (let q of data.faq) {
@@ -18,22 +20,19 @@ function renderMPfaq(data) {
             }
         }
     }
-    console.log(questions);
 
-    // HTML generavimas
-    HTML = generateSingleTitleMPfaq(categories)
-
+    // generation of title, questions and answers
     for (let i = 0; i < questions.length; i++) {
-        const faqMP = questions[i];
-        // console.log(faqMP);
-        // console.log(faqMP.category);
+        let faqMP = questions[i];
 
-        if (faqMP.category === 'gen') {
-            HTML += generateSingleMPfaq(faqMP);
+        if (currentCategory !== faqMP.category) {
+            HTML += generateSingleTitleMPfaq(categories, faqMP);
+            currentCategory = faqMP.category;
         }
 
-    }
-    faqMPDOM.innerHTML = HTML;
+        HTML += generateSingleMPfaq(faqMP)
+
+    } return faqMPDOM.innerHTML = HTML;
 }
 
 export { renderMPfaq }
