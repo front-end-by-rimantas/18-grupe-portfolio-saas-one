@@ -1,83 +1,80 @@
 function isValidFooter (data)  {
     let errors = [];
 
-    if (typeof data.title !== 'string')
-    {
-        errors.push("ERROR: data. turi buti tekstas");
-    }
-    if ( data.title.length > 25)
-    {
-        errors.push('ERROR: data. negali buti toks ilgas');
-    }
-    if ( data.title === "")
-    {
-        errors.push('ERROR: irasyk data. pavadinima');
-    }
-
-
-    if ( typeof data.first !== 'string' )
-    {
-        errors.push('ERROR: I navigations eilute turi buti tekstas');
-    } else {
-            if (typeof data.second !== "string" ) {
-                errors.push('ERROR: II navigations eilute turi buti tekstas');
-            }
-            if( typeof data.third !== 'string'){
-                errors.push('ERROR: III navigations eilute turi buti tekstas');
-            }
-            if (typeof data.fourth !== 'string' ){
-                errors.push( 'ERROR: IV navigations eilute turi buti tekstas');
-            }
-            if ( typeof data.fifth !== 'string' ){
-                errors.push( 'ERROR: V navigations eilute turi buti tekstas');
-            }
+    if(typeof data.title !== 'string'){
+        errors.push('ERROR: Navigacijos pavadinimas turi buti tekstinis.');
+    } else { 
+        if(data.title === ''){
+            errors.push('ERROR: Navigacijos pavadinimas negali būti tuscias.');
         }
-
-    if ( data.first.length > 25 )
-    {
-        errors.push('ERROR: I navigacijos eilute turi buti trumpesnes');
-    } else {
-            if ( data.second.length > 25){
-            errors.push('ERROR: II navigacijos eilute turi buti trumpesnes');
-            }
-            if ( data.third.length > 25 ){
-            errors.push('ERROR: III navigacijos eilute turi buti trumpesnes');
-            }
-            if ( data.fourth.length > 25 ){
-            errors.push('ERROR: IV navigacijos eilute turi buti trumpesnes');
-            }
-            if ( data.fifth.length > 25)  {
-            errors.push('ERROR: V navigacijos eilute turi buti trumpesnes');
-            }
+        if(data.title.length > 25){
+            errors.push('ERROR: Navigacijos pavadinimas negali buti ilgesnis nei 25 simboliai.');
         }
+    }
 
-    if ( data.first === "" && data.second === "" && data.third === "" && data.fourth === "" && data.fifth === "")
-    {
-        errors.push('ERROR: I navigacijos eilute negali buti tuscias tekstas');
-    } else {
-            if( data.second === "") {
-                errors.push('ERROR: II navigacijo eilute negali buti tuscias tekstas');
-            }
-            if (data.third === "" ){
-                errors.push('ERROR: III navigacijos eilute negali buti tuscias tekstas');
-            }
-            if (data.fourth === ""){
-                errors.push('ERROR: IV navigacijos eilute negali buti tuscias tekstas');
-            }
-            if (data.fifth === ""){
-                errors.push('ERROR: V navigacijos eilute negali buti tuscias tekstas');
-            }
-          }
-
+    if(data.links.length <= 0){
+        errors.push('ERROR: Navigacijoje turi buti bent viena nuoroda.');
+    }
           
-    // error count
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
             console.error(errors[i]);
-        } return false;
+        }
+        return false;
     }
     return true;
 }
 
+function isValidFooterLink (data) {
+    let errors = [];
 
-export { isValidFooter }
+    if(typeof data.text !== 'string'){
+        errors.push('ERROR: Nuorodos pavadinimas turi būti tekstinis.');
+    } else {
+        if(data.text === ''){
+            errors.push('ERROR: Nuorodos pavadinimas negali būti tuscias.');
+        }     
+        if(data.text.length > 25){
+            errors.push('ERROR: Nuorodos pavadinimas negali būti ilgesnis nei 25 simboliai.');
+        }
+    }
+
+
+    if(errors.length > 0){
+        for(let i = 0; i < errors.length; i++){
+            console.error(errors[i]);
+        }
+        return false;
+    }
+    return true;
+}
+
+function isValidFooterSocial (data) {
+    let errors = [];
+
+        if(data.icon === ''){
+            errors.push('ERROR: Icon nuorodos pavadinimas negali būti tuscias.');
+        } else {     
+            if(data.icon.length < 4){
+                errors.push('ERROR: Icon nuorodos pavadinimas negali būti trumpesnis nei 4 simboliai.');
+            }
+            if(data.links === ''){
+                errors.push('ERROR: Social nuoroda negali buti tuscia.');
+            }
+        }
+
+
+    if(errors.length > 0){
+        for(let i = 0; i < errors.length; i++){
+            console.error(errors[i]);
+        }
+        return false;
+    }
+    return true;
+}
+
+export { isValidFooterLink };
+
+export { isValidFooter };
+
+export { isValidFooterSocial };
