@@ -24,8 +24,8 @@ import { ourTeamData } from './data/ourTeamData.js';
 import { renderOurTeam } from './components/ourTeam/renderOurTeam.js';
 
 // address import
-import { ourAddressData } from './data/ourAddressData.js'
-import { renderAddress } from './components/address/renderAddress.js'
+import { ourAddressData } from './data/ourAddressData.js';
+import { renderAddress } from './components/address/renderAddress.js';
 
 // footer import
 import { renderFooter } from './components/footer/renderFooter.js';
@@ -41,7 +41,10 @@ import { renderBackToTop } from './components/back-to-top.js'
 // page - about logic
 
 // page - contact logic
-
+import { renderContact } from '../contact/js/renderContact.js';
+import { form } from '../contact/js/form.js';
+renderContact(ourAddressData);
+form();
 // page - pricing logic
 
 // page - case study logic
