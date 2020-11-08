@@ -23,20 +23,6 @@ const ourAddressData = {
             linkedin: '<i class="fab fa-linkedin-in"></i>',
             active: true
         }
-    ],
-    selectorContact: '#addresscontact-js',
-    contact: [
-        {
-            contactTitle: 'Our Contact',
-            iconLocation: '<i class="fas fa-map-marker-alt"></i>',
-            iconEmail: '<i class="fas fa-envelope-open"></i>',
-            iconPhone: '<i class="fas fa-phone"></i>',
-            contactAddress: 'Danmondi, 7563 King Meadow Suite 896, USA',
-            contactEmail: 'roganinc@coname.com',
-            contactPhone: '8801723801729',
-            text: 'Skrido oro lėktuvėlis jam sugedo motorėlis, kiek reikės vinių, pasakysi TU! ✈✈✈ 🌃🌃🌃',
-            active: true
-        }
     ]
 }
 export { ourAddressData }

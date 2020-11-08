@@ -23,8 +23,8 @@ function renderSingleAddress1(address) {
                     <div class="adrs-box">
                         <div class="adrs-icons">${address.icon}</div>
                         <h5 class="adrs-box-titles">${address.title}</h5>
-                        <a href="mailto: ${address.email}" class="adrs-contacts">${address.email}</a>
-                        <a href="tel: ${address.phone}" class="adrs-contacts">${address.phone}</a>
+                        <a href="#" class="adrs-contacts">${address.email}</a>
+                        <a href="#" class="adrs-contacts">${address.phone}</a>
                     </div>
                 </div>`
     return HTML1
