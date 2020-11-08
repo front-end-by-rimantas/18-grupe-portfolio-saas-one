@@ -6,30 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <!-- reset -->
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/layout.css">
     <!-- 3rd party -->
     <script src="https://kit.fontawesome.com/28d6b952f3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- components -->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/button.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/button.css">
     <!-- custom -->
+    <link rel="stylesheet" href="./css/fillForm.css">
     <link rel="stylesheet" href="../css/custom.css">
 
 </head>
 
 <body>
-    <!-- bg animations -->
-    <div class="hero-animations">
-        <img src="../img/shape-square.png" class="shape-square hero">
-        <img src="../img/shape-triangle.png" class="shape-triangle hero">
-        <img src="../img/shape-plus.png" class="shape-plus-one hero">
-        <img src="../img/shape-plus.png" class="shape-plus-two hero">
-        <img src="../img/shape-oval.png" class="shape-oval hero">
-        <a href="#" class="btn back-to-top fa fa-angle-up"></a>
-    </div>
      <!-- header -->
      <header class="container">  
         <div class="row">
@@ -51,46 +42,58 @@
         </div>
     </header>
     <!-- fill form -->
-    <div class="container fill-form col-12">
-        <div class="row fill-form-title-row">
-            <div class="fill-form-title col-12">Fill the form.<br>It's easy.</div>
+    <div class="container fill-form">
+        <div class="row">
+            <h1 class="form-header col-12">Fill the form. <br> It's easy.</h1>
+            <div class="col-7">
+                <form action="" class=""></form>
+                <input type="text" placeholder="First Name">
+                <form action=""></form>
+                <input type="text" placeholder="Last Name">
+                <form action=""></form>
+                <input type="text" placeholder="Email">
+                <form action=""></form>
+                <input type="text" placeholder="Your Comment">
+            </div>
+            <div class="vertical-line"></div>
+            <div class="col-4">
+                NEED PRESENTATION
+            </div>
         </div>
-        <div class="row fill-form-row">
-            <form class="col-7 col-md-12">
-                <div class="name-row">
-                    <div class="name-box">
-                        <input id="name" class="name" type="text" name="name" placeholder="Name" autocomplete="given-name" required>
-                    </div>
-                    <div class="lastname-box">
-                        <input id="lastname" class="lastname" type="text" name="lastname" placeholder="Last name" autocomplete="family-name"
-                            required>
+    </div>
+    <!-- address -->
+    <div class="container address">
+        <div class="row">
+            <div class="section-title col-12"><p>Our Address</p></div>
+            <div class="title col-12"> Meet Client Satisfaction by using product</div>            
+            <div class="adrs col-12">
+                <div class="adrs-box-wrap">
+                    <div class="adrs-box">
+                        <div class="adrs-icons"><i class="fas fa-map-marker-alt"></i></div>
+                        <h5 class="adrs-box-titles">Our Location</h5>
+                        <p class="adrs-paragraphs">Danmondi, 7563 King Meadow <br> Suite 896, USA</p>
                     </div>
                 </div>
-                <input id="email" class="email" type="email" name="email" placeholder="Your Email" autocomplete="email" required>
-                <textarea id="comment" class="comments" placeholder="Your comments" name="comment" required></textarea>
-                <button class="button" id="button">Send Your Message</button>
-            </form>
-            <div class="vertical-line-box">
-                <div class="col-1 vertical-line"></div>
-            </div>
-            <div class="col-4 col-md-12">
-                <h2 class="fillform-title2">Need presentation?</h2>
-                <p class="fillform-paragraph">
-                    Interdum velit laoreet id donec ultrices. Pharetra diam sit amet nisl. Volutpat lacus laoreet non curabitur gravida
-                    arcu. Fames ac turpis egestas integer eget aliquet. Quis risus sed vulputate odio ut enim.
-                </p>
-                <div class="download-link">
-                    <a href="./download/company-profile.pdf"><i class="fas fa-arrow-circle-down"></i>Company profile</a>
+                <div class="adrs-box-wrap">
+                    <div class="adrs-box">
+                        <div class="adrs-icons"><i class="fas fa-envelope-open"></i></div>
+                        <h5 class="adrs-box-titles">Email & Phone</h5>
+                        <a href="#" class="adrs-contacts">roganinc@coname.com</a>
+                        <a href="#" class="adrs-contacts">880 1723801729</a>
                     </div>
-            </div>
-            <div class="col-12" id="message">
-                
-            </div>
-        </div>
-        <!-- address -->
-        <div class="row">
-            <div class="col-4 col-md-12" id="addresscontact-js">
-                
+                </div>
+                <div class="adrs-box-wrap">
+                    <div class="adrs-box">
+                        <div class="adrs-icons"><i class="fas fa-border-all"></i></div>
+                        <h5 class="adrs-box-titles">Get In Touch</h5>
+                        <p class="adrs-paragraphs">Also find our social media below</p>
+                        <p class="adrs-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -113,6 +116,6 @@
             </div>
         </div>
     </footer>
-    <script src="../js/main.js" type="module"></script>
+    <script src="/js/main.js" type="module"></script>
 </body>
 </html>
