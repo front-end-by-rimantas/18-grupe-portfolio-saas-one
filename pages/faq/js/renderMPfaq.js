@@ -38,8 +38,8 @@ function renderMPfaq(data, categories) {
     // generation of menu
     menuHTML += `<div class="faqMP menu-box">
                     <div class="faqMP menu-title">Questions</div>
-                    <div class="faqMP menu-gen">${categories.gen}</div>
-                    <div class="faqMP menu-lic">${categories.lic}</div>
+                    <a href="#" class="faqMP menu-gen">${categories.gen}</a>
+                    <a href="#" class="faqMP menu-lic">${categories.lic}</a>
                  </div>`;
 
     // HTML generation
