@@ -1,5 +1,5 @@
 function generateSingleTitleMPfaq(categories, faqMP) {
-  const titleHTML = `<div class="title">
+  const titleHTML = `<div class="title ${faqMP.category}">
                       ${faqMP.category === 'gen' ? categories.gen : categories.lic}
                      </div>`;
 

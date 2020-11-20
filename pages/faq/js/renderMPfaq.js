@@ -1,4 +1,3 @@
-import { categories } from '../../../js/data/faq.js';
 import { generateSingleMPfaq, generateSingleTitleMPfaq } from './generateSingleMPfaq.js'
 
 function renderMPfaq(data, categories) {
@@ -35,16 +34,40 @@ function renderMPfaq(data, categories) {
         qaHTML += generateSingleMPfaq(faqMP);
     }
 
-    // generation of menu
+    // generation of submenu
     menuHTML += `<div class="faqMP menu-box">
                     <div class="faqMP menu-title">Questions</div>
-                    <a href="#" class="faqMP menu-gen">${categories.gen}</a>
-                    <a href="#" class="faqMP menu-lic">${categories.lic}</a>
+                    <div class="faqMP menu-gen">${categories.gen}</div>
+                    <div class="faqMP menu-lic">${categories.lic}</div>
                  </div>`;
 
     // HTML generation
     faqMPDOM.innerHTML = qaHTML;
     faqMenuDOM.innerHTML = menuHTML;
+
+    // window movement to the particular category of questions 
+    const genMenu = document.querySelector('.menu-gen');
+    const licMenu = document.querySelector('.menu-lic');
+
+    genMenu.addEventListener('click', () => {
+        const titleDOM = document.getElementsByClassName("title gen");
+        const questionPositionHeight = titleDOM[0].offsetTop;
+
+        window.scrollTo({
+            top: questionPositionHeight - 110,
+            behavior: "smooth"
+        });
+    });
+
+    licMenu.addEventListener('click', () => {
+        const titleDOM = document.getElementsByClassName("title lic");
+        const questionPositionHeight = titleDOM[0].offsetTop;
+
+        window.scrollTo({
+            top: questionPositionHeight - 110,
+            behavior: "smooth"
+        });
+    });
 
     return qaHTML + menuHTML;
 }
