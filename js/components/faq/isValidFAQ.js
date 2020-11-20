@@ -6,15 +6,6 @@ function isValidFAQ(faq) {
         errors.push('ERROR: klausimo aktyvumo statusas turi buti boolean.');
     }
 
-    // icon test
-    if (typeof faq.icon !== 'string') {
-        errors.push('ERROR: icon turi buti tekstinis.');
-    } else {
-        if (faq.icon === '') {
-            errors.push('ERROR: icon pavadinimas negali buti tuscias.');
-        }
-    }
-
     // question test
     if (typeof faq.question !== 'string') {
         errors.push('ERROR: klausimas turi buti tekstinis.');
@@ -24,6 +15,15 @@ function isValidFAQ(faq) {
         }
         if (faq.question.length > 130) {
             errors.push('ERROR: klausimas yra per ilgas.');
+        }
+    }
+
+    // question type test
+    if (typeof faq.category !== 'string') {
+        errors.push('ERROR: klausimo tipas turi buti tekstinis.');
+    } else {
+        if (faq.category === '') {
+            errors.push('ERROR: klausimo tipas negali buti tuscias.');
         }
     }
 
