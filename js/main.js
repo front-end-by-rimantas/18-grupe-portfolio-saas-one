@@ -13,7 +13,7 @@ import { renderFeature } from './components/feature/renderFeature.js';
 import { projectsData } from './data/projects.js'
 import { Projects } from './components/projects/Projects.js'
 // faq import
-import { faqData } from './data/faq.js';
+import { homeFAQ, faqFAQ, categories } from './data/faq.js';
 import { renderFAQ } from './components/faq/renderFAQ.js';
 // testimonials import
 import { testimonialsData } from './data/testimonials.js';
@@ -51,7 +51,7 @@ import { renderBackToTop } from './components/back-to-top.js'
 // page - testimonials logic
 
 // page - faq logic
-
+import { renderMPfaq } from '../pages/faq/js/renderMPfaq.js';
 // page - terms of use logic
 
 // page - 404  logic
@@ -75,7 +75,7 @@ renderFeature(featureData);
 // projects logic
 new Projects(projectsData);
 // faq logic
-renderFAQ(faqData);
+renderFAQ(homeFAQ);
 // testimonials logic
 renderTestimonial(testimonialsData);
 
@@ -93,22 +93,22 @@ renderFooterSocial(footerData);
 renderBackToTop();
 
 // <--Multipages logic: start-->
-    // page - services logic
+// page - services logic
 
-    // page - about logic
+// page - about logic
 
-    // page - contact logic
+// page - contact logic
 
-    // page - pricing logic
+// page - pricing logic
 
-    // page - case study logic
+// page - case study logic
 
-    // Ppage - our team logic
+// Ppage - our team logic
 
-    // page - testimonials logic
+// page - testimonials logic
 
-    // page - faq logic
-
+// page - faq logic
+renderMPfaq(faqFAQ, categories);
     // page - terms of use logic
 
     // page - 404  logic

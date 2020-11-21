@@ -7,15 +7,18 @@ function renderFAQ(data) {
     let HTML = '';
     const faqDOM = document.querySelector(data.selector);
     const faqCount = data.faq.length;
-    if(!faqDOM){
+    // console.log(data);
+    if (!faqDOM) {
         return;
     }
-    for (let i = 0; i < faqCount; i++) {
-        const faq = data.faq[i];
-        
-        HTML += generateSingleFAQ(faq, i === 0 ? true : false);
-    }
 
+    for (let i = 0; i < faqCount; i++) {
+        if (data.faq[i].category === 'gen') {
+            const faq = data.faq[i];
+
+            HTML += generateSingleFAQ(data, faq, i === 0 ? true : false);
+        }
+    }
     // post logic validation
 
     //output
@@ -30,7 +33,7 @@ function renderFAQ(data) {
         const question = allQuestionDOM[i];
         const icon = allIconDOM[i];
 
-        question.addEventListener('click', () => { 
+        question.addEventListener('click', () => {
             if (question.classList.contains('show')) {
                 question.classList.remove('show');
                 icon.classList.remove('violet');
@@ -40,7 +43,7 @@ function renderFAQ(data) {
             } else {
                 document.querySelector('.qa .show').classList.remove('show');
                 question.classList.add('show');
-                
+
                 document.querySelector('.violet').classList.remove('violet');
                 icon.classList.add('violet');
             }

@@ -1,0 +1,70 @@
+.hr.dash {
+    border: 0;
+    border-top: 1px solid rgb(218, 218, 218);
+    border-style: dashed;
+    margin: 30px 0;
+}
+.hr.dash:last-of-type {
+    display: none;
+}
+
+.faqMP >.title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: left;
+}
+
+    .faqMP > .question {
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+.faqMP.menu-box {
+    position: sticky;
+    top: 110px;
+    background: #f2f2f25c;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(12,0,46,0.04);
+}
+
+    .faqMP.menu-box > .faqMP.menu-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .faqMP.menu-box > .faqMP.menu-gen,
+    .faqMP.menu-box > .faqMP.menu-lic {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        color:#757575;
+    }
+
+    .faqMP.menu-box > .faqMP.menu-gen:hover,
+    .faqMP.menu-box > .faqMP.menu-lic:hover {
+        background-color: #007bff;
+        border-radius: 5px;
+        color: #fff;
+        animation-name: fadein;
+        animation-duration: 700ms;
+    }
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 990px) {
+    .faqMP.menu-box {
+        display: none;
+    }
+}
