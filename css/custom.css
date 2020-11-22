@@ -393,7 +393,7 @@ HEADER DROPMENU
             }
 /* TESTIMONIALS */
 .testimonials{
-    background-image: url(/img/mini-test-bg.png);
+    background-image: url(../img/mini-test-bg.png);
     background-repeat: no-repeat;
     background-size: cover; 
 }

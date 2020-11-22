@@ -11,19 +11,19 @@ const headerData = {
             dropdown: [
                 {
                     title: 'Service.',
-                    link: '/pages/service/',
+                    link: './pages/service/',
                 },
                 {
                     title: 'About',
-                    link: '/about/',
+                    link: './about/',
                 },
                 {
                     title: 'Contact',
-                    link: '/contact/',
+                    link: './contact/',
                 },
                 {
                     title: 'Pricing',
-                    link: '/pages/pricing',
+                    link: './pages/pricing',
                 },
                 {
                     title: 'Case Study....',
@@ -31,29 +31,29 @@ const headerData = {
                     dropdown: [
                         {
                             title: 'Case Default',
-                            link: '/pages/case-default/',
+                            link: './pages/case-default/',
                         },
                         {
                             title: 'Case Detail',
-                            link: '/pages/case-detail/',
+                            link: './pages/case-detail/',
                         }
                     ]
                 },
                 {
                     title: 'Our Team',
-                    link: '/pages/our team/',
+                    link: './pages/our-team/',
                 },
                 {
                     title: 'FAQ',
-                    link: '/pages/faq/',
+                    link: './pages/faq/',
                 },
                 {
                     title: 'Terms of use',
-                    link: '/pages/terms-of-use',
+                    link: './pages/terms-of-use',
                 },
                 {
                     title: 'ERROR 404',
-                    link: '/pages/error-404/',
+                    link: './pages/error-404/',
                 }
             ]
         },
@@ -63,11 +63,11 @@ const headerData = {
             dropdown: [
                 {
                     title: 'Blog Default',
-                    link: '/blog-default/',
+                    link: './blog-default/',
                 },
                 {
                     title: 'Blog Single',
-                    link: '/blog-single/',
+                    link: './blog-single/',
                 }
             ]
         },
@@ -77,21 +77,21 @@ const headerData = {
             dropdown: [
                 {
                     title: 'Portfolio Standard',
-                    link: '/portfolio-standard/',
+                    link: './portfolio-standard/',
                 },
                 {
                     title: 'Portfolio Masonry',
-                    link: '/portfolio-masonry/',
+                    link: './portfolio-masonry/',
                 }
             ]
         },
         {
             title: 'About.',
-            link: '/about/',
+            link: './about/',
         },
         {
             title: 'Contact.',
-            link: '/contact/',
+            link: './contact/',
 
         }
     ]
