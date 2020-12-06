@@ -23,7 +23,7 @@ const headerData = {
                 },
                 {
                     title: 'Pricing',
-                    link: './pages/pricing',
+                    link: './pages/pricing/',
                 },
                 {
                     title: 'Case Study....',
@@ -49,7 +49,7 @@ const headerData = {
                 },
                 {
                     title: 'Terms of use',
-                    link: './pages/terms-of-use',
+                    link: './pages/terms-of-use/',
                 },
                 {
                     title: 'ERROR 404',
