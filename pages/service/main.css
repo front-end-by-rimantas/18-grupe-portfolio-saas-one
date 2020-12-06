@@ -1,5 +1,40 @@
 
 
+/* HERO */
+.container.hero {
+    padding: 150px 0;
+}
+.container.hero > .row {
+    grid-column: 2 / 3;
+}
+    .container.hero .title {
+        display: inline-block;
+        float: left;
+        font-size: 50px;
+        color: #2b2350;
+    }
+    .container.hero .hero-path {
+        display: inline-block;
+        float: left;
+        text-align: center;
+    }
+        .hero-path .hero-home {
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+            color: #2b2350;
+            font-weight: 600;
+        }
+            .hero-path .hero-home:hover {
+                color: #fb6638;
+            }
+        .hero-path .MP-title {
+            display: inline-block;
+            text-align: center;
+            font-size: 18px;
+        }
 
 
 /* FOOTER */
