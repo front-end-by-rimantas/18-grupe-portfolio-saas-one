@@ -3,6 +3,7 @@
 /* HERO */
 .container.hero {
     padding: 150px 0;
+    position: relative;
 }
 .container.hero > .row {
     grid-column: 2 / 3;
@@ -35,7 +36,59 @@
             text-align: center;
             font-size: 18px;
         }
-
+        .animations > .shape-triangle.hero,
+        .animations > .shape-square.hero,
+        .animations > .shape-square.hero-two,
+        .animations > .shape-plus-one.hero,
+        .animations > .shape-plus-two.hero,
+        .animations > .shape-oval.hero {
+            width: 18px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+        }
+         .animations > .shape-triangle.hero{
+             background-image: url(../../img/shape-triangle.png);
+         }
+        .animations > .shape-square.hero,
+        .animations > .shape-square.hero-two {
+            background-image: url(../../img/shape-square.png);
+        }
+        .animations > .shape-plus-one.hero,
+        .animations > .shape-plus-two.hero {
+            background-image: url(../../img/shape-plus.png);
+        }
+        .animations > .shape-oval.hero {
+            background-image: url(../../img/shape-oval.png);
+        }
+            .animations > .shape-square.hero {
+                    top: -50%;
+                    left: 40%;
+                }
+            .animations > .shape-square.hero-two {
+                animation-duration: 13s;
+                top: -50%;
+                left: 80%;
+            }
+            .animations > .shape-triangle.hero {
+                top: 40%;
+                left: 0;
+            }
+            .animations > .shape-plus-one.hero {
+                width: 25px;
+                top: -80%;
+                left: 0;
+            }
+            .animations > .shape-plus-two.hero {
+                width: 25px;
+                top: 120%;
+                left: 25%;
+            }
+            .animations > .shape-oval.hero {
+                width: 100px;
+                top: -20%;
+                right: -15%;
+            }
 
 /* FOOTER */
 footer {
